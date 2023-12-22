@@ -1,0 +1,18 @@
+on: 
+  workflow_dispatch:
+  schedule:
+    - cron: '0 4 * * 4'
+
+env:
+  AGNOSTIC_API_KEY: ${{ secrets.AGNOSTIC_API_KEY }}
+  RPC_URL: ${{ secrets.RPC_URL }}
+
+jobs:
+  build: # make sure build/ci work properly
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          npm install
+      - run: |
+          npm run start
