@@ -359,7 +359,7 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
             if (isActivePeriod) {
                 period.unclaimedRewards = period.allocatedRewards - totalClaimed;
                 period.votesReceived = BigInt(weights[i].gaugeWeight);
-                period.totalWeight = parseUnits(weights[i].totalWeight.toString(), 18);
+                period.totalWeight = weights[i].totalWeight;
 
                 // Remove weight from blacklisted address
                 let total = 0n;
@@ -507,7 +507,7 @@ const fetchHistoricals = async (
 export type IUserWeightMap = Record<number, IUserWeight>;
 
 export interface IUserWeight {
-    totalWeight: number;
+    totalWeight: bigint;
     usersWeight: IWeight[];
     gaugeWeight: bigint;
 }
@@ -525,14 +525,14 @@ const computeHistoricalData = (
     const weights: IUserWeightMap = {};
     for (let i = 0; i < response.numberOfPeriods; i++) {
         const weight: IUserWeight = {
-            totalWeight: 0,
+            totalWeight: 0n,
             usersWeight: [],
             gaugeWeight: 0n,
         };
 
         const data = calls.shift();
         const totalWeightResp = data[0].result;
-        weight.totalWeight = parseFloat(formatUnits(totalWeightResp, 18));
+        weight.totalWeight = BigInt(formatUnits(totalWeightResp, 18));
 
         for (const blacklist of response.blacklistedAddresses) {
             const blacklistData = calls.shift();
