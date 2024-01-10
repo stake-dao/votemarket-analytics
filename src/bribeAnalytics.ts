@@ -359,7 +359,7 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
             if (isActivePeriod) {
                 period.unclaimedRewards = period.allocatedRewards - totalClaimed;
                 period.votesReceived = BigInt(weights[i].gaugeWeight);
-                period.totalWeight = BigInt(weights[i].totalWeight);
+                period.totalWeight = parseUnits(weights[i].totalWeight.toString(), 18);
 
                 // Remove weight from blacklisted address
                 let total = 0n;
