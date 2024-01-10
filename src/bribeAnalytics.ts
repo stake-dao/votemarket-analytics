@@ -244,7 +244,7 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
     }
 
     const protocolTokenPrices = await Promise.all(protocolTokenPriceCall);
-    const tokenRewardPrices = await getHistoricalPricesFromContracts(tokenHistoricalRewardPriceCalls);
+    const tokenRewardPrices = await getHistoricalPricesFromContracts(protocol, tokenHistoricalRewardPriceCalls);
 
     response.weeklyIncentive = inflation;
 
