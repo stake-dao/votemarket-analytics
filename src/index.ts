@@ -1,16 +1,15 @@
 import * as dotenv from "dotenv";
-import { BigNumber } from "@ethersproject/bignumber";
-import moment from "moment";
-import { formatUnits } from "@ethersproject/units";
 import { IBribeGeneralReport, IBribeReport, IProtocol } from "./interfaces";
 import { isArray } from "lodash";
 import { getAllGauges } from "./gaugesUtils";
 import { getAllAnalyticsBribesByProtocol } from "./bountyUtils";
 import { getBribeAnalytics } from "./bribeAnalytics";
 import { PROTOCOLS } from "./bountyConfig";
-import fs from 'fs';
+import * as fs from 'fs';
 import { startNextPeriod } from "./periodUtils";
 import { getInflationFromBribeContract } from "./inflationUtils";
+import { formatUnits } from "viem";
+import moment from "moment";
 
 dotenv.config();
 
@@ -21,13 +20,24 @@ const analyticsAvailable = (protocol: IProtocol): boolean => {
     return ANALYTICS_PROTOCOL.some((a) => protocol.key.toLowerCase() === a);
 }
 
+(BigInt.prototype as any).toJSON = function () {
+    return this.toString();
+};
+
 const main = async () => {
     const mapGauges = await getAllGauges();
-    const nextPeriod = await startNextPeriod();
+    const periods: any = {};
 
     for (const protocol of PROTOCOLS) {
         if (!analyticsAvailable(protocol)) {
             continue;
+        }
+
+        let nextPeriod: number = periods[protocol.protocolChainId];
+
+        if (!nextPeriod) {
+            nextPeriod = await startNextPeriod(protocol);
+            periods[protocol.protocolChainId] = nextPeriod;
         }
 
         try {
@@ -87,7 +97,7 @@ const main = async () => {
                                 gaugeAddress: ba.gaugeAddress,
                                 bribeContract: ba.bribeContract,
                                 tokenRewardAddress: ba.rewardTokenAddress,
-                                id: BigNumber.from(ba.id).toNumber(),
+                                id: Number(ba.id),
                             });
                         }
 

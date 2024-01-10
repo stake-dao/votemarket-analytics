@@ -1,6 +1,6 @@
-import { BigNumber } from "@ethersproject/bignumber";
+export type TABLE = "evm_events_ethereum_mainnet" | "evm_events_bsc";
 
-export const QUERY_BRIBES_CREATED = (contracts: string[]) => `
+export const QUERY_BRIBES_CREATED = (table: TABLE, contracts: string[]) => `
 select
     address,
     timestamp,
@@ -14,7 +14,7 @@ select
     input_7_value_uint256 as totalRewardAmount,
     input_8_value_uint8 as isUpgradable,
     token_name('ethereum', 'mainnet', rewardToken) as token_name
-from evm_events_ethereum_mainnet
+from ${table}
 where 
 address IN (${contracts.map((c: string) => "'" + c + "'").join(",")}) and
 (
@@ -24,7 +24,7 @@ address IN (${contracts.map((c: string) => "'" + c + "'").join(",")}) and
 )`;
 
 
-export const QUERY_BRIBE_CREATED = (bribeContract: string, id: string) => `
+export const QUERY_BRIBE_CREATED = (table: TABLE, bribeContract: string, id: string) => `
 select
     address,
     timestamp,
@@ -38,7 +38,7 @@ select
     input_7_value_uint256 as totalRewardAmount,
     input_8_value_uint8 as isUpgradable,
     token_name('ethereum', 'mainnet', rewardToken) as token_name
-from evm_events_ethereum_mainnet
+from ${table}
 where 
 address = '${bribeContract}' and
 input_0_value_uint256 = '${id}' and
@@ -51,29 +51,29 @@ input_0_value_uint256 = '${id}' and
 /**
  * Fetch all rollover for a bribe
  */
-export const ROLLOVER_QUERY = (bribeContract: string, id: string, tokenRewardAddress: string) => `
+export const ROLLOVER_QUERY = (table: TABLE, bribeContract: string, id: string, tokenRewardAddress: string) => `
 select
     timestamp,
     input_3_value_uint256 as amount,
     token_usd_amount('ethereum', 'mainnet', '${tokenRewardAddress}', toDate(timestamp), amount) as total_usd
-from evm_events_ethereum_mainnet
+from ${table}
 where 
 address = '${bribeContract}' and
 input_0_value_uint256 = '${id}' and
 signature = 'PeriodRolledOver(uint256,uint256,uint256,uint256)'
 ORDER BY timestamp ASC`;
 
-export const PRICE_QUERY = (tokenRewardAddress: string, timestamp: number, amount: BigNumber) => `
+export const PRICE_QUERY = (table: TABLE, tokenRewardAddress: string, timestamp: number, amount: bigint) => `
 select
     token_usd_amount('ethereum', 'mainnet', '${tokenRewardAddress}', toDate(${timestamp}), ${amount.toString()}) as total_usd
-from evm_events_ethereum_mainnet
+from ${table}
 LIMIT 1
 `;
 
-export const INCREASED_QUEUED_EVENTS = (bribesContract: string, bribeId: string) => `
+export const INCREASED_QUEUED_EVENTS = (table: TABLE, bribesContract: string, bribeId: string) => `
 select
     input_1_value_uint8 as numberOfPeriods
-from evm_events_ethereum_mainnet
+from ${table}
 where
     address = '${bribesContract}' and 
     input_0_value_uint256 = '${bribeId}' and
@@ -86,45 +86,16 @@ ORDER BY timestamp DESC
 LIMIT 1
 `;
 
-
-export const CLAIMED_REWARDS_QUERY = (bribeContract: string, id: string) => `
+export const CLAIMED_REWARDS_QUERY = (table: TABLE, bribeContract: string, id: string) => `
 select
     block_number,
     transaction_index,
     timestamp,
     input_0_value_address as user,
     input_3_value_uint256 as amount
-from evm_events_ethereum_mainnet
+from ${table}
 where 
     address = '${bribeContract}' and
     input_2_value_uint256 = '${id}' and
-    signature = 'Claimed(address,address,uint256,uint256,uint256)'
-ORDER BY timestamp DESC`;
-
-export const CLAIMED_REWARDS_QUERY_V3 = (bribeContract: string, id: string) => `
-select
-    block_number,
-    transaction_index,
-    timestamp,
-    input_0_value_address as user,
-    input_3_value_uint256 as amount
-from evm_events_ethereum_mainnet
-where 
-    address = '${bribeContract}' and
-    input_2_value_uint256 = '${id}' and
-    signature = 'Claimed(address,address,uint256,uint256,uint256,uint256)'
-ORDER BY timestamp DESC`;
-
-export const CLAIMED_REWARDS_QUERY_V3_WITH_ISSUE = (bribeContract: string, id: string) => `
-select
-    block_number,
-    transaction_index,
-    timestamp,
-    input_0_value_address as user,
-    input_2_value_uint256 as amount
-from evm_events_ethereum_mainnet
-where 
-    address = '${bribeContract}' and
-    input_3_value_uint256 = '${id}' and
     signature = 'Claimed(address,address,uint256,uint256,uint256,uint256)'
 ORDER BY timestamp DESC`;

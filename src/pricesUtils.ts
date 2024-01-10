@@ -1,4 +1,5 @@
 import { FXS_ADDRESS, SD_FXS_ADDRESS } from "./addresses";
+import { delay } from "./sleepUtils";
 import { equals } from "./stringUtils";
 import axios from "axios";
 
@@ -11,6 +12,8 @@ const replaceAddress: any = {
     ["0xA1f82E14bc09A1b42710dF1A8a999B62f294e592".toLowerCase()]: "coingecko:conflux-token",
     ["0x559b7bfC48a5274754b08819F75C5F27aF53D53b".toLowerCase()]: "coingecko:qi-dao"
 }
+
+const cacheHistoricalsPrices: any = {};
 
 export const getCoingeckoPrice = (coingeckoLPPrices: any, address: string, replace: boolean = true): number => {
     if(equals(address, "0x4F7796928Bc83D29e66A58D0D3C1346F5E4DB2Fd")) {
@@ -184,20 +187,36 @@ export interface IHistoricalPrice {
 export const getHistoricalPricesFromContracts = async (data: IHistoricalPrice[]): Promise<any> => {
 
     const calls: any[] = [];
-
     for (const d of data) {
-        calls.push(axios.get(`https://coins.llama.fi/prices/historical/${d.timestamp}/ethereum:${d.address}`));
+        const url = `https://coins.llama.fi/prices/historical/${d.timestamp}/ethereum:${d.address}`;
+        if (!cacheHistoricalsPrices[url]) {
+            calls.push(axios.get(url));
+            await delay(1000);
+        }
     }
 
-    const callsResp = await Promise.all(calls);
+    let callsResp: any[] = [];
+    if (calls.length > 0) {
+        callsResp = await Promise.all(calls);
+    }
 
     const resp = {
         data: {}
     };
 
     for (const d of data) {
-        const r = callsResp.shift();
-        const res = removeKey(r.data.coins);
+        const url = `https://coins.llama.fi/prices/historical/${d.timestamp}/ethereum:${d.address}`;
+
+        let response = null;
+        if (!cacheHistoricalsPrices[url]) {
+            response = callsResp.shift();
+            cacheHistoricalsPrices[url] = response;
+        } else {
+            console.log("Dans le cache ", url )
+            response = cacheHistoricalsPrices[url];
+        }
+        
+        const res = removeKey(response.data.coins);
         resp.data = {
             ...resp.data,
             ...res

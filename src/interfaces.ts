@@ -1,9 +1,9 @@
-import { BigNumber } from "@ethersproject/bignumber";
+import { TABLE } from "./queries";
 
 export interface IBribeReport {
     bribeContract: string;
     created: number;
-    id: BigNumber;
+    id: bigint;
     gaugeAddress: string;
     gaugeName: string;
     manager: string;
@@ -12,9 +12,9 @@ export interface IBribeReport {
     rewardTokenSymbol: string;
     rewardTokenDecimals: number;
     numberOfPeriods: number;
-    maxRewardPerVote: BigNumber;
-    rewardPerPeriod: BigNumber;
-    totalRewardAmount: BigNumber;
+    maxRewardPerVote: bigint;
+    rewardPerPeriod: bigint;
+    totalRewardAmount: bigint;
     weeklyIncentive: number;
     protocolTokenSymbol: string;
     protocolTokenDecimal: number;
@@ -33,18 +33,18 @@ export interface IPeriodBribeReport {
     startClaim: number;
     endClaim: number;
     activePeriod: boolean;
-    allocatedRewards: BigNumber;
+    allocatedRewards: bigint;
     allocatedRewardsUSD: number;
-    votesReceived: BigNumber;
-    totalWeight: BigNumber;
-    incentiveDirectedBN: BigNumber;
+    votesReceived: bigint;
+    totalWeight: bigint;
+    incentiveDirectedBN: bigint;
     incentiveDirected: number;
     incentiveDirectedUSD: number;
     incentiveBoostAchieved: number;
     incentiveProtocolTokenUSD: number;
-    claimedRewards: BigNumber;
+    claimedRewards: bigint;
     claimedRewardsUSD: number;
-    unclaimedRewards: BigNumber;
+    unclaimedRewards: bigint;
     realPricePerVoteAchieved: number;
     realPricePerVoteAchievedUSD: number;
     tokenRewardPrice: number;
@@ -52,13 +52,13 @@ export interface IPeriodBribeReport {
 
 export interface IClaimedBribeReport {
     timestamp: number;
-    amountBN: BigNumber;
+    amountBN: bigint;
     amount: number;
 }
 
 export interface IRolloverBribeReport {
     timestamp: number;
-    amountBN: BigNumber;
+    amountBN: bigint;
     amount: number;
     price: number;
 }
@@ -66,7 +66,7 @@ export interface IRolloverBribeReport {
 export interface IAnalyticsBribe {
     bribeContract: string;
     created: number;
-    id: BigNumber;
+    id: bigint;
     gaugeAddress: string;
     gaugeName: string;
 }
@@ -95,6 +95,7 @@ export interface IRewardsTokensAvailable {
 export interface IProtocol {
     key: string;
     bribeContract: IChainBribeContract[];
+    curveImageNetwork?: string;
     v3Contract: string;
     atLeastV5Contracts: string[];
     claimableContract: string;
@@ -108,8 +109,10 @@ export interface IProtocol {
     protocolChainId: number;
     veMultiplier: number;
     indexVotePage: number;
+    roundDuration: number;
     rewardsTokensAvailable: IRewardsTokensAvailable[];
     isAvailableForVBM: boolean;
+    table: TABLE;
 }
 
 export type NetworkName = "ethereum" | "arbitrum" | "bsc";
@@ -119,6 +122,7 @@ export interface IChainBribeContract {
     chainId: number;
     network: NetworkName; // For defillama api price => chain name like ethereum|arbitrum|bsc ...
     curveImageNetwork: CurveImageNetwork;
+    claimBribeContract?: `0x${string}`;
     bribeContract: `0x${string}`;
     image: string; // Chain image
     active: boolean;

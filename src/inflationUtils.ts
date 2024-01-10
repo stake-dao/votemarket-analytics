@@ -1,14 +1,12 @@
 import { CRV_ADDRESS } from "./addresses";
 import { PROTOCOLS } from "./bountyConfig";
 import { IProtocol } from "./interfaces";
-import { getNewDefaultProvider } from "./jsonRpcUtils";
+import { getClient } from "./jsonRpcUtils";
 import { WEEK } from "./periodUtils";
 import { equals } from "./stringUtils";
-import { BigNumber } from "@ethersproject/bignumber";
-import { formatUnits } from "@ethersproject/units";
-import { Contract } from "ethers-multicall";
 import CRV_ABI from '../abis/CRV.json';
 import TokenAdmin_ABI from '../abis/TokenAdmin.json';
+import { formatUnits } from "viem";
 
 export const CRV_INFLATION_CHANGE = 1691877600 // 13-08-2023
 export const CRV_WEEKLY_INFLATION_OLD = 3726757 // Weekly inflation before 13-08-2023
@@ -33,18 +31,42 @@ export const getInflationFromBribeContract = async (bribeContract: string): Prom
         return -1;
     }
 
-    const multiProvider = getNewDefaultProvider(1);
+    const client = getClient(protocol);
+    if (!client) {
+        return -1;
+    }
 
     switch (protocol.key) {
         case "crv":
-            const crvContract = new Contract(CRV_ADDRESS, CRV_ABI as any);
-            const crvResp = await multiProvider.all([crvContract.rate()]);
-            const crvRate = parseFloat(formatUnits(BigNumber.from(crvResp.shift())));
+            const [rate] = await client.multicall({
+                contracts: [
+                    {
+                        address: CRV_ADDRESS as any,
+                        abi: CRV_ABI,
+                        functionName: 'rate',
+                    }
+                ]
+            });
+            if (!rate.result) {
+                return 0;
+            }
+            const crvRate = parseFloat(formatUnits(rate.result as any, 18));
             return Math.round(crvRate * WEEK);
         case "bal":
-            const balancerTokenAdminContract = new Contract(BALANCER_TOKEN_ADMIN, TokenAdmin_ABI as any);
-            const resp = await multiProvider.all([balancerTokenAdminContract.getInflationRate()]);
-            const balInflationRate = parseFloat(formatUnits(BigNumber.from(resp.shift())));
+            const [inflationRate] = await client.multicall({
+                contracts: [
+                    {
+                        address: BALANCER_TOKEN_ADMIN as any,
+                        abi: TokenAdmin_ABI,
+                        functionName: 'getInflationRate',
+                    }
+                ]
+            });
+            if (!inflationRate.result) {
+                return 0;
+            }
+
+            const balInflationRate = parseFloat(formatUnits(inflationRate as any, 18));
             return Math.round(balInflationRate * WEEK);
         case "fxs":
             return FXS_WEEKLY_INFLATION;

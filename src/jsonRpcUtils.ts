@@ -1,27 +1,22 @@
-import { ethers } from "ethers";
-import { Provider } from "ethers-multicall";
 import * as dotenv from "dotenv";
+import { PublicClient, createPublicClient, http } from "viem";
+import { IProtocol } from "./interfaces";
+import * as chains from 'viem/chains'
 
 dotenv.config();
 
-export const getNewJsonProvider = (chainId?: number): any => {
-    return new ethers.providers.JsonRpcProvider(process.env.RPC_URL, 1);
-};
-
-export const getNewDefaultProvider = (chainId: number = -1) => {
-    let jsonProvider: any = null;
-    if (chainId === -1) {
-        jsonProvider = getNewJsonProvider(1);
-    } else {
-        jsonProvider = getNewJsonProvider(chainId);
+export const getClient = (protocol: IProtocol): PublicClient | null => {
+    for (const chain of Object.values(chains)) {
+        if ('id' in chain && chain.id === protocol.protocolChainId) {
+            return createPublicClient({
+                chain,
+                transport: http(),
+                batch: {
+                    multicall: true,
+                },
+            });
+        }
     }
 
-    return getNewProvider(jsonProvider, chainId);
-}
-
-const getNewProvider = (jsonProvider: ethers.providers.Provider, chainId: number = -1) => {
-    if (chainId === -1) {
-        chainId = 1;
-    }
-    return new Provider(jsonProvider, chainId);
+    return null;
 }

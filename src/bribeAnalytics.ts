@@ -1,23 +1,19 @@
 import { agnosticFetch } from "./agnosticUtils";
 import { getProtocolTokenAddressFromBribeContract } from "./bountyUtils";
 import { IBribeReport, IClaimedBribeReport, IPeriodBribeReport, IProtocol, IRolloverBribeReport } from "./interfaces";
-import { CLAIMED_REWARDS_QUERY, CLAIMED_REWARDS_QUERY_V3, CLAIMED_REWARDS_QUERY_V3_WITH_ISSUE, INCREASED_QUEUED_EVENTS, PRICE_QUERY, QUERY_BRIBE_CREATED, ROLLOVER_QUERY } from "./queries";
-import { BigNumber } from "@ethersproject/bignumber";
+import { CLAIMED_REWARDS_QUERY, INCREASED_QUEUED_EVENTS, PRICE_QUERY, QUERY_BRIBE_CREATED, ROLLOVER_QUERY } from "./queries";
 import moment from "moment";
 import { equals } from "./stringUtils";
 import { PROTOCOLS, USEFUL_BLACKLIST_ADDRESSES } from "./bountyConfig";
-import { Contract } from "ethers-multicall";
 import BribePlateformV5_ABI from '../abis/BribePlateform.json';
 import CurveGaugeController_ABI from '../abis/CurveGaugeController.json';
 import ERC20_ABI from '../abis/ERC20.json';
 import { WEEK } from "./periodUtils";
-import { ethers } from "ethers";
 import { BAL_ADDRESS, FXS_ADDRESS, SD_FXS_ADDRESS } from "./addresses";
-import { formatUnits } from "@ethersproject/units";
-import { JsonRpcProvider } from "@ethersproject/providers";
-import { getNewDefaultProvider } from "./jsonRpcUtils";
-import { getCoingeckoPrice, getHistoricalPricesFromContracts } from "./pricesUtils";
+import { getClient } from "./jsonRpcUtils";
+import { IHistoricalPrice, getCoingeckoPrice, getHistoricalPricesFromContracts } from "./pricesUtils";
 import * as dotenv from "dotenv";
+import { PublicClient, formatUnits, parseUnits } from "viem";
 
 dotenv.config();
 
@@ -45,25 +41,16 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
     }
 
     // Fetch bribes data
-    const bribes = await agnosticFetch(QUERY_BRIBE_CREATED(bribeContractStr, id as string));
+    const bribes = await agnosticFetch(QUERY_BRIBE_CREATED(protocol.table, bribeContractStr, id as string));
     if (!bribes) {
         return {};
     }
 
     // Fetch ve contract
-    const multiProvider = getNewDefaultProvider(1);
+    const client = getClient(protocol);
 
     const claimedCall = agnosticFetch(CLAIMED_REWARDS_QUERY(
-        bribeContractStr,
-        id as string
-    ));
-
-    const claimedV3Call = agnosticFetch(CLAIMED_REWARDS_QUERY_V3(
-        bribeContractStr,
-        id as string
-    ));
-
-    const claimedV3IssueCall = agnosticFetch(CLAIMED_REWARDS_QUERY_V3_WITH_ISSUE(
+        protocol.table,
         bribeContractStr,
         id as string
     ));
@@ -80,16 +67,16 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
     const response: IBribeReport = {
         bribeContract: bribe[0],
         created: moment(bribe[1]).unix(),
-        id: BigNumber.from(bribe[2]),
+        id: BigInt(bribe[2]),
         gaugeAddress: bribe[3],
         gaugeName,
         manager: bribe[4],
         rewardTokenAddress: bribe[5],
         rewardTokenName: bribe[11],
         numberOfPeriods: parseInt(bribe[6]),
-        maxRewardPerVote: BigNumber.from(bribe[7]),
-        rewardPerPeriod: BigNumber.from(bribe[8]),
-        totalRewardAmount: BigNumber.from(bribe[9]),
+        maxRewardPerVote: BigInt(bribe[7]),
+        rewardPerPeriod: BigInt(bribe[8]),
+        totalRewardAmount: BigInt(bribe[9]),
         isUpgradable: parseInt(bribe[10]) === 1,
         blacklistedAddresses: [],
         periods: [],
@@ -101,40 +88,64 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
     };
 
     // Check if we have an increased
-    const increased = await agnosticFetch(INCREASED_QUEUED_EVENTS(bribeContractStr, id as string));
+    const increased = await agnosticFetch(INCREASED_QUEUED_EVENTS(protocol.table, bribeContractStr, id as string));
     if (increased && increased.length > 0) {
         response.numberOfPeriods = parseInt(increased[0][0]);
     }
 
     const rolloverCall = agnosticFetch(ROLLOVER_QUERY(
+        protocol.table,
         bribeContractStr,
         id as string,
         response.rewardTokenAddress
     ));
 
     // Manage blacklist addresses
-    const contract = new Contract(bribeContractStr, BribePlateformV5_ABI);
-    const erc20 = new Contract(response.rewardTokenAddress, ERC20_ABI);
-    const erc20ProtocolToken = new Contract(protocolTokenAddress, ERC20_ABI);
     const [
-        blacklistedAddresses,
-        decimals,
+        blacklistedAddressesRes,
+        decimalsRes,
         symbol,
         protocolTokenSymbol,
-        protocolTokenDecimal
-    ] = await multiProvider.all([
-        contract.getBlacklistedAddressesPerBounty(response.id),
-        erc20.decimals(),
-        erc20.symbol(),
-        erc20ProtocolToken.symbol(),
-        erc20ProtocolToken.decimals()
-    ]);
+        protocolTokenDecimalRes,
+    ] = await client.multicall({
+        contracts: [
+            {
+                address: bribeContractStr as any,
+                abi: BribePlateformV5_ABI,
+                functionName: 'getBlacklistedAddressesPerBounty',
+                args: [response.id]
+            },
+            {
+                address: response.rewardTokenAddress as any,
+                abi: ERC20_ABI,
+                functionName: 'decimals',
+            },
+            {
+                address: response.rewardTokenAddress as any,
+                abi: ERC20_ABI,
+                functionName: 'symbol',
+            },
+            {
+                address: protocolTokenAddress as any,
+                abi: ERC20_ABI,
+                functionName: 'symbol',
+            },
+            {
+                address: protocolTokenAddress as any,
+                abi: ERC20_ABI,
+                functionName: 'decimals',
+            }
+        ]
+    });
 
+    const decimals = Number(decimalsRes.result)
+    const protocolTokenDecimal = Number(protocolTokenDecimalRes.result)
     response.rewardTokenDecimals = decimals;
-    response.rewardTokenSymbol = symbol;
-    response.protocolTokenSymbol = protocolTokenSymbol;
+    response.rewardTokenSymbol = symbol.result as string;
+    response.protocolTokenSymbol = protocolTokenSymbol.result as string;
     response.protocolTokenDecimal = protocolTokenDecimal;
 
+    const blacklistedAddresses = blacklistedAddressesRes.result as string[];
     response.blacklistedAddresses = blacklistedAddresses.map((address: string) => {
         let name = "Unknown voter";
         const usefulBlacklist = USEFUL_BLACKLIST_ADDRESSES.find((b: any) => equals(b.address, address));
@@ -149,10 +160,8 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
     });
 
     // Get claimed data
-    const [claimedResp, claimedV3Resp, claimedV3IssueResp] = await Promise.all([
+    const [claimedResp] = await Promise.all([
         claimedCall,
-        claimedV3Call,
-        claimedV3IssueCall
     ]);
 
     let claimed: IClaimedBribeReport[] = [];
@@ -160,30 +169,10 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
         claimed = claimedResp.map((c: any) => {
             return {
                 timestamp: moment(c[2]).unix(),
-                amountBN: BigNumber.from(c[4]),
-                amount: BigNumber.from(c[4]).div(BigNumber.from(10).pow(decimals)).toNumber()
+                amountBN: BigInt(c[4]),
+                amount: parseFloat(formatUnits(c[4], decimals))
             }
         });
-    }
-
-    if (claimedV3Resp) {
-        claimed = claimed.concat(claimedV3Resp.map((c: any) => {
-            return {
-                timestamp: moment(c[2]).unix(),
-                amountBN: BigNumber.from(c[4]),
-                amount: BigNumber.from(c[4]).div(BigNumber.from(10).pow(decimals)).toNumber()
-            }
-        }));
-    }
-
-    if (claimedV3IssueResp) {
-        claimed = claimed.concat(claimedV3IssueResp.map((c: any) => {
-            return {
-                timestamp: moment(c[2]).unix(),
-                amountBN: BigNumber.from(c[4]),
-                amount: BigNumber.from(c[4]).div(BigNumber.from(10).pow(decimals)).toNumber()
-            }
-        }));
     }
 
     // Get rollover
@@ -191,10 +180,10 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
     let rollovers: IRolloverBribeReport[] = [];
     if (rolloverResp) {
         rollovers = rolloverResp.map((r: any) => {
-            const amount = BigNumber.from(r[1]).div(BigNumber.from(10).pow(decimals)).toNumber();
+            const amount = parseFloat(formatUnits(r[1], decimals));
             return {
                 timestamp: moment(r[0]).unix(),
-                amountBN: BigNumber.from(r[1]),
+                amountBN: BigInt(r[1]),
                 amount,
                 price: parseFloat(r[2]) / amount,
             }
@@ -209,24 +198,15 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
 
     let claimedStart = moment.unix(nextPeriod + WEEK);
 
-    const calls: any[] = [];
-    const prov = new JsonRpcProvider(
-        {
-            url: "https://rpc.ankr.com/eth",
-        },
-        1,
-    );
-    const blockNumber = await prov.getBlockNumber();
+    const blockNumber = Number(await client.getBlockNumber());
     const now = moment();
     const protocolTokenPriceCall: any[] = [];
-    const tokenRewardPriceCall: any[] = [];
-    const gaugeControllerContract = new Contract(gaugeController, CurveGaugeController_ABI as any);
+    const tokenHistoricalRewardPriceCalls: IHistoricalPrice[] = [];
 
-    let iface = new ethers.utils.Interface(CurveGaugeController_ABI as any);
     let nextThursdayGaugeData = moment.utc(claimedStart).add(-1, "week");
 
     const fetchHistoricalsDataCall = fetchHistoricalsData(
-        iface,
+        client,
         response,
         moment.unix(nextThursdayGaugeData.unix()),
         now,
@@ -234,29 +214,37 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
         gaugeController
     );
 
+    const calls: any[] = [];
     for (let i = 0; i < response.numberOfPeriods; i++) {
         nextThursdayGaugeData = nextThursdayGaugeData.add(1, "week");
 
         const next = nextThursdayGaugeData.unix();
-        calls.push(gaugeControllerContract.points_weight(response.gaugeAddress, moment.unix(next).unix()));
 
-        protocolTokenPriceCall.push(agnosticFetch(PRICE_QUERY(protocolTokenAddress, next, BigNumber.from(1).mul(BigNumber.from(10).pow(protocolTokenDecimal)))));
+        calls.push({
+            address: gaugeController as any,
+            abi: CurveGaugeController_ABI,
+            functionName: 'points_weight',
+            args: [response.gaugeAddress, moment.unix(next).unix()]
+        });
 
-        tokenRewardPriceCall.push(getHistoricalPricesFromContracts([{
+        protocolTokenPriceCall.push(agnosticFetch(PRICE_QUERY(protocol.table, protocolTokenAddress, next, parseUnits("1", protocolTokenDecimal))));
+
+        tokenHistoricalRewardPriceCalls.push({
             address: getRealTokenRewardAddress(response.rewardTokenAddress),
             timestamp: next
-        }]));
+        });
     }
 
-    const callsResp = await multiProvider.all(calls);
+    const callsResp = await client.multicall({ contracts: calls });
+
     const weights = await fetchHistoricalsDataCall;
 
     for (let i = 0; i < response.numberOfPeriods; i++) {
-        weights[i].gaugeWeight = callsResp[i].bias;
+        weights[i].gaugeWeight = callsResp[i].result[0];
     }
 
     const protocolTokenPrices = await Promise.all(protocolTokenPriceCall);
-    const tokenRewardPrices = await Promise.all(tokenRewardPriceCall);
+    const tokenRewardPrices = await getHistoricalPricesFromContracts(tokenHistoricalRewardPriceCalls);
 
     response.weeklyIncentive = inflation;
 
@@ -270,10 +258,10 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
             return claimedStart.unix() <= c.timestamp && claimedEnd.unix() >= c.timestamp;
         });
 
-        const totalClaimed = claimedPeriod.reduce((acc: BigNumber, c: IClaimedBribeReport) => acc.add(c.amountBN), BigNumber.from(0));
+        const totalClaimed = claimedPeriod.reduce((acc: bigint, c: IClaimedBribeReport) => acc + c.amountBN, 0n);
 
         const period: IPeriodBribeReport = {
-            allocatedRewards: BigNumber.from(0),
+            allocatedRewards: 0n,
             allocatedRewardsUSD: 0,
             periodNumber: i + 1,
             claimedRewards: totalClaimed,
@@ -281,10 +269,10 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
             startClaim: claimedStart.unix(),
             endClaim: claimedEnd.unix(),
             activePeriod: moment().isBefore(claimedEnd),
-            unclaimedRewards: BigNumber.from(0),
-            votesReceived: BigNumber.from(0),
-            totalWeight: BigNumber.from(0),
-            incentiveDirectedBN: BigNumber.from(0),
+            unclaimedRewards: 0n,
+            votesReceived: 0n,
+            totalWeight: 0n,
+            incentiveDirectedBN: 0n,
             incentiveDirected: 0,
             realPricePerVoteAchieved: 0,
             realPricePerVoteAchievedUSD: 0,
@@ -299,37 +287,38 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
             const rollover = rollovers.find((r: IClaimedBribeReport) => r.timestamp > period.startClaim && r.timestamp < moment.unix(period.startClaim).add(6, "days").unix());
             let isActivePeriod = false;
             if (rollover) {
-                period.allocatedRewards = BigNumber.from(rollover.amountBN);
+                period.allocatedRewards = rollover.amountBN;
                 isActivePeriod = true;
             } else if (i === 0) {
-                period.allocatedRewards = BigNumber.from(response.rewardPerPeriod);
+                period.allocatedRewards = response.rewardPerPeriod;
                 isActivePeriod = true;
             } else {
-                period.allocatedRewards = BigNumber.from(0);
+                period.allocatedRewards = 0n;
             }
 
             if (isActivePeriod) {
-                period.unclaimedRewards = BigNumber.from(period.allocatedRewards).sub(totalClaimed);
-                period.votesReceived = BigNumber.from(weights[i].gaugeWeight);
-                period.totalWeight = BigNumber.from(weights[i].totalWeight);
+                period.unclaimedRewards = period.allocatedRewards - totalClaimed;
+                period.votesReceived = BigInt(weights[i].gaugeWeight);
+                period.totalWeight = BigInt(weights[i].totalWeight);
 
                 // Remove weight from blacklisted address
-                let total = BigNumber.from(0);
+                let total = 0n;
                 for (const w of weights[i].usersWeight) {
-                    const veCRVVoted = BigNumber.from(w.slope).mul(BigNumber.from(w.end).sub(claimedStart.utc().valueOf() / 1000));
-                    total = total.add(veCRVVoted);
+                    const veCRVVoted = BigInt(w.slope) * (BigInt(w.end) - BigInt((claimedStart.utc().valueOf() / 1000)));
+                    total += veCRVVoted;
                 }
 
                 // Check neg
-                if (total.lte(period.votesReceived)) {
-                    period.votesReceived = BigNumber.from(period.votesReceived).sub(total);
+                if (total <= period.votesReceived) {
+                    period.votesReceived = period.votesReceived - total;
                 }
 
-                let inflationBN = BigNumber.from(inflation).mul(BigNumber.from(10).pow(decimals));
+                let inflationBN = parseUnits(inflation.toString(), decimals);
                 if (equals(protocolTokenAddress, BAL_ADDRESS)) {
-                    inflationBN = BigNumber.from(inflation);
+                    inflationBN = BigInt(inflation);
                 }
-                period.incentiveDirectedBN = inflationBN.mul(period.votesReceived).div(period.totalWeight);
+
+                period.incentiveDirectedBN = inflationBN * period.votesReceived / period.totalWeight;
                 period.incentiveDirected = parseFloat(formatUnits(period.incentiveDirectedBN, decimals));
                 period.incentiveProtocolTokenUSD = parseFloat(protocolTokenPrices[i][0][0]);
                 period.incentiveDirectedUSD = period.incentiveDirected * period.incentiveProtocolTokenUSD;
@@ -360,7 +349,7 @@ const checkDiv = (d: number): number => {
 }
 
 const fetchHistoricalsData = async (
-    iface: ethers.utils.Interface,
+    client: PublicClient,
     response: IBribeReport,
     nextThursdayGaugeData: moment.Moment,
     now: moment.Moment,
@@ -369,8 +358,7 @@ const fetchHistoricalsData = async (
 ) => {
     try {
         return await fetchHistoricals(
-            process.env.RPC_URL,
-            iface,
+            client,
             response,
             moment.unix(nextThursdayGaugeData.unix()),
             now,
@@ -382,8 +370,7 @@ const fetchHistoricalsData = async (
     catch (e) {
         // Retry
         return await fetchHistoricals(
-            process.env.RPC_URL,
-            iface,
+            client,
             response,
             moment.unix(nextThursdayGaugeData.unix()),
             now,
@@ -395,21 +382,14 @@ const fetchHistoricalsData = async (
 };
 
 const fetchHistoricals = async (
-    url: string,
-    iface: ethers.utils.Interface,
+    client: PublicClient,
     response: IBribeReport,
     nextThursdayGaugeData: moment.Moment,
     now: moment.Moment,
     blockNumber: number,
     gaugeController: string
 ) => {
-    const prov = new JsonRpcProvider(
-        {
-            url,
-        },
-        1,
-    );
-
+    
     const callsPointWeight: any[] = [];
     for (let i = 0; i < response.numberOfPeriods; i++) {
         nextThursdayGaugeData = nextThursdayGaugeData.add(1, "week");
@@ -418,22 +398,32 @@ const fetchHistoricals = async (
         next = moment.unix(next).add(0, "hour").unix();
 
         let numberOfBlockSince = Math.max(Math.round((now.unix() - next) / 12), 0);
+        const block = blockNumber - numberOfBlockSince;
 
-        const data = iface.encodeFunctionData("get_total_weight");
-        callsPointWeight.push(prov.call({
-            to: gaugeController,
-            data
-        },
-            blockNumber - numberOfBlockSince));
+        callsPointWeight.push(client.multicall({
+            contracts: [
+                {
+                    address: gaugeController as any,
+                    abi: CurveGaugeController_ABI,
+                    functionName: "get_total_weight"
+                }
+            ],
+            blockNumber: BigInt(block),
+        }));
+        
 
         for (const blacklist of response.blacklistedAddresses) {
-            const data = iface.encodeFunctionData("vote_user_slopes", [blacklist.address, response.gaugeAddress]);
-
-            callsPointWeight.push(prov.call({
-                to: gaugeController,
-                data
-            },
-                blockNumber - numberOfBlockSince));
+            callsPointWeight.push(client.multicall({
+                contracts: [
+                    {
+                        address: gaugeController as any,
+                        abi: CurveGaugeController_ABI,
+                        functionName: "vote_user_slopes",
+                        args: [blacklist.address, response.gaugeAddress]
+                    }
+                ],
+                blockNumber: BigInt(block),
+            }));
         }
     }
 
@@ -441,35 +431,27 @@ const fetchHistoricals = async (
 
     return await computeHistoricalData(
         response,
-        callsRespPointWeight,
-        iface
+        callsRespPointWeight
     )
 }
 
 const computeHistoricalData = async (
     response: IBribeReport,
-    calls: any[],
-    iface: ethers.utils.Interface,
+    calls: any[]
 ) => {
-    let indexPointWeight = 0;
     const weights: any = {};
     for (let i = 0; i < response.numberOfPeriods; i++) {
         const weight = {
-            totalWeight: BigNumber.from(0),
+            totalWeight: 0,
             usersWeight: [],
         };
 
-        const totalWeightResp = calls[indexPointWeight];
-        indexPointWeight++;
-        const data = iface.decodeFunctionResult("get_total_weight", totalWeightResp);
-        weight.totalWeight = BigNumber.from(data[0]).div(BigNumber.from(10).pow(18));
+        const totalWeightResp = calls.shift()[0].result;
+        weight.totalWeight = parseFloat(formatUnits(totalWeightResp, 18));
 
         for (const blacklist of response.blacklistedAddresses) {
-            const pointWeight = calls[indexPointWeight];
-            indexPointWeight++;
-
-            const data = iface.decodeFunctionResult("vote_user_slopes", pointWeight);
-            (weight.usersWeight as any[]).push(data);
+            const pointWeight = calls.shift()[0].result;
+            (weight.usersWeight as any[]).push(pointWeight);
         }
 
         weights[i] = weight;

@@ -1,11 +1,14 @@
-import { getNewJsonProvider } from "./jsonRpcUtils";
+import { IProtocol } from "./interfaces";
+import { getClient } from "./jsonRpcUtils";
 
 export const WEEK = 604800;
 
-export const startNextPeriod = async (): Promise<number> => {
-    const provider = getNewJsonProvider();
-    const currentBlock = await provider.getBlockNumber();
-    const blockTimestamp = (await provider.getBlock(currentBlock)).timestamp;
-    const currentPeriodTimestamp = Math.floor((blockTimestamp / WEEK)) * WEEK;
-    return currentPeriodTimestamp + WEEK;
+export const startNextPeriod = async (protocol: IProtocol): Promise<number> => {
+    const client = getClient(protocol);
+    const blockTimestamp = (await client.getBlock()).timestamp;
+
+    const week = protocol.roundDuration * WEEK;
+
+    const currentPeriodTimestamp = Math.floor((Number(blockTimestamp) / week)) * week;
+    return currentPeriodTimestamp + week;
 }
