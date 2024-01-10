@@ -5,12 +5,13 @@ import * as chains from 'viem/chains'
 
 dotenv.config();
 
-export const getClient = (protocol: IProtocol): PublicClient | null => {
+export const getClient = (protocol: IProtocol, url?: string): PublicClient | null => {
     for (const chain of Object.values(chains)) {
         if ('id' in chain && chain.id === protocol.protocolChainId) {
+
             return createPublicClient({
                 chain,
-                transport: http(),
+                transport: http(url),
                 batch: {
                     multicall: true,
                 },
@@ -19,4 +20,15 @@ export const getClient = (protocol: IProtocol): PublicClient | null => {
     }
 
     return null;
+}
+
+export const getRpcUrlFromEnv = (protocol: IProtocol): string | undefined => {
+    switch (protocol.protocolChainId) {
+        case chains.mainnet.id:
+            return process.env.RPC_URL;
+        case chains.bsc.id:
+            return process.env.BSC_RPC_URL;
+        default:
+            return undefined;
+    }
 }

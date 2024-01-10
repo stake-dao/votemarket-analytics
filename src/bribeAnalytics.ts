@@ -7,15 +7,28 @@ import { equals } from "./stringUtils";
 import { PROTOCOLS, USEFUL_BLACKLIST_ADDRESSES } from "./bountyConfig";
 import BribePlateformV5_ABI from '../abis/BribePlateform.json';
 import CurveGaugeController_ABI from '../abis/CurveGaugeController.json';
+import CakeGaugeController_ABI from '../abis/CakeGaugeController.json';
 import ERC20_ABI from '../abis/ERC20.json';
 import { WEEK } from "./periodUtils";
 import { BAL_ADDRESS, FXS_ADDRESS, SD_FXS_ADDRESS } from "./addresses";
-import { getClient } from "./jsonRpcUtils";
+import { getClient, getRpcUrlFromEnv } from "./jsonRpcUtils";
 import { IHistoricalPrice, getCoingeckoPrice, getHistoricalPricesFromContracts } from "./pricesUtils";
 import * as dotenv from "dotenv";
-import { PublicClient, formatUnits, parseUnits } from "viem";
+import { formatUnits, parseUnits } from "viem";
+import { delay } from "./sleepUtils";
 
 dotenv.config();
+
+type ITokenDataMap = Record<string, ITokenData>;
+
+interface ITokenData {
+    decimals: number;
+    symbol: string;
+}
+
+const cacheTokenData: ITokenDataMap = {};
+
+const cacheBlockNumberByChain = {};
 
 export const getBribeAnalytics = async (bribeContract: string, id: string, mapGauges: any[], nextPeriod: number, inflation: number): Promise<IBribeReport | any> => {
     const bribeContractStr = bribeContract as string;
@@ -93,48 +106,90 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
     // Manage blacklist addresses
     const client = getClient(protocol);
 
-    const [
-        blacklistedAddressesRes,
-        decimalsRes,
-        symbol,
-        protocolTokenSymbol,
-        protocolTokenDecimalRes,
-    ] = await client.multicall({
-        contracts: [
-            {
-                address: bribeContractStr as any,
-                abi: BribePlateformV5_ABI,
-                functionName: 'getBlacklistedAddressesPerBounty',
-                args: [response.id]
-            },
-            {
-                address: response.rewardTokenAddress as any,
-                abi: ERC20_ABI,
-                functionName: 'decimals',
-            },
-            {
-                address: response.rewardTokenAddress as any,
-                abi: ERC20_ABI,
-                functionName: 'symbol',
-            },
-            {
-                address: protocolTokenAddress as any,
-                abi: ERC20_ABI,
-                functionName: 'symbol',
-            },
-            {
-                address: protocolTokenAddress as any,
-                abi: ERC20_ABI,
-                functionName: 'decimals',
-            }
-        ]
+    const haveRewardTokenAddress = !!cacheTokenData[response.rewardTokenAddress];
+    const haveProtocolRewardTokenAddress = !!cacheTokenData[protocolTokenAddress];
+
+    const tokenCalls: any[] = [
+        {
+            address: bribeContractStr as any,
+            abi: BribePlateformV5_ABI,
+            functionName: 'getBlacklistedAddressesPerBounty',
+            args: [response.id]
+        }
+    ];
+
+    if (!haveRewardTokenAddress) {
+        tokenCalls.push({
+            address: response.rewardTokenAddress as any,
+            abi: ERC20_ABI,
+            functionName: 'decimals',
+        });
+        tokenCalls.push({
+            address: response.rewardTokenAddress as any,
+            abi: ERC20_ABI,
+            functionName: 'symbol',
+        });
+    }
+
+    if(!haveProtocolRewardTokenAddress) {
+        tokenCalls.push({
+            address: protocolTokenAddress as any,
+            abi: ERC20_ABI,
+            functionName: 'symbol',
+        });
+        tokenCalls.push({
+            address: protocolTokenAddress as any,
+            abi: ERC20_ABI,
+            functionName: 'decimals',
+        });
+    }
+
+    const tokenResponses = await client.multicall({
+        contracts: tokenCalls,
     });
 
-    const decimals = Number(decimalsRes.result)
-    const protocolTokenDecimal = Number(protocolTokenDecimalRes.result)
+    const blacklistedAddressesRes = tokenResponses.shift();
+    
+    let decimals = 0;
+    let protocolTokenDecimal = 0;
+    let rewardTokenSymbol = "";
+    let protocolTokenSymbol = "";
+
+    if(!haveRewardTokenAddress) {
+        let data = tokenResponses.shift();
+        decimals = Number(data.result);
+        
+        data = tokenResponses.shift();
+        rewardTokenSymbol = data.result as string;
+
+        cacheTokenData[response.rewardTokenAddress] = {
+            decimals,
+            symbol: rewardTokenSymbol
+        };
+    } else {
+        decimals = cacheTokenData[response.rewardTokenAddress].decimals;
+        rewardTokenSymbol = cacheTokenData[response.rewardTokenAddress].symbol;
+    }
+
+    if(!haveProtocolRewardTokenAddress) {
+        let data = tokenResponses.shift();
+        protocolTokenDecimal = Number(data.result);
+        
+        data = tokenResponses.shift();
+        protocolTokenSymbol = data.result as string;
+
+        cacheTokenData[protocolTokenAddress] = {
+            decimals: protocolTokenDecimal,
+            symbol: protocolTokenSymbol
+        };
+    } else {
+        protocolTokenDecimal = cacheTokenData[protocolTokenAddress].decimals;
+        protocolTokenSymbol = cacheTokenData[protocolTokenAddress].symbol;
+    }
+
     response.rewardTokenDecimals = decimals;
-    response.rewardTokenSymbol = symbol.result as string;
-    response.protocolTokenSymbol = protocolTokenSymbol.result as string;
+    response.rewardTokenSymbol = rewardTokenSymbol;
+    response.protocolTokenSymbol = protocolTokenSymbol;
     response.protocolTokenDecimal = protocolTokenDecimal;
 
     const blacklistedAddresses = blacklistedAddressesRes.result as string[];
@@ -198,7 +253,12 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
 
     let claimedStart = moment.unix(nextPeriod + WEEK);
 
-    const blockNumber = Number(await client.getBlockNumber());
+    let blockNumber = cacheBlockNumberByChain[protocol.protocolChainId];
+    if (!blockNumber) {
+        blockNumber = Number(await client.getBlockNumber());
+        cacheBlockNumberByChain[protocol.protocolChainId] = blockNumber;
+    }
+
     const now = moment();
     const protocolTokenPriceCall: any[] = [];
     const tokenHistoricalRewardPriceCalls: IHistoricalPrice[] = [];
@@ -207,7 +267,6 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
 
     const fetchHistoricalsDataCall = fetchHistoricalsData(
         protocol,
-        client,
         response,
         moment.unix(nextThursdayGaugeData.unix()),
         now,
@@ -351,17 +410,15 @@ const checkDiv = (d: number): number => {
 
 const fetchHistoricalsData = async (
     protocol: IProtocol,
-    client: PublicClient,
     response: IBribeReport,
     nextThursdayGaugeData: moment.Moment,
     now: moment.Moment,
     blockNumber: number,
     gaugeController: string
-) => {
+): Promise<IUserWeightMap> => {
     try {
         return await fetchHistoricals(
             protocol,
-            client,
             response,
             moment.unix(nextThursdayGaugeData.unix()),
             now,
@@ -374,7 +431,6 @@ const fetchHistoricalsData = async (
         // Retry
         return await fetchHistoricals(
             protocol,
-            client,
             response,
             moment.unix(nextThursdayGaugeData.unix()),
             now,
@@ -387,16 +443,17 @@ const fetchHistoricalsData = async (
 
 const fetchHistoricals = async (
     protocol: IProtocol,
-    client: PublicClient,
     response: IBribeReport,
     nextThursdayGaugeData: moment.Moment,
     now: moment.Moment,
     blockNumber: number,
     gaugeController: string
-) => {
+): Promise<IUserWeightMap> => {
     
+    const client = getClient(protocol, getRpcUrlFromEnv(protocol));
+
     const isCake = protocol.key === "cake";
-    const abi = isCake ? CurveGaugeController_ABI : CurveGaugeController_ABI;
+    const abi = isCake ? CakeGaugeController_ABI : CurveGaugeController_ABI;
 
     const callsPointWeight: any[] = [];
     for (let i = 0; i < response.numberOfPeriods; i++) {
@@ -433,34 +490,59 @@ const fetchHistoricals = async (
                 ],
                 blockNumber: BigInt(block),
             }));
+
+            // Unit rate limit on Alchemy
+            await delay(500);
         }
     }
 
     const callsRespPointWeight = await Promise.all(callsPointWeight);
 
-    return await computeHistoricalData(
+    return computeHistoricalData(
         response,
         callsRespPointWeight
     )
 }
 
-const computeHistoricalData = async (
+export type IUserWeightMap = Record<number, IUserWeight>;
+
+export interface IUserWeight {
+    totalWeight: number;
+    usersWeight: IWeight[];
+    gaugeWeight: bigint;
+}
+
+export interface IWeight {
+    slope: bigint;
+    power: bigint;
+    end: bigint;
+}
+
+const computeHistoricalData = (
     response: IBribeReport,
     calls: any[]
-) => {
-    const weights: any = {};
+): IUserWeightMap => {
+    const weights: IUserWeightMap = {};
     for (let i = 0; i < response.numberOfPeriods; i++) {
-        const weight = {
+        const weight: IUserWeight = {
             totalWeight: 0,
             usersWeight: [],
+            gaugeWeight: 0n,
         };
 
-        const totalWeightResp = calls.shift()[0].result;
+        const data = calls.shift();
+        console.log(data);
+        const totalWeightResp = data[0].result;
         weight.totalWeight = parseFloat(formatUnits(totalWeightResp, 18));
 
         for (const blacklist of response.blacklistedAddresses) {
-            const pointWeight = calls.shift()[0].result;
-            (weight.usersWeight as any[]).push(pointWeight);
+            const blacklistData = calls.shift();
+            const pointWeight = blacklistData[0].result;
+            weight.usersWeight.push({
+                slope: pointWeight[0],
+                power: pointWeight[1],
+                end: pointWeight[2]
+            });
         }
 
         weights[i] = weight;
