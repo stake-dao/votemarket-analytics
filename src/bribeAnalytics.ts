@@ -531,7 +531,6 @@ const computeHistoricalData = (
         };
 
         const data = calls.shift();
-        console.log(data);
         const totalWeightResp = data[0].result;
         weight.totalWeight = parseFloat(formatUnits(totalWeightResp, 18));
 

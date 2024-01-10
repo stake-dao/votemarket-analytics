@@ -86,7 +86,6 @@ export const getHistoricalPricesFromContracts = async (protocol: IProtocol, data
             response = callsResp.shift();
             cacheHistoricalsPrices[url] = response;
         } else {
-            console.log("Dans le cache ", url )
             response = cacheHistoricalsPrices[url];
         }
         
