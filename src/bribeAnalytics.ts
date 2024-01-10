@@ -46,22 +46,12 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
         return {};
     }
 
-    // Fetch ve contract
-    const client = getClient(protocol);
-
-    const claimedCall = agnosticFetch(CLAIMED_REWARDS_QUERY(
-        protocol.table,
-        bribeContractStr,
-        id as string
-    ));
-
-    const protocolTokenAddress = getProtocolTokenAddressFromBribeContract(bribeContractStr);
-
     const bribe = bribes[0];
     if (!bribe) {
         return {};
     }
 
+    const protocolTokenAddress = getProtocolTokenAddressFromBribeContract(bribeContractStr);
     const gaugeName = mapGauges.find((m: any) => equals(m.address, bribe[3]))?.name || "";
 
     const response: IBribeReport = {
@@ -87,12 +77,12 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
         weeklyIncentive: 0
     };
 
-    // Check if we have an increased
-    const increased = await agnosticFetch(INCREASED_QUEUED_EVENTS(protocol.table, bribeContractStr, id as string));
-    if (increased && increased.length > 0) {
-        response.numberOfPeriods = parseInt(increased[0][0]);
-    }
-
+    const claimedCall = agnosticFetch(CLAIMED_REWARDS_QUERY(
+        protocol.table,
+        bribeContractStr,
+        id as string
+    ));
+    const increasedCall = agnosticFetch(INCREASED_QUEUED_EVENTS(protocol.table, bribeContractStr, id as string));
     const rolloverCall = agnosticFetch(ROLLOVER_QUERY(
         protocol.table,
         bribeContractStr,
@@ -101,6 +91,8 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
     ));
 
     // Manage blacklist addresses
+    const client = getClient(protocol);
+
     const [
         blacklistedAddressesRes,
         decimalsRes,
@@ -159,9 +151,15 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
         };
     });
 
-    // Get claimed data
-    const [claimedResp] = await Promise.all([
+    // Get agnostic data
+    const [
+        claimedResp,
+        rolloverResp,
+        increasedResp
+    ] = await Promise.all([
         claimedCall,
+        rolloverCall,
+        increasedCall
     ]);
 
     let claimed: IClaimedBribeReport[] = [];
@@ -176,7 +174,6 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
     }
 
     // Get rollover
-    const rolloverResp = await rolloverCall;
     let rollovers: IRolloverBribeReport[] = [];
     if (rolloverResp) {
         rollovers = rolloverResp.map((r: any) => {
@@ -190,10 +187,13 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
         });
     }
 
-    // Iterate on each periods to calculate data
+    if (increasedResp && increasedResp.length > 0) {
+        response.numberOfPeriods = parseInt(increasedResp[0][0]);
+    }
 
+    // Iterate on each periods to calculate data
     while (nextPeriod > response.created) {
-        nextPeriod -= WEEK;
+        nextPeriod -= WEEK * protocol.roundDuration;
     }
 
     let claimedStart = moment.unix(nextPeriod + WEEK);
@@ -203,9 +203,10 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
     const protocolTokenPriceCall: any[] = [];
     const tokenHistoricalRewardPriceCalls: IHistoricalPrice[] = [];
 
-    let nextThursdayGaugeData = moment.utc(claimedStart).add(-1, "week");
+    let nextThursdayGaugeData = moment.utc(claimedStart).add(-1 * protocol.roundDuration, "week");
 
     const fetchHistoricalsDataCall = fetchHistoricalsData(
+        protocol,
         client,
         response,
         moment.unix(nextThursdayGaugeData.unix()),
@@ -216,7 +217,7 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
 
     const calls: any[] = [];
     for (let i = 0; i < response.numberOfPeriods; i++) {
-        nextThursdayGaugeData = nextThursdayGaugeData.add(1, "week");
+        nextThursdayGaugeData = nextThursdayGaugeData.add(1 * protocol.roundDuration, "week");
 
         const next = nextThursdayGaugeData.unix();
 
@@ -253,7 +254,7 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
     for (let i = 0; i < response.numberOfPeriods; i++) {
 
         // Get claimed during period
-        const claimedEnd = moment(claimedStart).add(1, "week");
+        const claimedEnd = moment(claimedStart).add(1 * protocol.roundDuration, "week");
         const claimedPeriod: IClaimedBribeReport[] = claimed.filter((c: IClaimedBribeReport) => {
             return claimedStart.unix() <= c.timestamp && claimedEnd.unix() >= c.timestamp;
         });
@@ -284,7 +285,7 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
 
         // Find allocated rewards during the period
         if (now.isAfter(claimStartClone)) {
-            const rollover = rollovers.find((r: IClaimedBribeReport) => r.timestamp > period.startClaim && r.timestamp < moment.unix(period.startClaim).add(6, "days").unix());
+            const rollover = rollovers.find((r: IClaimedBribeReport) => r.timestamp > period.startClaim && r.timestamp < moment.unix(period.startClaim).add(6 * protocol.roundDuration, "days").unix());
             let isActivePeriod = false;
             if (rollover) {
                 period.allocatedRewards = rollover.amountBN;
@@ -349,6 +350,7 @@ const checkDiv = (d: number): number => {
 }
 
 const fetchHistoricalsData = async (
+    protocol: IProtocol,
     client: PublicClient,
     response: IBribeReport,
     nextThursdayGaugeData: moment.Moment,
@@ -358,6 +360,7 @@ const fetchHistoricalsData = async (
 ) => {
     try {
         return await fetchHistoricals(
+            protocol,
             client,
             response,
             moment.unix(nextThursdayGaugeData.unix()),
@@ -370,6 +373,7 @@ const fetchHistoricalsData = async (
     catch (e) {
         // Retry
         return await fetchHistoricals(
+            protocol,
             client,
             response,
             moment.unix(nextThursdayGaugeData.unix()),
@@ -382,6 +386,7 @@ const fetchHistoricalsData = async (
 };
 
 const fetchHistoricals = async (
+    protocol: IProtocol,
     client: PublicClient,
     response: IBribeReport,
     nextThursdayGaugeData: moment.Moment,
@@ -390,9 +395,12 @@ const fetchHistoricals = async (
     gaugeController: string
 ) => {
     
+    const isCake = protocol.key === "cake";
+    const abi = isCake ? CurveGaugeController_ABI : CurveGaugeController_ABI;
+
     const callsPointWeight: any[] = [];
     for (let i = 0; i < response.numberOfPeriods; i++) {
-        nextThursdayGaugeData = nextThursdayGaugeData.add(1, "week");
+        nextThursdayGaugeData = nextThursdayGaugeData.add(1 * protocol.roundDuration, "week");
 
         let next = nextThursdayGaugeData.unix();
         next = moment.unix(next).add(0, "hour").unix();
@@ -404,8 +412,9 @@ const fetchHistoricals = async (
             contracts: [
                 {
                     address: gaugeController as any,
-                    abi: CurveGaugeController_ABI,
-                    functionName: "get_total_weight"
+                    abi,
+                    functionName: isCake ? "getTotalWeight" : "get_total_weight",
+                    args: isCake ? [false] : []
                 }
             ],
             blockNumber: BigInt(block),
@@ -417,8 +426,8 @@ const fetchHistoricals = async (
                 contracts: [
                     {
                         address: gaugeController as any,
-                        abi: CurveGaugeController_ABI,
-                        functionName: "vote_user_slopes",
+                        abi,
+                        functionName: isCake ? "voteUserSlopes" : "vote_user_slopes",
                         args: [blacklist.address, response.gaugeAddress]
                     }
                 ],
