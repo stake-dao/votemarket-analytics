@@ -1,7 +1,58 @@
-import { ANGLE_ADDRESS, BAL_ADDRESS, CRV_ADDRESS, FXS_ADDRESS, LIT_ADDRESS, LIT_GAUGE_CONTROLLER, VE_BAL_ADDRESS, VE_LIT_ADDRESS } from "./addresses";
+import { ANGLE_ADDRESS, BAL_ADDRESS, CAKE_ADDRESS, CAKE_GAUGE_CONTROLLER_2, CRV_ADDRESS, FXS_ADDRESS, LIT_ADDRESS, LIT_GAUGE_CONTROLLER, VE_BAL_ADDRESS, VE_CAKE_ADDRESS, VE_LIT_ADDRESS } from "./addresses";
 import { IProtocol } from "./interfaces";
 
 export const PROTOCOLS: IProtocol[] = [
+    {
+        key: "cake",
+        bribeContract: [
+            {
+                bribeContract: "0x62c5D779f5e56F6BC7578066546527fEE590032c", // V5
+                chainId: 56,
+                image: "",
+                network: "bsc",
+                active: true,
+                curveImageNetwork: "bsc",
+            },
+            {
+                bribeContract: "0xa77889DA8fEDC7FD65D37Af60d0744B954E3bAf0", // V5
+                chainId: 56,
+                image: "",
+                network: "bsc",
+                active: false,
+                curveImageNetwork: "bsc",
+                claimBribeContract: "0x0bb31c617420907db54817B13EE3fe022c803c16"
+            }
+        ],
+        curveImageNetwork: "bsc",
+        v3Contract: "",
+        claimableContract: "", // Only for V4, see getClaimableContract
+        atLeastV5Contracts: [],
+        label: "PancakeSwap",
+        gaugeController: CAKE_GAUGE_CONTROLLER_2,
+        image: "https://bscscan.com/token/images/pancake_32.png?=v1",
+        veContract: VE_CAKE_ADDRESS,
+        voteLink: "https://pancakeswap.finance/gauges-voting",
+        protocolTokenAddress: CAKE_ADDRESS,
+        veTokenAddress: CAKE_ADDRESS,
+        protocolChainId: 56,
+        veMultiplier: 1,
+        indexVotePage: 5,
+        roundDuration: 2,
+        rewardsTokensAvailable: [
+            {
+                address: CAKE_ADDRESS,
+                symbol: "CAKE",
+                decimals: 18,
+            },
+            {
+                address: "OTHER",
+                symbol: "Other",
+                decimals: 0,
+            }
+        ],
+        isAvailableForVBM: false,
+        table: "evm_events_bsc"
+    },
     {
         key: "crv",
         bribeContract: [
@@ -27,6 +78,7 @@ export const PROTOCOLS: IProtocol[] = [
         protocolChainId: 1,
         veMultiplier: 1,
         indexVotePage: 1,
+        roundDuration: 1,
         rewardsTokensAvailable: [
             {
                 address: CRV_ADDRESS,
@@ -45,6 +97,7 @@ export const PROTOCOLS: IProtocol[] = [
             }
         ],
         isAvailableForVBM: true,
+        table: "evm_events_ethereum_mainnet"
     },
     {
         key: "angle",
@@ -71,6 +124,7 @@ export const PROTOCOLS: IProtocol[] = [
         protocolChainId: 1,
         veMultiplier: 1,
         indexVotePage: 4,
+        roundDuration: 1,
         rewardsTokensAvailable: [
             {
                 address: ANGLE_ADDRESS,
@@ -84,6 +138,7 @@ export const PROTOCOLS: IProtocol[] = [
             }
         ],
         isAvailableForVBM: false,
+        table: "evm_events_ethereum_mainnet"
     },
     {
         key: "bal",
@@ -110,6 +165,7 @@ export const PROTOCOLS: IProtocol[] = [
         protocolChainId: 1,
         veMultiplier: 1,
         indexVotePage: 2,
+        roundDuration: 1,
         rewardsTokensAvailable: [
             {
                 address: BAL_ADDRESS,
@@ -123,6 +179,7 @@ export const PROTOCOLS: IProtocol[] = [
             }
         ],
         isAvailableForVBM: false,
+        table: "evm_events_ethereum_mainnet"
     },
     {
         key: "fxs",
@@ -149,6 +206,7 @@ export const PROTOCOLS: IProtocol[] = [
         protocolChainId: 1,
         veMultiplier: 4,
         indexVotePage: 3,
+        roundDuration: 1,
         rewardsTokensAvailable: [
             {
                 address: FXS_ADDRESS,
@@ -162,6 +220,7 @@ export const PROTOCOLS: IProtocol[] = [
             }
         ],
         isAvailableForVBM: false,
+        table: "evm_events_ethereum_mainnet"
     },
     {
         key: "lit",
@@ -188,6 +247,7 @@ export const PROTOCOLS: IProtocol[] = [
         protocolChainId: 1,
         veMultiplier: 1,
         indexVotePage: 4,
+        roundDuration: 1,
         rewardsTokensAvailable: [
             {
                 address: LIT_ADDRESS,
@@ -201,6 +261,7 @@ export const PROTOCOLS: IProtocol[] = [
             }
         ],
         isAvailableForVBM: false,
+        table: "evm_events_ethereum_mainnet"
     }
 ];
 

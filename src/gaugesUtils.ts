@@ -1,6 +1,5 @@
 import axios from "axios";
 import { request, gql } from "graphql-request";
-import { BigNumber } from "@ethersproject/bignumber";
 
 const getCurveGauges = async (all: boolean = false): Promise<any[]> => {
     try {
@@ -30,7 +29,7 @@ const getCurveGauges = async (all: boolean = false): Promise<any[]> => {
 
             const gauge = gaugeCurveMap[gaugeAddress.toLowerCase()];
             let name: string = gauge?.shortName || "";
-            const gaugeWeight = BigNumber.from(gauge?.gauge_controller?.get_gauge_weight || "0");
+            const gaugeWeight = BigInt(gauge?.gauge_controller?.get_gauge_weight || "0");
 
             const firstIndex = name.indexOf("(");
             if (firstIndex > -1) {

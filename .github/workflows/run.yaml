@@ -6,6 +6,7 @@ on:
 env:
   AGNOSTIC_API_KEY: ${{ secrets.AGNOSTIC_API_KEY }}
   RPC_URL: ${{ secrets.RPC_URL }}
+  BSC_RPC_URL: ${{ secrets.BSC_RPC_URL }}
 
 jobs:
   build: # make sure build/ci work properly

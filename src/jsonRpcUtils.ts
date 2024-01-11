@@ -1,27 +1,34 @@
-import { ethers } from "ethers";
-import { Provider } from "ethers-multicall";
 import * as dotenv from "dotenv";
+import { PublicClient, createPublicClient, http } from "viem";
+import { IProtocol } from "./interfaces";
+import * as chains from 'viem/chains'
 
 dotenv.config();
 
-export const getNewJsonProvider = (chainId?: number): any => {
-    return new ethers.providers.JsonRpcProvider(process.env.RPC_URL, 1);
-};
+export const getClient = (protocol: IProtocol, url?: string): PublicClient | null => {
+    for (const chain of Object.values(chains)) {
+        if ('id' in chain && chain.id === protocol.protocolChainId) {
 
-export const getNewDefaultProvider = (chainId: number = -1) => {
-    let jsonProvider: any = null;
-    if (chainId === -1) {
-        jsonProvider = getNewJsonProvider(1);
-    } else {
-        jsonProvider = getNewJsonProvider(chainId);
+            return createPublicClient({
+                chain,
+                transport: http(url),
+                batch: {
+                    multicall: true,
+                },
+            });
+        }
     }
 
-    return getNewProvider(jsonProvider, chainId);
+    return null;
 }
 
-const getNewProvider = (jsonProvider: ethers.providers.Provider, chainId: number = -1) => {
-    if (chainId === -1) {
-        chainId = 1;
+export const getRpcUrlFromEnv = (protocol: IProtocol): string | undefined => {
+    switch (protocol.protocolChainId) {
+        case chains.mainnet.id:
+            return process.env.RPC_URL;
+        case chains.bsc.id:
+            return process.env.BSC_RPC_URL;
+        default:
+            return undefined;
     }
-    return new Provider(jsonProvider, chainId);
 }

@@ -4,7 +4,6 @@ import { getAllGauges } from "./gaugesUtils";
 import { IAnalyticsBribe, IProtocol } from "./interfaces";
 import { QUERY_BRIBES_CREATED } from "./queries";
 import { equals } from "./stringUtils";
-import { BigNumber } from "@ethersproject/bignumber";
 
 export const getProtocolTokenAddressFromBribeContract = (bribeContract: string): string => {
     const protocol = PROTOCOLS.find((p: IProtocol) => {
@@ -32,7 +31,7 @@ export const getAllAnalyticsBribesByProtocol = async (protocolKey: string): Prom
 
     const contracts = protocol.bribeContract.map((b) => b.bribeContract);
 
-    const bribes = await agnosticFetch(QUERY_BRIBES_CREATED(contracts));
+    const bribes = await agnosticFetch(QUERY_BRIBES_CREATED(protocol.table, contracts));
     return await getAnalyticsBribes(bribes);
 }
 
@@ -44,13 +43,13 @@ const getAnalyticsBribes = async (bribes: any[]): Promise<IAnalyticsBribe[]> => 
 
     const mapGauges = await getAllGauges();
 
-    const responses: any[] = [];
+    const responses: IAnalyticsBribe[] = [];
 
     for (const bribe of bribes) {
         responses.push({
             bribeContract: bribe[0],
             created: bribe[1],
-            id: BigNumber.from(bribe[2]),
+            id: BigInt(bribe[2]),
             gaugeAddress: bribe[3],
             gaugeName: mapGauges[bribe[3].toLowerCase()] || ""
         });
