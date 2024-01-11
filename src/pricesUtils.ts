@@ -52,7 +52,7 @@ export interface IHistoricalPrice {
     timestamp: number;
 }
 
-export const getHistoricalPricesFromContracts = async (protocol: IProtocol, data: IHistoricalPrice[]): Promise<any> => {
+export const getHistoricalPricesFromContracts = async (protocol: IProtocol, data: IHistoricalPrice[]): Promise<number[]> => {
 
     const chainName = getChainName(protocol);
     const calls: any[] = [];
@@ -73,9 +73,7 @@ export const getHistoricalPricesFromContracts = async (protocol: IProtocol, data
         callsResp = await Promise.all(calls);
     }
 
-    const resp = {
-        data: {}
-    };
+    const prices: number[] = [];
 
     for (let i = 0; i < data.length; i++) {
         const d = data[i];
@@ -88,15 +86,20 @@ export const getHistoricalPricesFromContracts = async (protocol: IProtocol, data
         } else {
             response = cacheHistoricalsPrices[url];
         }
-        
-        const res = removeKey(response.data.coins);
-        resp.data = {
-            ...resp.data,
-            ...res
-        };
+
+        if (!response.data.coins) {
+            prices.push(0);
+        } else {
+            const keys = Object.keys(response.data.coins);
+            if (keys.length === 0) {
+                prices.push(0);
+            } else {
+                prices.push(response.data.coins[keys[0]].price);
+            }
+        }
     }
 
-    return resp;
+    return prices;
 }
 
 const removeKey = (data: any): any => {

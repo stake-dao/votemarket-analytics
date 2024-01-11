@@ -260,8 +260,8 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
     }
 
     const now = moment();
-    const protocolTokenPriceCall: any[] = [];
     const tokenHistoricalRewardPriceCalls: IHistoricalPrice[] = [];
+    const tokenHistoricalProtocolTokenPriceCalls: IHistoricalPrice[] = [];
 
     let nextThursdayGaugeData = moment.utc(claimedStart).add(-1 * protocol.roundDuration, "week");
 
@@ -287,10 +287,13 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
             args: [response.gaugeAddress, moment.unix(next).unix()]
         });
 
-        protocolTokenPriceCall.push(agnosticFetch(PRICE_QUERY(protocol.table, protocolTokenAddress, next, parseUnits("1", protocolTokenDecimal))));
-
         tokenHistoricalRewardPriceCalls.push({
             address: getRealTokenRewardAddress(response.rewardTokenAddress),
+            timestamp: next
+        });
+
+        tokenHistoricalProtocolTokenPriceCalls.push({
+            address: getRealTokenRewardAddress(protocolTokenAddress),
             timestamp: next
         });
     }
@@ -303,7 +306,7 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
         weights[i].gaugeWeight = callsResp[i].result[0];
     }
 
-    const protocolTokenPrices = await Promise.all(protocolTokenPriceCall);
+    const protocolTokenPrices = await getHistoricalPricesFromContracts(protocol, tokenHistoricalProtocolTokenPriceCalls);
     const tokenRewardPrices = await getHistoricalPricesFromContracts(protocol, tokenHistoricalRewardPriceCalls);
 
     response.weeklyIncentive = inflation;
@@ -359,7 +362,7 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
             if (isActivePeriod) {
                 period.unclaimedRewards = period.allocatedRewards - totalClaimed;
                 period.votesReceived = BigInt(weights[i].gaugeWeight);
-                period.totalWeight = weights[i].totalWeight;
+                period.totalWeight = BigInt(Math.floor(parseInt(formatUnits(weights[i].totalWeight, 18))));
 
                 // Remove weight from blacklisted address
                 let total = 0n;
@@ -378,12 +381,14 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
                     inflationBN = BigInt(inflation);
                 }
 
+                const protocolTokenPrice = protocolTokenPrices[i];
+
                 period.incentiveDirectedBN = inflationBN * period.votesReceived / period.totalWeight;
                 period.incentiveDirected = parseFloat(formatUnits(period.incentiveDirectedBN, decimals));
-                period.incentiveProtocolTokenUSD = parseFloat(protocolTokenPrices[i][0][0]);
+                period.incentiveProtocolTokenUSD = protocolTokenPrice;
                 period.incentiveDirectedUSD = period.incentiveDirected * period.incentiveProtocolTokenUSD;
-
-                const tokenRewardPrice = getCoingeckoPrice(tokenRewardPrices[i]?.data || {}, getRealTokenRewardAddress(response.rewardTokenAddress), false);
+                
+                const tokenRewardPrice = tokenRewardPrices[i];
 
                 const totalClaimedNumber = parseFloat(formatUnits(totalClaimed, decimals));
                 const voteReceivedNumber = parseFloat(formatUnits(period.votesReceived, 18));
