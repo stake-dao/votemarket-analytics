@@ -532,7 +532,7 @@ const computeHistoricalData = (
 
         const data = calls.shift();
         const totalWeightResp = data[0].result;
-        weight.totalWeight = BigInt(formatUnits(totalWeightResp, 18));
+        weight.totalWeight = BigInt(Math.floor(parseInt(formatUnits(totalWeightResp, 18))));
 
         for (const blacklist of response.blacklistedAddresses) {
             const blacklistData = calls.shift();
