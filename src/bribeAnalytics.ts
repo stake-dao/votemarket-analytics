@@ -334,10 +334,6 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
                 period.incentiveProtocolTokenUSD = parseFloat(protocolTokenPrices[i][0][0]);
                 period.incentiveDirectedUSD = period.incentiveDirected * period.incentiveProtocolTokenUSD;
 
-                if (equals(protocol.key, 'fxs')) {
-                    period.incentiveDirectedUSD /= 4;
-                }
-
                 const tokenRewardPrice = getCoingeckoPrice(tokenRewardPrices[i]?.data || {}, getRealTokenRewardAddress(response.rewardTokenAddress), false);
 
                 const totalClaimedNumber = parseFloat(formatUnits(totalClaimed, decimals));
