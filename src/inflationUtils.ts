@@ -12,7 +12,7 @@ import TokenAdmin_ABI from '../abis/TokenAdmin.json';
 
 export const CRV_INFLATION_CHANGE = 1691877600 // 13-08-2023
 export const CRV_WEEKLY_INFLATION_OLD = 3726757 // Weekly inflation before 13-08-2023
-const FXS_WEEKLY_INFLATION = 43750; // Weekly inflation
+const FXS_WEEKLY_INFLATION = 21875; // Weekly inflation
 const ANGLE_WEEKLY_INFLATION = 210376; // Weekly inflation
 const CAKE_WEEKLY_INFLATION = 401644;
 
