@@ -14,7 +14,7 @@ import moment from "moment";
 dotenv.config();
 
 const MAX_NUMBER_WEEKS = 9;
-const ANALYTICS_PROTOCOL = ["crv", "bal", "fxs"];
+const ANALYTICS_PROTOCOL = ["cake", "crv", "bal", "fxs"];
 
 const analyticsAvailable = (protocol: IProtocol): boolean => {
     return ANALYTICS_PROTOCOL.some((a) => protocol.key.toLowerCase() === a);
@@ -42,6 +42,7 @@ const main = async () => {
 
         try {
             const bribes = await getAllAnalyticsBribesByProtocol(protocol.key);
+            console.log(bribes)
             const gauges = mapGauges[protocol.key.toLowerCase()];
 
             const bribeAnalytics: IBribeReport[] = [];

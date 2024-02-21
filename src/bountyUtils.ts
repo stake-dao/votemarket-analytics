@@ -30,7 +30,7 @@ export const getAllAnalyticsBribesByProtocol = async (protocolKey: string): Prom
     }
 
     const contracts = protocol.bribeContract.map((b) => b.bribeContract);
-
+    console.log(QUERY_BRIBES_CREATED(protocol.table, contracts))
     const bribes = await agnosticFetch(QUERY_BRIBES_CREATED(protocol.table, contracts));
     return await getAnalyticsBribes(bribes);
 }

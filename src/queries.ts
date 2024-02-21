@@ -1,4 +1,4 @@
-export type TABLE = "evm_events_ethereum_mainnet" | "evm_events_bsc";
+export type TABLE = "evm_events_ethereum_mainnet" | "evm_events_bsc_mainnet_v1";
 
 export const QUERY_BRIBES_CREATED = (table: TABLE, contracts: string[]) => `
 select

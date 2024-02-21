@@ -12,7 +12,7 @@ import ERC20_ABI from '../abis/ERC20.json';
 import { WEEK } from "./periodUtils";
 import { BAL_ADDRESS, FXS_ADDRESS, SD_FXS_ADDRESS } from "./addresses";
 import { getClient, getRpcUrlFromEnv } from "./jsonRpcUtils";
-import { IHistoricalPrice, getCoingeckoPrice, getHistoricalPricesFromContracts } from "./pricesUtils";
+import { IHistoricalPrice, getHistoricalPricesFromContracts } from "./pricesUtils";
 import * as dotenv from "dotenv";
 import { formatUnits, parseUnits } from "viem";
 import { delay } from "./sleepUtils";
