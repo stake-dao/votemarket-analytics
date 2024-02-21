@@ -23,6 +23,26 @@ address IN (${contracts.map((c: string) => "'" + c + "'").join(",")}) and
     signature = 'BountyCreated(uint256,address,address,address,uint8,uint256,uint256,uint256,bool)'
 )`;
 
+export const QUERY_BRIBES_CREATED_PANCAKE = (table: TABLE, contracts: string[]) => `
+select
+    address,
+    timestamp,
+    input_0_value_uint256 as id,
+    input_1_value_address as gauge,
+    input_3_value_address as manager,
+    input_4_value_address as rewardToken,
+    input_5_value_uint8 as numberOfPeriods,
+    input_6_value_uint256 as maxRewardPerVote,
+    input_7_value_uint256 as rewardPerPeriod,
+    input_8_value_uint256 as totalRewardAmount,
+    input_9_value_uint8 as isUpgradable,
+    token_name('bsc', 'mainnet', rewardToken) as token_name
+from ${table}
+where 
+address IN (${contracts.map((c: string) => "'" + c + "'").join(",")}) and
+signature = 'BountyCreated(uint256,address,uint256,address,address,uint8,uint256,uint256,uint256,bool)'
+`;
+
 
 export const QUERY_BRIBE_CREATED = (table: TABLE, bribeContract: string, id: string) => `
 select
@@ -39,7 +59,7 @@ select
     input_8_value_uint8 as isUpgradable,
     token_name('ethereum', 'mainnet', rewardToken) as token_name
 from ${table}
-where 
+where
 address = '${bribeContract}' and
 input_0_value_uint256 = '${id}' and
 (
@@ -47,6 +67,26 @@ input_0_value_uint256 = '${id}' and
     OR
     signature = 'BountyCreated(uint256,address,address,address,uint8,uint256,uint256,uint256,bool)'
 )`;
+
+export const QUERY_BRIBE_CREATED_PANCAKE = (table: TABLE, bribeContract: string, id: string) => `
+select
+    address,
+    timestamp,
+    input_0_value_uint256 as id,
+    input_1_value_address as gauge,
+    input_3_value_address as manager,
+    input_4_value_address as rewardToken,
+    input_5_value_uint8 as numberOfPeriods,
+    input_6_value_uint256 as maxRewardPerVote,
+    input_7_value_uint256 as rewardPerPeriod,
+    input_8_value_uint256 as totalRewardAmount,
+    input_9_value_uint8 as isUpgradable,
+    token_name('bsc', 'mainnet', rewardToken) as token_name
+from ${table}
+where
+address = '${bribeContract}' and
+input_0_value_uint256 = '${id}' and
+signature = 'BountyCreated(uint256,address,uint256,address,address,uint8,uint256,uint256,uint256,bool)'`;
 
 /**
  * Fetch all rollover for a bribe

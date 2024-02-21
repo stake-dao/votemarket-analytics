@@ -1,7 +1,7 @@
 import { agnosticFetch } from "./agnosticUtils";
 import { getProtocolTokenAddressFromBribeContract } from "./bountyUtils";
 import { IBribeReport, IClaimedBribeReport, IPeriodBribeReport, IProtocol, IRolloverBribeReport } from "./interfaces";
-import { CLAIMED_REWARDS_QUERY, INCREASED_QUEUED_EVENTS, PRICE_QUERY, QUERY_BRIBE_CREATED, ROLLOVER_QUERY } from "./queries";
+import { CLAIMED_REWARDS_QUERY, INCREASED_QUEUED_EVENTS, PRICE_QUERY, QUERY_BRIBE_CREATED, QUERY_BRIBE_CREATED_PANCAKE, ROLLOVER_QUERY } from "./queries";
 import moment from "moment";
 import { equals } from "./stringUtils";
 import { PROTOCOLS, USEFUL_BLACKLIST_ADDRESSES } from "./bountyConfig";
@@ -54,7 +54,10 @@ export const getBribeAnalytics = async (bribeContract: string, id: string, mapGa
     }
 
     // Fetch bribes data
-    const bribes = await agnosticFetch(QUERY_BRIBE_CREATED(protocol.table, bribeContractStr, id as string));
+    const bribes = await agnosticFetch(
+        equals(protocol.key, 'cake')
+            ? QUERY_BRIBE_CREATED_PANCAKE(protocol.table, bribeContractStr, id as string)
+            : QUERY_BRIBE_CREATED(protocol.table, bribeContractStr, id as string));
     if (!bribes) {
         return {};
     }

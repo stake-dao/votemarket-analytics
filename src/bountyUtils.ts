@@ -2,7 +2,7 @@ import { agnosticFetch } from "./agnosticUtils";
 import { PROTOCOLS } from "./bountyConfig";
 import { getAllGauges } from "./gaugesUtils";
 import { IAnalyticsBribe, IProtocol } from "./interfaces";
-import { QUERY_BRIBES_CREATED } from "./queries";
+import { QUERY_BRIBES_CREATED, QUERY_BRIBES_CREATED_PANCAKE } from "./queries";
 import { equals } from "./stringUtils";
 
 export const getProtocolTokenAddressFromBribeContract = (bribeContract: string): string => {
@@ -30,8 +30,10 @@ export const getAllAnalyticsBribesByProtocol = async (protocolKey: string): Prom
     }
 
     const contracts = protocol.bribeContract.map((b) => b.bribeContract);
-    console.log(QUERY_BRIBES_CREATED(protocol.table, contracts))
-    const bribes = await agnosticFetch(QUERY_BRIBES_CREATED(protocol.table, contracts));
+    const bribes = await agnosticFetch(
+        equals(protocol.key, 'cake')
+            ? QUERY_BRIBES_CREATED_PANCAKE(protocol.table, contracts)
+            : QUERY_BRIBES_CREATED(protocol.table, contracts));
     return await getAnalyticsBribes(bribes);
 }
 
