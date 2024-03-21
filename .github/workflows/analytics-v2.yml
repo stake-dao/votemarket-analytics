@@ -50,14 +50,13 @@ jobs:
       - name: Run the script
         run: |
           cd ${{ env.DEVOPS_DIR }}
-          ./exec.sh script/votemarket/analytics.py
+          python script/votemarket/analytics.py
         shell: bash
         env:
           PYTHONPATH: ${{ env.DEVOPS_DIR }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_TOKEN }}
           AGNOSTIC_KEY: ${{ secrets.AGNOSTIC_KEY }}
-          PROD: "True"
 
       - name: Checkout target repository
         uses: actions/checkout@v4
