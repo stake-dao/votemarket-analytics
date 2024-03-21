@@ -1,0 +1,84 @@
+name: Analytics V2
+
+on:
+  workflow_dispatch: # Allows the workflow to be triggered manually
+  schedule:
+    - cron: '0 */1 * * *' # Every hour
+
+env:
+  DEVOPS_DIR: devops
+  WEB3_INFURA_PROJECT_ID: ${{ secrets.WEB3_INFURA_PROJECT_ID }}
+  ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
+  MODE: ${{ github.event.inputs.mode || 'execute' }} # Set a default value for mode
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the votemarket-analytics-v2 repo
+        uses: actions/checkout@v4
+        with:
+          repository: stake-dao/automation-jobs
+          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+          path: ${{ env.DEVOPS_DIR }}
+          ref: votemarket-analytics-v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10.13"
+
+      - name: Install Foundry
+        if: ${{ env.MODE == 'execute' }}
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+
+      - name: Cache pip
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          pip install eth-ape ape-roll ape-infura ape-etherscan python-dotenv
+          sudo apt-get install -y bc
+
+      - name: Run the script
+        run: |
+          cd ${{ env.DEVOPS_DIR }}
+          ./exec.sh script/votemarket/analytics.py
+        shell: bash
+        env:
+          PYTHONPATH: ${{ env.DEVOPS_DIR }}
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_TOKEN }}
+          AGNOSTIC_KEY: ${{ secrets.AGNOSTIC_KEY }}
+          PROD: "True"
+
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: stake-dao/votemarket-analytics
+          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+          path: ${{ env.TARGET_DEVOPS_DIR }}
+        if: always()
+          
+      - name: Copy CSV to target repo
+        run: |
+          cp "${{ env.DEVOPS_DIR }}/json/votemarket-analytics.json" "${GITHUB_WORKSPACE}//${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics.json"
+
+      - name: Commit and push changes to repo
+        run: |
+          cd "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}"
+          git config user.email "actions@github.com"
+          git config user.name "Stake DAO Automation"
+          git add .
+          git commit -m "Analytics"
+          git push
+        shell: bash
+        if: always()
+      
