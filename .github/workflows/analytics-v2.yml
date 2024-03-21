@@ -6,6 +6,7 @@ on:
     - cron: '0 */1 * * *' # Every hour
 
 env:
+  TARGET_DEVOPS_DIR: target-devops
   DEVOPS_DIR: devops
   WEB3_INFURA_PROJECT_ID: ${{ secrets.WEB3_INFURA_PROJECT_ID }}
   ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
@@ -68,7 +69,7 @@ jobs:
           
       - name: Copy CSV to target repo
         run: |
-          cp "${{ env.DEVOPS_DIR }}/json/votemarket-analytics.json" "${GITHUB_WORKSPACE}//${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics.json"
+          cp "${{ env.DEVOPS_DIR }}/json/votemarket-analytics.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics.json"
 
       - name: Commit and push changes to repo
         run: |
