@@ -3,7 +3,7 @@ name: Analytics V2
 on:
   workflow_dispatch: # Allows the workflow to be triggered manually
   schedule:
-    - cron: '0 */1 * * *' # Every hour
+    - cron: '0 */6 * * *' # Every 6 hours
 
 env:
   TARGET_DEVOPS_DIR: target-devops
