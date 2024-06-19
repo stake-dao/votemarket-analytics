@@ -38,9 +38,8 @@ jobs:
             ${{ runner.os }}-pip-
 
       - name: Install dependencies
-        run: |
-          pip install eth-ape ape-roll ape-infura ape-etherscan python-dotenv
-          sudo apt-get install -y bc
+        run: pip install -r ${{ env.DEVOPS_DIR }}/requirements.txt
+        shell: bash
 
       - name: Run the script
         run: |
