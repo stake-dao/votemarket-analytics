@@ -64,6 +64,7 @@ jobs:
       - name: Copy CSV to target repo
         run: |
           cp "${{ env.DEVOPS_DIR }}/json/votemarket-analytics.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics.json"
+          cp "${{ env.DEVOPS_DIR }}/json/votemarket-vlcvx-analytics.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-vlcvx-analytics.json"
 
       - name: Commit and push changes to repo
         run: |
