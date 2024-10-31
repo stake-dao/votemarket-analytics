@@ -65,6 +65,7 @@ jobs:
         run: |
           cp "${{ env.DEVOPS_DIR }}/json/votemarket-analytics.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics.json"
           cp "${{ env.DEVOPS_DIR }}/json/votemarket-analytics-vlcvx.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics-vlcvx.json"
+          cp "${{ env.DEVOPS_DIR }}/json/votemarket-analytics-curve.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics-curve.json"
 
       - name: Commit and push changes to repo
         run: |
