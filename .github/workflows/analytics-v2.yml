@@ -65,7 +65,6 @@ jobs:
         run: |
           mkdir -p "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics"
           cp ${{ env.DEVOPS_DIR }}/json/votemarket-analytics-*.json "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/"
-          cp "${{ env.DEVOPS_DIR }}/json/votemarket-vlcvx-analytics.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-vlcvx-analytics.json"
 
       - name: Commit and push changes to repo
         run: |

@@ -8018,7 +8018,7 @@
         "amountDepositedUSD": 882.9189998171069,
         "amountClaimedUSD": 882.9189998171069,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 4.313068264371887e-5,
+        "dollarPerVeCrvVote": 4.313068264371887e-05,
         "dollarPerVlCVXVote": 0.00022927706803241814,
         "incentivesDirectedUSD": 125154.50809719687,
         "efficiency": 141.75083798527626
@@ -8568,7 +8568,7 @@
         "amountDepositedUSD": 1166.4272166388307,
         "amountClaimedUSD": 1166.4272166388307,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 5.663918829232797e-5,
+        "dollarPerVeCrvVote": 5.663918829232797e-05,
         "dollarPerVlCVXVote": 0.00032540747591710845,
         "incentivesDirectedUSD": 143232.59448023874,
         "efficiency": 122.7959982732372
@@ -9944,7 +9944,7 @@
         "amountDepositedUSD": 1736.8975871199393,
         "amountClaimedUSD": 1736.8975871199393,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 9.89810254928387e-5,
+        "dollarPerVeCrvVote": 9.89810254928387e-05,
         "dollarPerVlCVXVote": 0.0005299371597086173,
         "incentivesDirectedUSD": 105124.1311036811,
         "efficiency": 60.524081490604246
@@ -10758,7 +10758,7 @@
         "amountDepositedUSD": 1613.755824892022,
         "amountClaimedUSD": 1613.755824892022,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 8.625328386151702e-5,
+        "dollarPerVeCrvVote": 8.625328386151702e-05,
         "dollarPerVlCVXVote": 0.00047789565936382644,
         "incentivesDirectedUSD": 97694.67049000866,
         "efficiency": 60.53869425787852
@@ -11212,7 +11212,7 @@
         "amountDepositedUSD": 34.105518375939084,
         "amountClaimedUSD": 34.105518375939084,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 5.6534484156624424e-5,
+        "dollarPerVeCrvVote": 5.6534484156624424e-05,
         "dollarPerVlCVXVote": 0.0003106859129672645,
         "incentivesDirectedUSD": 2741.1090658254557,
         "efficiency": 80.37142363915119
@@ -11224,7 +11224,7 @@
         "amountDepositedUSD": 11.303473634674914,
         "amountClaimedUSD": 11.303473634674914,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 3.236395737097447e-5,
+        "dollarPerVeCrvVote": 3.236395737097447e-05,
         "dollarPerVlCVXVote": 0.00017785650285900126,
         "incentivesDirectedUSD": 1586.9578802147366,
         "efficiency": 140.39559267396632
@@ -11690,7 +11690,7 @@
         "amountDepositedUSD": 39.964267095889305,
         "amountClaimedUSD": 39.964267095889305,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 8.99776488767281e-5,
+        "dollarPerVeCrvVote": 8.99776488767281e-05,
         "dollarPerVlCVXVote": 0.0005123211085762716,
         "incentivesDirectedUSD": 2392.5115903124624,
         "efficiency": 59.86626964963295
@@ -12492,8 +12492,8 @@
         "amountDepositedUSD": 6.286110380481251,
         "amountClaimedUSD": 6.286110380481251,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 8.622274850200231e-6,
-        "dollarPerVlCVXVote": 4.888887738768587e-5,
+        "dollarPerVeCrvVote": 8.622274850200231e-06,
+        "dollarPerVlCVXVote": 4.888887738768587e-05,
         "incentivesDirectedUSD": 4182.091182822664,
         "efficiency": 665.2907648278509
       },
@@ -15266,7 +15266,7 @@
         "amountDepositedUSD": 49.3390442191281,
         "amountClaimedUSD": 49.3390442191281,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 9.20615810132966e-5,
+        "dollarPerVeCrvVote": 9.20615810132966e-05,
         "dollarPerVlCVXVote": 0.0005618521016040368,
         "incentivesDirectedUSD": 2565.027698978904,
         "efficiency": 51.98778654055233
@@ -17094,8 +17094,8 @@
         "amountDepositedUSD": 5.5104,
         "amountClaimedUSD": 0.0,
         "maxRewardPerVoteUSD": 0.00287,
-        "dollarPerVeCrvVote": 1.2129891076696906e-7,
-        "dollarPerVlCVXVote": 6.592363655008927e-7,
+        "dollarPerVeCrvVote": 1.2129891076696906e-07,
+        "dollarPerVlCVXVote": 6.592363655008927e-07,
         "incentivesDirectedUSD": 220512.83871004186,
         "efficiency": 40017.57380771666
       },
@@ -17118,8 +17118,8 @@
         "amountDepositedUSD": 3.3608106105680666,
         "amountClaimedUSD": 0.0,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 2.79781156299637e-7,
-        "dollarPerVlCVXVote": 1.5205570392049663e-6,
+        "dollarPerVeCrvVote": 2.79781156299637e-07,
+        "dollarPerVlCVXVote": 1.5205570392049663e-06,
         "incentivesDirectedUSD": 58308.683312751455,
         "efficiency": 17349.589152509765
       }
@@ -17146,8 +17146,12 @@
         "efficiency": 1.034806341624915,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "WETH+CJPY ",
@@ -17162,8 +17166,12 @@
         "efficiency": -1,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "crvUSD+CJPY ",
@@ -17178,8 +17186,12 @@
         "efficiency": -1,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "rETH+frxETH ",
@@ -17194,8 +17206,12 @@
         "efficiency": 1.172916171204403,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "zunETH+frxETH ",
@@ -17210,8 +17226,12 @@
         "efficiency": 1.0118153535841736,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "FRAX+tBTC+frxETH ",
@@ -17226,8 +17246,12 @@
         "efficiency": 3.829309560848179,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "WETH+CVG ",
@@ -17242,8 +17266,12 @@
         "efficiency": 0.9849760525706847,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "zunETH+pxETH ",
@@ -17258,8 +17286,12 @@
         "efficiency": 1.0496344677032057,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "xETH+pxETH ",
@@ -17274,8 +17306,12 @@
         "efficiency": 1.6737893256608805,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "WETH+CVX ",
@@ -17290,8 +17326,12 @@
         "efficiency": 1.3587538583097887,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "CVX+FRAXBP ",
@@ -17306,8 +17346,12 @@
         "efficiency": -1,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "frxETH+CVX ",
@@ -17322,8 +17366,12 @@
         "efficiency": 1.0055798197557158,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "CRV+cvxCRV ",
@@ -17338,8 +17386,12 @@
         "efficiency": 1.0856042293257362,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "FXS+cvxFXS ",
@@ -17354,8 +17406,12 @@
         "efficiency": 1.0440399151080173,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-FXS+cvxFXS ",
@@ -17370,8 +17426,12 @@
         "efficiency": 0.8947944431627517,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "FXN+cvxFXN ",
@@ -17386,8 +17446,12 @@
         "efficiency": 1.0337092349052974,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "PRISMA+cvxPrisma ",
@@ -17402,8 +17466,12 @@
         "efficiency": 1.0253824631626767,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "MIM+3Crv ",
@@ -17418,8 +17486,12 @@
         "efficiency": 1.2232765484242223,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "ETH+frxETH ",
@@ -17434,8 +17506,12 @@
         "efficiency": 1.0441724757880402,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "WETH+frxETH ",
@@ -17450,8 +17526,12 @@
         "efficiency": 1.0791813800666783,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "FRAX+USDC ",
@@ -17466,8 +17546,12 @@
         "efficiency": 1.1287274824829558,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "FRAX+crvUSD ",
@@ -17482,8 +17566,12 @@
         "efficiency": 1.0858792733195362,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "FRAX+FXB_20241231 ",
@@ -17498,8 +17586,12 @@
         "efficiency": 1.1287274824829558,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "FRAX+FXB_20261231 ",
@@ -17514,8 +17606,12 @@
         "efficiency": 1.0943679956908736,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "DOLA+FRAXPYUSD ",
@@ -17530,8 +17626,12 @@
         "efficiency": 1.7595802819182293,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "sfrxETH+rsETH ",
@@ -17546,8 +17646,12 @@
         "efficiency": 1.198224503697405,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-FRAX+FXB20291231 ",
@@ -17562,8 +17666,12 @@
         "efficiency": 2.203706037228628,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-lend-crvUSD",
@@ -17578,8 +17686,12 @@
         "efficiency": 4.033319537405762,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-FRAX+DAI ",
@@ -17594,8 +17706,12 @@
         "efficiency": 1.0534789836507585,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-FRAX+PYUSD ",
@@ -17610,8 +17726,12 @@
         "efficiency": 0.967480699271105,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-FRAX+FXB20551231 ",
@@ -17626,8 +17746,12 @@
         "efficiency": 1.827463543067643,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-FRAX+wfrxETH+FXS ",
@@ -17642,8 +17766,12 @@
         "efficiency": 3.3861824474488667,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-crvUSD+FRAX ",
@@ -17658,8 +17786,12 @@
         "efficiency": 0.9406062354024632,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-FRAX+USDC ",
@@ -17674,8 +17806,12 @@
         "efficiency": 1.0534789836507585,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-FXB20251231+FXB_20261231+FXB20291231 ",
@@ -17690,8 +17826,12 @@
         "efficiency": 6.245625403072356,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-wfrxETH+sfrxETH ",
@@ -17706,8 +17846,12 @@
         "efficiency": 1.0534789836507585,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-FRAX+USDT ",
@@ -17722,8 +17866,12 @@
         "efficiency": 0.9406062354024632,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-lend-crvUSD",
@@ -17738,8 +17886,12 @@
         "efficiency": 0.9330813855192435,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "fraxtal-lend-crvUSD",
@@ -17754,8 +17906,12 @@
         "efficiency": 2.7239956577255335,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "msETH+frxETH ",
@@ -17770,8 +17926,12 @@
         "efficiency": 12.43216411970453,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "alETH+frxETH ",
@@ -17786,8 +17946,12 @@
         "efficiency": 1.0445188445625198,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "alUSD+FRAXBP ",
@@ -17802,8 +17966,12 @@
         "efficiency": 1.044078655173621,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "eUSD+FRAXBP ",
@@ -17818,8 +17986,12 @@
         "efficiency": 1.0885825358202623,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "DOLA+FRAXBP ",
@@ -17834,8 +18006,12 @@
         "efficiency": 1.089113467483317,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "STG+FRAXBP ",
@@ -17850,8 +18026,12 @@
         "efficiency": 1.0977637201736252,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "COIL+FRAXBP ",
@@ -17866,8 +18046,12 @@
         "efficiency": 1.2952972157735547,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "msUSD+FRAXBP ",
@@ -17882,8 +18066,12 @@
         "efficiency": 1.058095219478103,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "mkUSD+FRAXBP ",
@@ -17898,8 +18086,12 @@
         "efficiency": 1.2612205048505651,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "CVX+clevCVX ",
@@ -17914,8 +18106,12 @@
         "efficiency": 1.053067789668069,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "alETH+pxETH ",
@@ -17930,8 +18126,12 @@
         "efficiency": 1.0933162186964551,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "WETH+pxETH ",
@@ -17946,8 +18146,12 @@
         "efficiency": 1.0681730406046726,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "pxETH+stETH ",
@@ -17962,8 +18166,12 @@
         "efficiency": 1.0681730406046726,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "CVX+afCVX ",
@@ -17978,8 +18186,12 @@
         "efficiency": 1.0282345212870188,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "msETH+WETH ",
@@ -17994,8 +18206,12 @@
         "efficiency": 1.0433409363253174,
         "remainingWeek": 2,
         "maxPricePerVote": 10.005741376922623,
-        "platforms": ["convex"],
-        "blacklistedAddresses": ["0x735C0C6007307beFEC8Cb44112706d95759F6852"]
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x735C0C6007307beFEC8Cb44112706d95759F6852"
+        ]
       },
       {
         "gaugeName": "CRV+sdCRV ",
@@ -18009,7 +18225,9 @@
         "incentivesDirectedUSD": 16859.590947011737,
         "efficiency": -1,
         "remainingWeek": 4.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "0",
         "timestampPeriod": 1728518400
@@ -18026,8 +18244,12 @@
         "incentivesDirectedUSD": 0.0,
         "efficiency": -1,
         "remainingWeek": 4.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": ["0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"],
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
         "campaignId": "1",
         "timestampPeriod": 1729123200
       },
@@ -18043,8 +18265,12 @@
         "incentivesDirectedUSD": 9365.614939993036,
         "efficiency": -1,
         "remainingWeek": 4.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": ["0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"],
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
         "campaignId": "2",
         "timestampPeriod": 1729123200
       },
@@ -18060,8 +18286,12 @@
         "incentivesDirectedUSD": 9365.614939993036,
         "efficiency": -1,
         "remainingWeek": 2.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": ["0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"],
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
         "campaignId": "5",
         "timestampPeriod": 1729123200
       },
@@ -18077,8 +18307,12 @@
         "incentivesDirectedUSD": 12212.020940990715,
         "efficiency": 1.6722137423709917,
         "remainingWeek": 7.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": ["0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"],
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
         "campaignId": "123",
         "timestampPeriod": 1728518400
       },
@@ -18094,8 +18328,12 @@
         "incentivesDirectedUSD": 1025.95266664517,
         "efficiency": 1.6609319227456563,
         "remainingWeek": 7.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": ["0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"],
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
         "campaignId": "133",
         "timestampPeriod": 1728518400
       },
@@ -18111,7 +18349,9 @@
         "incentivesDirectedUSD": 1136.2031708248194,
         "efficiency": 1.7012866813617098,
         "remainingWeek": 3.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "236",
         "timestampPeriod": 1728518400
@@ -18128,7 +18368,9 @@
         "incentivesDirectedUSD": 5883.627867124456,
         "efficiency": 1.3347438816834603,
         "remainingWeek": 3.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "10",
         "timestampPeriod": 1728518400
@@ -18140,13 +18382,17 @@
         "amountDepositedUSD": 32.80215067392709,
         "amountClaimedUSD": 32.80215067392685,
         "maxRewardPerVoteUSD": 0,
-        "dollarPerVeCrvVote": 1.9040486864894416e-5,
+        "dollarPerVeCrvVote": 1.9040486864894416e-05,
         "dollarPerVlCVXVote": 0.00019051418726082577,
         "incentivesDirectedUSD": 1479.0224520320082,
         "efficiency": 45.08919145986441,
         "remainingWeek": 7.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": ["0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"],
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
         "campaignId": "16",
         "timestampPeriod": 1728518400
       },
@@ -18162,7 +18408,9 @@
         "incentivesDirectedUSD": 5873.942380383419,
         "efficiency": 1.8832050002511673,
         "remainingWeek": 1.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "26",
         "timestampPeriod": 1728518400
@@ -18179,7 +18427,9 @@
         "incentivesDirectedUSD": 6562.5592814074125,
         "efficiency": 1.7360894496214188,
         "remainingWeek": 1.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "30",
         "timestampPeriod": 1728518400
@@ -18196,7 +18446,9 @@
         "incentivesDirectedUSD": 7689.514710266757,
         "efficiency": 1.7799802570062433,
         "remainingWeek": 1.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "31",
         "timestampPeriod": 1728518400
@@ -18213,7 +18465,9 @@
         "incentivesDirectedUSD": 1108.0998804079675,
         "efficiency": 1.1366658124660973,
         "remainingWeek": 3.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "32",
         "timestampPeriod": 1728518400
@@ -18225,12 +18479,14 @@
         "amountDepositedUSD": 0.0215415,
         "amountClaimedUSD": 0.021188510535687346,
         "maxRewardPerVoteUSD": 0,
-        "dollarPerVeCrvVote": 1.1600476428044012e-9,
-        "dollarPerVlCVXVote": 1.1607136698809553e-8,
+        "dollarPerVeCrvVote": 1.1600476428044012e-09,
+        "dollarPerVlCVXVote": 1.1607136698809553e-08,
         "incentivesDirectedUSD": 15681.048550215974,
         "efficiency": 740073.1884293956,
         "remainingWeek": 4.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "33",
         "timestampPeriod": 1728518400
@@ -18247,7 +18503,9 @@
         "incentivesDirectedUSD": 22055.375346341676,
         "efficiency": 1.1498645007113373,
         "remainingWeek": 4.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "34",
         "timestampPeriod": 1729123200
@@ -18264,7 +18522,9 @@
         "incentivesDirectedUSD": 6095.573429703828,
         "efficiency": 1.5529391429203538,
         "remainingWeek": 2.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "35",
         "timestampPeriod": 1729123200
@@ -18281,7 +18541,9 @@
         "incentivesDirectedUSD": 4891.773891244016,
         "efficiency": 1.2787279809813141,
         "remainingWeek": 2.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "38",
         "timestampPeriod": 1729123200
@@ -18298,7 +18560,9 @@
         "incentivesDirectedUSD": 5318.464590288984,
         "efficiency": 1.2164832091237383,
         "remainingWeek": 2.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "39",
         "timestampPeriod": 1729123200
@@ -18315,7 +18579,9 @@
         "incentivesDirectedUSD": 2651.4240140582638,
         "efficiency": 1.9605192563706546,
         "remainingWeek": 1.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "8",
         "timestampPeriod": 1728518400
@@ -18327,106 +18593,1090 @@
     "snapshotProposalId": "0x70f5849b8f9f24f9b80c436824f4a8e803da8a9a02fe155f0ec794ff1c1d7d63",
     "startRoundTimestamp": 1729728000,
     "endRoundTimestamp": 1730937600,
-    "crvPerCvx": 10.187644075213337,
-    "vlCVXSupply": 40484815.448656365,
+    "crvPerCvx": 9.577903147879994,
+    "vlCVXSupply": 43062127.88682264,
     "veCrvHeldByConvex": 412444890.2416094,
-    "totalDepositedUSD": 1719.1449993230626,
+    "totalDepositedUSD": 495537.27128824213,
     "incentives": [
       {
         "gaugeName": "ETH+CNC ",
         "gaugeAddress": "0x5A8fa46ebb404494D718786e55c4E043337B10bF",
-        "nonBlacklistedVotes": 0.0,
+        "nonBlacklistedVotes": 290280.31734452915,
         "amountDepositedUSD": 432.9854030769231,
-        "amountClaimedUSD": 0.0,
+        "amountClaimedUSD": 432.9854030769231,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 0,
-        "dollarPerVlCVXVote": 0.0,
-        "incentivesDirectedUSD": 0.0,
-        "efficiency": -1,
+        "dollarPerVeCrvVote": 0.0014916113053680437,
+        "dollarPerVlCVXVote": 0.014286508617097972,
+        "incentivesDirectedUSD": 490.35107421027215,
+        "efficiency": 1.132488695290168,
         "remainingWeek": 2,
-        "maxPricePerVote": 10.187644075213337,
-        "platforms": ["convex"],
-        "blacklistedAddresses": []
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
       },
       {
         "gaugeName": "rETH+frxETH ",
         "gaugeAddress": "0xF20bd4D5A4112d5f9c64aDF53726F3ef1b7d0D61",
-        "nonBlacklistedVotes": 0.0,
-        "amountDepositedUSD": 243.30719999999997,
-        "amountClaimedUSD": 0.0,
+        "nonBlacklistedVotes": 622029.2514525625,
+        "amountDepositedUSD": 855.3278688794896,
+        "amountClaimedUSD": 855.3278688794896,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 0,
-        "dollarPerVlCVXVote": 0.0,
-        "incentivesDirectedUSD": 0.0,
-        "efficiency": -1,
+        "dollarPerVeCrvVote": 0.001375060524697397,
+        "dollarPerVlCVXVote": 0.013170196528024715,
+        "incentivesDirectedUSD": 1050.7523018791546,
+        "efficiency": 1.2284789729296182,
         "remainingWeek": 2,
-        "maxPricePerVote": 10.187644075213337,
-        "platforms": ["convex"],
-        "blacklistedAddresses": []
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
       },
       {
         "gaugeName": "FRAX+tBTC+frxETH ",
         "gaugeAddress": "0x4B43fEaB8f5ccD38Ac0831DD7eC797330114F058",
-        "nonBlacklistedVotes": 0.0,
-        "amountDepositedUSD": 299.64007467701106,
-        "amountClaimedUSD": 0.0,
+        "nonBlacklistedVotes": 290280.31734452915,
+        "amountDepositedUSD": 429.64948596767056,
+        "amountClaimedUSD": 429.64948596767056,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 0,
-        "dollarPerVlCVXVote": 0.0,
-        "incentivesDirectedUSD": 0.0,
-        "efficiency": -1,
+        "dollarPerVeCrvVote": 0.0014801192512743683,
+        "dollarPerVlCVXVote": 0.01417643883601855,
+        "incentivesDirectedUSD": 490.35107421027215,
+        "efficiency": 1.1412816498683516,
         "remainingWeek": 2,
-        "maxPricePerVote": 10.187644075213337,
-        "platforms": ["convex"],
-        "blacklistedAddresses": []
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
       },
       {
         "gaugeName": "WETH+CJPY ",
         "gaugeAddress": "0xC798130644b8962a357dfBe8BB30b19b681AA7D4",
-        "nonBlacklistedVotes": 1360.2871643306237,
+        "nonBlacklistedVotes": 870840.9520335876,
         "amountDepositedUSD": 0.0,
         "amountClaimedUSD": 0.0,
         "maxRewardPerVoteUSD": 0.0,
         "dollarPerVeCrvVote": 0.0,
         "dollarPerVlCVXVote": 0.0,
-        "incentivesDirectedUSD": 2.30769144212567,
+        "incentivesDirectedUSD": 1471.053222630817,
         "efficiency": -1,
         "remainingWeek": 2,
-        "maxPricePerVote": 10.187644075213337,
-        "platforms": ["convex"],
-        "blacklistedAddresses": []
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
       },
       {
         "gaugeName": "crvUSD+CJPY ",
         "gaugeAddress": "0xa5Dc66685bD13A0924505807c29F8C65dDa0d207",
-        "nonBlacklistedVotes": 1360.2871643306237,
+        "nonBlacklistedVotes": 870840.9520335876,
         "amountDepositedUSD": 0.0,
         "amountClaimedUSD": 0.0,
         "maxRewardPerVoteUSD": 0.0,
         "dollarPerVeCrvVote": 0.0,
         "dollarPerVlCVXVote": 0.0,
-        "incentivesDirectedUSD": 2.30769144212567,
+        "incentivesDirectedUSD": 1471.053222630817,
         "efficiency": -1,
         "remainingWeek": 2,
-        "maxPricePerVote": 10.187644075213337,
-        "platforms": ["convex"],
-        "blacklistedAddresses": []
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
       },
       {
         "gaugeName": "zunETH+frxETH ",
         "gaugeAddress": "0x44f30D79f62a3D5340030d64806cD73239889F07",
-        "nonBlacklistedVotes": 0.0,
-        "amountDepositedUSD": 595.2726492347626,
-        "amountClaimedUSD": 0.0,
+        "nonBlacklistedVotes": 870840.9520335876,
+        "amountDepositedUSD": 877.3459470177183,
+        "amountClaimedUSD": 877.3459470177183,
         "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 0,
-        "dollarPerVlCVXVote": 0.0,
-        "incentivesDirectedUSD": 0.0,
-        "efficiency": -1,
+        "dollarPerVeCrvVote": 0.0010074697853482203,
+        "dollarPerVlCVXVote": 0.0096494480284807,
+        "incentivesDirectedUSD": 1471.053222630817,
+        "efficiency": 1.6767082900778576,
         "remainingWeek": 2,
-        "maxPricePerVote": 10.187644075213337,
-        "platforms": ["convex"],
-        "blacklistedAddresses": []
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "WETH+CVG ",
+        "gaugeAddress": "0x16A3a047fC1D388d5846a73ACDb475b11228c299",
+        "nonBlacklistedVotes": 3027209.0237358045,
+        "amountDepositedUSD": 3947.820792,
+        "amountClaimedUSD": 3947.820792,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.001304112389017687,
+        "dollarPerVlCVXVote": 0.012490662155961804,
+        "incentivesDirectedUSD": 5113.661202478553,
+        "efficiency": 1.295312394331843,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "CVX+afCVX ",
+        "gaugeAddress": "0x9755e37A291a37d8a0AB0828699A59b445477514",
+        "nonBlacklistedVotes": 3151614.874026317,
+        "amountDepositedUSD": 4236.5808,
+        "amountClaimedUSD": 4236.5808,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013442571409709061,
+        "dollarPerVlCVXVote": 0.012875164702065402,
+        "incentivesDirectedUSD": 5323.811662854384,
+        "efficiency": 1.2566293230744907,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "WETH+CVX ",
+        "gaugeAddress": "0x7E1444BA99dcdFfE8fBdb42C02F0005D14f13BE1",
+        "nonBlacklistedVotes": 14348141.400172444,
+        "amountDepositedUSD": 19649.28,
+        "amountClaimedUSD": 19649.28,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013694651768460997,
+        "dollarPerVlCVXVote": 0.01311660482822629,
+        "incentivesDirectedUSD": 24237.35309667917,
+        "efficiency": 1.2334982806840338,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "CVX+FRAXBP ",
+        "gaugeAddress": "0xaa386EF96A910Ee2F9cbEf7B139e99A88DF3b2ba",
+        "nonBlacklistedVotes": 106077.74161835335,
+        "amountDepositedUSD": 165.12,
+        "amountClaimedUSD": 165.12,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.00155659422496068,
+        "dollarPerVlCVXVote": 0.014908908727222716,
+        "incentivesDirectedUSD": 179.1900154588266,
+        "efficiency": 1.085210849435723,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "frxETH+CVX ",
+        "gaugeAddress": "0xc2075702490F0426E84E00d8B328119027813AC5",
+        "nonBlacklistedVotes": 10242748.340585532,
+        "amountDepositedUSD": 14001.138045572226,
+        "amountClaimedUSD": 14001.138045572226,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013669317628447995,
+        "dollarPerVlCVXVote": 0.013092340034288354,
+        "incentivesDirectedUSD": 17302.38790427675,
+        "efficiency": 1.235784394665584,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "CRV+cvxCRV ",
+        "gaugeAddress": "0xfB18127c1471131468a1AaD4785c19678e521D86",
+        "nonBlacklistedVotes": 82481078.7426098,
+        "amountDepositedUSD": 105680.10239999999,
+        "amountClaimedUSD": 105680.10239999999,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.001281264794435885,
+        "dollarPerVlCVXVote": 0.012271830107895275,
+        "incentivesDirectedUSD": 139329.75522917593,
+        "efficiency": 1.3184104866005122,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "FXS+cvxFXS ",
+        "gaugeAddress": "0x0c58c509305a8a7fE9a6a60CEaAC6185B96ECBb7",
+        "nonBlacklistedVotes": 1575807.4370131586,
+        "amountDepositedUSD": 2144.9087999999997,
+        "amountClaimedUSD": 2144.9087999999997,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013611490526187235,
+        "dollarPerVlCVXVote": 0.013036953795810742,
+        "incentivesDirectedUSD": 2661.905831427192,
+        "efficiency": 1.2410345052559775,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-FXS+cvxFXS ",
+        "gaugeAddress": "0x070EBC9F46d0a6A523D31eb4aE7901C56AD97ae2",
+        "nonBlacklistedVotes": 3649238.2751883673,
+        "amountDepositedUSD": 5004.787200000001,
+        "amountClaimedUSD": 5004.787200000001,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013714607878658354,
+        "dollarPerVlCVXVote": 0.013135718597294161,
+        "incentivesDirectedUSD": 6164.413504357708,
+        "efficiency": 1.231703418750293,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "FXN+cvxFXN ",
+        "gaugeAddress": "0x724476f141ED2DE4DA22eBDF435905dEf1118317",
+        "nonBlacklistedVotes": 2114899.454938713,
+        "amountDepositedUSD": 2849.9712,
+        "amountClaimedUSD": 2849.9712,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013475681755672818,
+        "dollarPerVlCVXVote": 0.012906877470748769,
+        "incentivesDirectedUSD": 3572.557826389127,
+        "efficiency": 1.2535417292599753,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "PRISMA+cvxPrisma ",
+        "gaugeAddress": "0x13E58C7b1147385D735a06D14F0456E54C2dEBC8",
+        "nonBlacklistedVotes": 3317489.3410803336,
+        "amountDepositedUSD": 4516.032,
+        "amountClaimedUSD": 4516.032,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013612800330895301,
+        "dollarPerVlCVXVote": 0.013038208314074392,
+        "incentivesDirectedUSD": 5604.012276688825,
+        "efficiency": 1.2409150946425591,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "ETH+frxETH ",
+        "gaugeAddress": "0x2932a86df44Fe8D2A706d8e9c5d51c24883423F5",
+        "nonBlacklistedVotes": 3276020.72431683,
+        "amountDepositedUSD": 4290.7224719999995,
+        "amountClaimedUSD": 4290.7224719999995,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013097360587957733,
+        "dollarPerVlCVXVote": 0.012544525120431974,
+        "incentivesDirectedUSD": 5533.962123230215,
+        "efficiency": 1.2897506560592613,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "WETH+frxETH ",
+        "gaugeAddress": "0x4E21418095d32d15c6e2B96A9910772613A50d50",
+        "nonBlacklistedVotes": 8459597.819754852,
+        "amountDepositedUSD": 11331.842179199999,
+        "amountClaimedUSD": 11331.842179199999,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013395249302204275,
+        "dollarPerVlCVXVote": 0.012829840045821961,
+        "incentivesDirectedUSD": 14290.231305556508,
+        "efficiency": 1.2610686841179926,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "FRAX+USDC ",
+        "gaugeAddress": "0xCFc25170633581Bf896CB6CDeE170e3E3Aa59503",
+        "nonBlacklistedVotes": 704966.484979571,
+        "amountDepositedUSD": 964.8,
+        "amountClaimedUSD": 964.8,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013685756990673942,
+        "dollarPerVlCVXVote": 0.013108085496209657,
+        "incentivesDirectedUSD": 1190.8526087963755,
+        "efficiency": 1.234299967657935,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "FRAX+crvUSD ",
+        "gaugeAddress": "0x96424E6b5eaafe0c3B36CA82068d574D44BE4e3c",
+        "nonBlacklistedVotes": 3110146.257262813,
+        "amountDepositedUSD": 4171.7952,
+        "amountClaimedUSD": 4171.7952,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013413501664939467,
+        "dollarPerVlCVXVote": 0.012847321982071726,
+        "incentivesDirectedUSD": 5253.761509395774,
+        "efficiency": 1.2593526905145713,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "FRAX+FXB_20241231 ",
+        "gaugeAddress": "0xC2FE9D3c761994897594Df63B33b6D843Ab7b1cF",
+        "nonBlacklistedVotes": 704966.484979571,
+        "amountDepositedUSD": 964.8,
+        "amountClaimedUSD": 964.8,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013685756990673942,
+        "dollarPerVlCVXVote": 0.013108085496209657,
+        "incentivesDirectedUSD": 1190.8526087963755,
+        "efficiency": 1.234299967657935,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "FRAX+FXB_20261231 ",
+        "gaugeAddress": "0x0E83dF148F69965BfE752250835854b0dBeeaf01",
+        "nonBlacklistedVotes": 6966727.616268701,
+        "amountDepositedUSD": 9385.574399999998,
+        "amountClaimedUSD": 9385.574399999998,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013471998500533889,
+        "dollarPerVlCVXVote": 0.012903349684649809,
+        "incentivesDirectedUSD": 11768.425781046535,
+        "efficiency": 1.2538844485689165,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "DOLA+FRAXPYUSD ",
+        "gaugeAddress": "0x4B092818708A721cB187dFACF41f440ADb79044D",
+        "nonBlacklistedVotes": 11486806.843490656,
+        "amountDepositedUSD": 15469.603199999998,
+        "amountClaimedUSD": 15469.603199999998,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.001346727894947264,
+        "dollarPerVlCVXVote": 0.012898829344353196,
+        "incentivesDirectedUSD": 19403.89250803506,
+        "efficiency": 1.2543238670811585,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "sfrxETH+rsETH ",
+        "gaugeAddress": "0x8f8E854EF0dc76D88D2e217D3c2653672d13b252",
+        "nonBlacklistedVotes": 456154.7843985458,
+        "amountDepositedUSD": 659.9232,
+        "amountClaimedUSD": 659.9232,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014467089298868785,
+        "dollarPerVlCVXVote": 0.01385643801362963,
+        "incentivesDirectedUSD": 770.5516880447134,
+        "efficiency": 1.1676384282969798,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "msETH+frxETH ",
+        "gaugeAddress": "0xB7A3C519889a916C5ecB54101E69ECf11DE60d0b",
+        "nonBlacklistedVotes": 1783150.5208306795,
+        "amountDepositedUSD": 334.5082228534534,
+        "amountClaimedUSD": 334.5082228534534,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.00018759393497393758,
+        "dollarPerVlCVXVote": 0.0017967565403100715,
+        "incentivesDirectedUSD": 3012.156598720244,
+        "efficiency": 9.004731103545568,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "alETH+frxETH ",
+        "gaugeAddress": "0x415F30505368fa1dB82Feea02EB778be04e75907",
+        "nonBlacklistedVotes": 39478123.158855975,
+        "amountDepositedUSD": 47197.77856181412,
+        "amountClaimedUSD": 47197.77856181412,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0011955426141180782,
+        "dollarPerVlCVXVote": 0.011450791367186217,
+        "incentivesDirectedUSD": 66687.74609259704,
+        "efficiency": 1.4129424757832034,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "alUSD+FRAXBP ",
+        "gaugeAddress": "0x740BA8aa0052E07b925908B380248cb03f3DE5cB",
+        "nonBlacklistedVotes": 49057373.63122544,
+        "amountDepositedUSD": 60738.088632399646,
+        "amountClaimedUSD": 60738.088632399646,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0012381031461035927,
+        "dollarPerVlCVXVote": 0.011858432020465725,
+        "incentivesDirectedUSD": 82869.33154153601,
+        "efficiency": 1.3643717378575995,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "eUSD+FRAXBP ",
+        "gaugeAddress": "0x8605dc0C339a2e7e85EEA043bD29d42DA2c6D784",
+        "nonBlacklistedVotes": 995246.8023241,
+        "amountDepositedUSD": 1362.1980845639164,
+        "amountClaimedUSD": 1362.1980845639164,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013687038043055369,
+        "dollarPerVlCVXVote": 0.013109312475773325,
+        "incentivesDirectedUSD": 1681.2036830066477,
+        "efficiency": 1.2341844420849082,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "DOLA+FRAXBP ",
+        "gaugeAddress": "0xBE266d68Ce3dDFAb366Bb866F4353B6FC42BA43c",
+        "nonBlacklistedVotes": 3234552.1075533256,
+        "amountDepositedUSD": 4321.441439220927,
+        "amountClaimedUSD": 4321.441439220927,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.00133602467838731,
+        "dollarPerVlCVXVote": 0.012796314972771172,
+        "incentivesDirectedUSD": 5463.911969771605,
+        "efficiency": 1.2643725586980632,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "STG+FRAXBP ",
+        "gaugeAddress": "0x8133e6B0B2420bBa10574A6668ea275f5E7Ed253",
+        "nonBlacklistedVotes": 1409932.969959142,
+        "amountDepositedUSD": 1895.1107874230572,
+        "amountClaimedUSD": 1895.1107874230572,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.001344114101734904,
+        "dollarPerVlCVXVote": 0.012873794686116626,
+        "incentivesDirectedUSD": 2381.705217592751,
+        "efficiency": 1.256763052270605,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "COIL+FRAXBP ",
+        "gaugeAddress": "0x06B30D5F2341C2FB3F6B48b109685997022Bd272",
+        "nonBlacklistedVotes": 248811.70058102498,
+        "amountDepositedUSD": 360.5589953561919,
+        "amountClaimedUSD": 360.5589953561919,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014491239540351786,
+        "dollarPerVlCVXVote": 0.01387956888102184,
+        "incentivesDirectedUSD": 420.30092075166186,
+        "efficiency": 1.1656925112531216,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "msUSD+FRAXBP ",
+        "gaugeAddress": "0xd5f2e6612E41bE48461FDBA20061E3c778Fe6EC4",
+        "nonBlacklistedVotes": 8252254.735937331,
+        "amountDepositedUSD": 11919.982377690385,
+        "amountClaimedUSD": 11919.982377690385,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014444515782796488,
+        "dollarPerVlCVXVote": 0.013834817318564873,
+        "incentivesDirectedUSD": 13939.980538263455,
+        "efficiency": 1.1694631834652482,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "mkUSD+FRAXBP ",
+        "gaugeAddress": "0xF184d80915Ba7d835D941BA70cDdf93DE36517ee",
+        "nonBlacklistedVotes": 580560.6346890584,
+        "amountDepositedUSD": 799.5017032420394,
+        "amountClaimedUSD": 799.5017032420394,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013771200723422168,
+        "dollarPerVlCVXVote": 0.013189922675895242,
+        "incentivesDirectedUSD": 980.7021484205444,
+        "efficiency": 1.2266417250191257,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+FXB20291231 ",
+        "gaugeAddress": "0x48100238C4a3CF44cFbF6C7693eD5C216881fAcE",
+        "nonBlacklistedVotes": 4561547.843985459,
+        "amountDepositedUSD": 5788.799999999999,
+        "amountClaimedUSD": 5788.799999999999,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0012690429209534018,
+        "dollarPerVlCVXVote": 0.01215477018739441,
+        "incentivesDirectedUSD": 7705.516880447135,
+        "efficiency": 1.3311078082585572,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-lend-crvUSD",
+        "gaugeAddress": "0x541f57aB2032A042CE6B02Fd435347fBaE1F6d0A",
+        "nonBlacklistedVotes": 3649238.2751883673,
+        "amountDepositedUSD": 2411.9999999999995,
+        "amountClaimedUSD": 2411.9999999999995,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0006609598546632301,
+        "dollarPerVlCVXVote": 0.006330609472601254,
+        "incentivesDirectedUSD": 6164.413504357708,
+        "efficiency": 2.55572699185643,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+DAI ",
+        "gaugeAddress": "0x64100c172D5DC8007E3ee701ECD99468619B6583",
+        "nonBlacklistedVotes": 331748.93410803325,
+        "amountDepositedUSD": 482.4,
+        "amountClaimedUSD": 482.4,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.001454111680259107,
+        "dollarPerVlCVXVote": 0.013927340839722767,
+        "incentivesDirectedUSD": 560.4012276688823,
+        "efficiency": 1.1616940872074675,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-pxETH+wfrxETH ",
+        "gaugeAddress": "0x6b794C5e3188c2C8C1412DBF38Fd70e9b20446a7",
+        "nonBlacklistedVotes": 704966.484979571,
+        "amountDepositedUSD": 964.8,
+        "amountClaimedUSD": 964.8,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013685756990673942,
+        "dollarPerVlCVXVote": 0.013108085496209657,
+        "incentivesDirectedUSD": 1190.8526087963755,
+        "efficiency": 1.234299967657935,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+PYUSD ",
+        "gaugeAddress": "0x72Bd89F2E3470fA5d188cF04eda17E8145eb4BF1",
+        "nonBlacklistedVotes": 456154.7843985458,
+        "amountDepositedUSD": 675.3599999999999,
+        "amountClaimedUSD": 675.3599999999999,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014805500744456358,
+        "dollarPerVlCVXVote": 0.014180565218626814,
+        "incentivesDirectedUSD": 770.5516880447134,
+        "efficiency": 1.1409495499359061,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+FXB20551231 ",
+        "gaugeAddress": "0x7bA1e40dAe22847E6c521bA297d40fF1c5fD97dd",
+        "nonBlacklistedVotes": 2736928.7063912754,
+        "amountDepositedUSD": 3376.7999999999997,
+        "amountClaimedUSD": 3376.7999999999997,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0012337917287046963,
+        "dollarPerVlCVXVote": 0.01181713768218901,
+        "incentivesDirectedUSD": 4623.310128268281,
+        "efficiency": 1.3691394599230873,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+wfrxETH+FXS ",
+        "gaugeAddress": "0x8882eB84d0c4894753C0450f2D514E39883c0C82",
+        "nonBlacklistedVotes": 2446648.3890467463,
+        "amountDepositedUSD": 964.8,
+        "amountClaimedUSD": 964.8,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0003943353709177237,
+        "dollarPerVlCVXVote": 0.003776905990433291,
+        "incentivesDirectedUSD": 4132.959054058008,
+        "efficiency": 4.283746946577538,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-crvUSD+FRAX ",
+        "gaugeAddress": "0x98a6C35546be6F7c545c99EfB48F4673eD2c99fc",
+        "nonBlacklistedVotes": 1824619.1375941834,
+        "amountDepositedUSD": 1929.6,
+        "amountClaimedUSD": 1929.6,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0010575357674611683,
+        "dollarPerVlCVXVote": 0.010128975156162009,
+        "incentivesDirectedUSD": 3082.2067521788535,
+        "efficiency": 1.5973293699102684,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+USDC ",
+        "gaugeAddress": "0xAA6dDbA00DE48D41E41543eF0a78AB31aae4dE8d",
+        "nonBlacklistedVotes": 331748.93410803325,
+        "amountDepositedUSD": 482.4,
+        "amountClaimedUSD": 482.4,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.001454111680259107,
+        "dollarPerVlCVXVote": 0.013927340839722767,
+        "incentivesDirectedUSD": 560.4012276688823,
+        "efficiency": 1.1616940872074675,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-FXB20251231+FXB_20261231+FXB20291231 ",
+        "gaugeAddress": "0xBd4Af2a6510b988878805956e5111839e55de069",
+        "nonBlacklistedVotes": 4561547.843985459,
+        "amountDepositedUSD": 2411.9999999999995,
+        "amountClaimedUSD": 2411.9999999999995,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.000528767883730584,
+        "dollarPerVlCVXVote": 0.0050644875780810035,
+        "incentivesDirectedUSD": 7705.516880447135,
+        "efficiency": 3.194658739820538,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-wfrxETH+sfrxETH ",
+        "gaugeAddress": "0xD1D981dDD0c9A0469E7d8cEE877f83B5877D7260",
+        "nonBlacklistedVotes": 331748.93410803325,
+        "amountDepositedUSD": 482.4,
+        "amountClaimedUSD": 482.4,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.001454111680259107,
+        "dollarPerVlCVXVote": 0.013927340839722767,
+        "incentivesDirectedUSD": 560.4012276688823,
+        "efficiency": 1.1616940872074675,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+USDT ",
+        "gaugeAddress": "0xE049AA6fbd64210bDEddC15F5a861084E6eE8b57",
+        "nonBlacklistedVotes": 1451401.586722646,
+        "amountDepositedUSD": 1929.6,
+        "amountClaimedUSD": 1929.6,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013294735362368974,
+        "dollarPerVlCVXVote": 0.012733568767746527,
+        "incentivesDirectedUSD": 2451.755371051361,
+        "efficiency": 1.2706029078831682,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-lend-crvUSD",
+        "gaugeAddress": "0xFC6891C8482aeF6AEF71a09A09ce14432617A403",
+        "nonBlacklistedVotes": 3027209.0237358045,
+        "amountDepositedUSD": 2411.9999999999995,
+        "amountClaimedUSD": 2411.9999999999995,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0007967735234296473,
+        "dollarPerVlCVXVote": 0.007631419638204252,
+        "incentivesDirectedUSD": 5113.661202478553,
+        "efficiency": 2.120091709153629,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "fraxtal-lend-crvUSD",
+        "gaugeAddress": "0xf868B47717F4739EE142b3BE6EE0f84Da868E917",
+        "nonBlacklistedVotes": 9620719.089132968,
+        "amountDepositedUSD": 4823.999999999999,
+        "amountClaimedUSD": 4823.999999999999,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0005014178207790022,
+        "dollarPerVlCVXVote": 0.004802531324042331,
+        "incentivesDirectedUSD": 16251.635602397593,
+        "efficiency": 3.3689128529016577,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "MIM+3Crv ",
+        "gaugeAddress": "0xd8b712d29381748dB89c36BCa0138d7c75866ddF",
+        "nonBlacklistedVotes": 16919195.639509704,
+        "amountDepositedUSD": 21183.55318146627,
+        "amountClaimedUSD": 21183.55318146627,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0012520425694468856,
+        "dollarPerVlCVXVote": 0.01199194246718508,
+        "incentivesDirectedUSD": 28580.462611113016,
+        "efficiency": 1.3491817149975758,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "CVX+clevCVX ",
+        "gaugeAddress": "0x7970489a543FB237ABab63d62524d8A5CE165B86",
+        "nonBlacklistedVotes": 1161121.2693781168,
+        "amountDepositedUSD": 1651.2,
+        "amountClaimedUSD": 1651.2,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014220736830394673,
+        "dollarPerVlCVXVote": 0.01362048400530101,
+        "incentivesDirectedUSD": 1961.4042968410888,
+        "efficiency": 1.1878659743465896,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "alETH+pxETH ",
+        "gaugeAddress": "0x4C5a449c6B81b800938EFCCDB41970e9CF9eC478",
+        "nonBlacklistedVotes": 6012949.430708105,
+        "amountDepositedUSD": 7758.536263184211,
+        "amountClaimedUSD": 7758.536263184211,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0012903045922125012,
+        "dollarPerVlCVXVote": 0.012358412415476127,
+        "incentivesDirectedUSD": 10157.272251498496,
+        "efficiency": 1.3091737805875523,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "zunETH+pxETH ",
+        "gaugeAddress": "0xf792934842e86f964bDF19A439797a6e3c9fE17B",
+        "nonBlacklistedVotes": 1741681.9040671752,
+        "amountDepositedUSD": 2497.7316096,
+        "amountClaimedUSD": 2497.7316096,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014340917269492768,
+        "dollarPerVlCVXVote": 0.013735591665896135,
+        "incentivesDirectedUSD": 2942.106445261634,
+        "efficiency": 1.1779113632360196,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "pxETH+stETH ",
+        "gaugeAddress": "0x58215F083882A5eb7056Ac34a0fdDA9D3b5665d2",
+        "nonBlacklistedVotes": 17126538.723327223,
+        "amountDepositedUSD": 24977.316096000002,
+        "amountClaimedUSD": 24977.316096000002,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014583983663890951,
+        "dollarPerVlCVXVote": 0.013968398304301155,
+        "incentivesDirectedUSD": 28930.71337840606,
+        "efficiency": 1.1582795071820857,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "WETH+pxETH ",
+        "gaugeAddress": "0xABaD903647511a0EC755a118849f733f7d2Ba002",
+        "nonBlacklistedVotes": 17126538.723327223,
+        "amountDepositedUSD": 24977.316096000002,
+        "amountClaimedUSD": 24977.316096000002,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014583983663890951,
+        "dollarPerVlCVXVote": 0.013968398304301155,
+        "incentivesDirectedUSD": 28930.71337840606,
+        "efficiency": 1.1582795071820857,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
+      },
+      {
+        "gaugeName": "msETH+WETH ",
+        "gaugeAddress": "0x4e227d29b33B77113F84bcC189a6F886755a1f24",
+        "nonBlacklistedVotes": 4727422.311039476,
+        "amountDepositedUSD": 6928.236,
+        "amountClaimedUSD": 6928.236,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014655420108800486,
+        "dollarPerVlCVXVote": 0.014036819439358394,
+        "incentivesDirectedUSD": 7985.717494281576,
+        "efficiency": 1.1526335844046849,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.577903147879994,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": [
+          "0x1E6F87A9ddF744aF31157d8DaA1e3025648d042d"
+        ]
       },
       {
         "gaugeName": "CRV+sdCRV ",
@@ -18434,13 +19684,15 @@
         "nonBlacklistedVotes": 16425019.057006273,
         "amountDepositedUSD": 0.0,
         "amountClaimedUSD": 0.0,
-        "maxRewardPerVoteUSD": 0.0,
+        "maxRewardPerVoteUSD": 0,
         "dollarPerVeCrvVote": 0.0,
         "dollarPerVlCVXVote": 0.0,
         "incentivesDirectedUSD": 13858.292511141368,
         "efficiency": -1,
-        "remainingWeek": 2.0,
-        "platforms": ["votemarket"],
+        "remainingWeek": 1.0,
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "0",
         "timestampPeriod": 1729728000
@@ -18456,9 +19708,13 @@
         "dollarPerVlCVXVote": 0.0,
         "incentivesDirectedUSD": 0.0,
         "efficiency": -1,
-        "remainingWeek": 3.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": ["0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"],
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
         "campaignId": "1",
         "timestampPeriod": 1729728000
       },
@@ -18468,65 +19724,39 @@
         "nonBlacklistedVotes": 10879390.814644363,
         "amountDepositedUSD": 0.0,
         "amountClaimedUSD": 0.0,
-        "maxRewardPerVoteUSD": 0.0,
+        "maxRewardPerVoteUSD": 0,
         "dollarPerVeCrvVote": 0.0,
         "dollarPerVlCVXVote": 0.0,
         "incentivesDirectedUSD": 9179.275818742728,
         "efficiency": -1,
-        "remainingWeek": 3.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": ["0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"],
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
         "campaignId": "2",
         "timestampPeriod": 1729728000
       },
       {
-        "gaugeName": "CRV+cvxCRV ",
-        "gaugeAddress": "0xfB18127c1471131468a1AaD4785c19678e521D86",
-        "nonBlacklistedVotes": 70389577.7966372,
-        "amountDepositedUSD": 0.0,
-        "amountClaimedUSD": 0.0,
-        "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 0.0,
-        "dollarPerVlCVXVote": 0.0,
-        "incentivesDirectedUSD": 59389.84639566909,
-        "efficiency": -1,
-        "remainingWeek": 3.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": ["0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"],
-        "campaignId": "4",
-        "timestampPeriod": 1729728000
-      },
-      {
         "gaugeName": "CRV+sdCRV ",
         "gaugeAddress": "0x26F7786de3E6D9Bd37Fcf47BE6F2bC455a21b74A",
         "nonBlacklistedVotes": 10879390.814644363,
-        "amountDepositedUSD": 0.0,
-        "amountClaimedUSD": 0.0,
-        "maxRewardPerVoteUSD": 0.0,
-        "dollarPerVeCrvVote": 0.0,
-        "dollarPerVlCVXVote": 0.0,
+        "amountDepositedUSD": 6605.053856742291,
+        "amountClaimedUSD": 6140.338595609023,
+        "maxRewardPerVoteUSD": 0,
+        "dollarPerVeCrvVote": 0.0005644009577580144,
+        "dollarPerVlCVXVote": 0.00540577770997697,
         "incentivesDirectedUSD": 9179.275818742728,
-        "efficiency": -1,
-        "remainingWeek": 1.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": ["0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"],
-        "campaignId": "5",
-        "timestampPeriod": 1729728000
-      },
-      {
-        "gaugeName": "CRV+sdCRV ",
-        "gaugeAddress": "0x26F7786de3E6D9Bd37Fcf47BE6F2bC455a21b74A",
-        "nonBlacklistedVotes": 10879390.814644363,
-        "amountDepositedUSD": 6472.282133042666,
-        "amountClaimedUSD": 4225.46234274253,
-        "maxRewardPerVoteUSD": 0.004839674418637976,
-        "dollarPerVeCrvVote": 0.0005949121824294203,
-        "dollarPerVlCVXVote": 0.006060753570599319,
-        "incentivesDirectedUSD": 9179.275818742728,
-        "efficiency": 1.41824407991737,
-        "remainingWeek": 5.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": ["0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"],
+        "efficiency": 1.4949136233801275,
+        "remainingWeek": 6.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
         "campaignId": "123",
         "timestampPeriod": 1729728000
       },
@@ -18534,16 +19764,20 @@
         "gaugeName": "PENDLE+sdPENDLE ",
         "gaugeAddress": "0x785dFF4aD2b6e55D150D335B46D567D854053dC8",
         "nonBlacklistedVotes": 1308309.5168218794,
-        "amountDepositedUSD": 569.5941333264484,
-        "amountClaimedUSD": 82.4259328764569,
-        "maxRewardPerVoteUSD": 0.004839674418637976,
-        "dollarPerVeCrvVote": 0.0004353664985255902,
-        "dollarPerVlCVXVote": 0.004435358929250605,
+        "amountDepositedUSD": 581.2787282400193,
+        "amountClaimedUSD": 200.24208021356642,
+        "maxRewardPerVoteUSD": 0,
+        "dollarPerVeCrvVote": 0.00015305405765142692,
+        "dollarPerVlCVXVote": 0.0014659369405754079,
         "incentivesDirectedUSD": 1103.8608793268756,
-        "efficiency": 1.9379779649068574,
-        "remainingWeek": 5.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": ["0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"],
+        "efficiency": 5.512631901094728,
+        "remainingWeek": 6.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
         "campaignId": "133",
         "timestampPeriod": 1729728000
       },
@@ -18551,83 +19785,57 @@
         "gaugeName": "crvUSD+zunUSD ",
         "gaugeAddress": "0xB1A829a05E618F7C4f50Cb86f8F64Fb86e42dE5a",
         "nonBlacklistedVotes": 909190.6287809255,
-        "amountDepositedUSD": 179.79014191836916,
-        "amountClaimedUSD": 133.90477412188065,
-        "maxRewardPerVoteUSD": 0.0003855501852709953,
-        "dollarPerVeCrvVote": 0.00019774746486271867,
-        "dollarPerVlCVXVote": 0.0020145807887971333,
+        "amountDepositedUSD": 329.2466300863155,
+        "amountClaimedUSD": 303.7483354242999,
+        "maxRewardPerVoteUSD": 0,
+        "dollarPerVeCrvVote": 0.00033408652246182547,
+        "dollarPerVlCVXVote": 0.0031998483551513982,
         "incentivesDirectedUSD": 767.1120281994447,
-        "efficiency": 4.2667079519172955,
+        "efficiency": 2.5254855376503755,
         "remainingWeek": 2.0,
-        "platforms": ["votemarket"],
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "236",
-        "timestampPeriod": 1729728000
-      },
-      {
-        "gaugeName": "arbi-USDe+USDx ",
-        "gaugeAddress": "0x99178264ec6b9de40689eE4F2f561cA3885a4BD2",
-        "nonBlacklistedVotes": 7492942.346793561,
-        "amountDepositedUSD": 4417.68436265975,
-        "amountClaimedUSD": 4304.2363323768295,
-        "maxRewardPerVoteUSD": 0.000925056,
-        "dollarPerVeCrvVote": 0.0005895793879356619,
-        "dollarPerVlCVXVote": 0.006006424958370652,
-        "incentivesDirectedUSD": 6322.02534746463,
-        "efficiency": 1.431072215321951,
-        "remainingWeek": 1.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": [],
-        "campaignId": "10",
         "timestampPeriod": 1729728000
       },
       {
         "gaugeName": "fraxtal-FXS+sdFXS ",
         "gaugeAddress": "0xa40C1E9aA3781c74c437212cd0353eAAB3EBBa6F",
         "nonBlacklistedVotes": 697713.7319350792,
-        "amountDepositedUSD": 30.879325729591752,
-        "amountClaimedUSD": 30.879325729591653,
-        "maxRewardPerVoteUSD": 0.000822744651168456,
-        "dollarPerVeCrvVote": 4.42578729874633e-5,
-        "dollarPerVlCVXVote": 0.00045088345752227485,
+        "amountDepositedUSD": 31.51278101159638,
+        "amountClaimedUSD": 31.512781011596278,
+        "maxRewardPerVoteUSD": 0,
+        "dollarPerVeCrvVote": 4.516577439890272e-05,
+        "dollarPerVlCVXVote": 0.00043259341279168804,
         "incentivesDirectedUSD": 588.6824820499636,
-        "efficiency": 19.063968145063072,
-        "remainingWeek": 5.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": ["0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"],
+        "efficiency": 18.68075311516735,
+        "remainingWeek": 6.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
         "campaignId": "16",
-        "timestampPeriod": 1729728000
-      },
-      {
-        "gaugeName": "USR+RLP ",
-        "gaugeAddress": "0x52ed9F154F25DD0AbC67EdB15dCE90fd92d8b22f",
-        "nonBlacklistedVotes": 2744985.414828017,
-        "amountDepositedUSD": 1740.8192737942868,
-        "amountClaimedUSD": 1266.2102446456404,
-        "maxRewardPerVoteUSD": 0.00084573552,
-        "dollarPerVeCrvVote": 0.0006341816114543382,
-        "dollarPerVlCVXVote": 0.006460816536542034,
-        "incentivesDirectedUSD": 2316.0284128423377,
-        "efficiency": 1.3304243856367275,
-        "remainingWeek": 1.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": [],
-        "campaignId": "32",
         "timestampPeriod": 1729728000
       },
       {
         "gaugeName": "ETH+OETH ",
         "gaugeAddress": "0xd03BE91b1932715709e18021734fcB91BB431715",
         "nonBlacklistedVotes": 28238553.56946696,
-        "amountDepositedUSD": 0.022223246344644915,
-        "amountClaimedUSD": 0.018202066518548807,
-        "maxRewardPerVoteUSD": 0.000850521175392,
-        "dollarPerVeCrvVote": 7.869824596353931e-10,
-        "dollarPerVlCVXVote": 8.017497192201331e-9,
+        "amountDepositedUSD": 0.022169061730598495,
+        "amountClaimedUSD": 0.019915708491443695,
+        "maxRewardPerVoteUSD": 0,
+        "dollarPerVeCrvVote": 7.052665938590293e-10,
+        "dollarPerVlCVXVote": 6.754975129416997e-09,
         "incentivesDirectedUSD": 23825.73402800886,
-        "efficiency": 1072108.6225888007,
-        "remainingWeek": 2.0,
-        "platforms": ["votemarket"],
+        "efficiency": 1196328.719023228,
+        "remainingWeek": 1.0,
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "33",
         "timestampPeriod": 1729728000
@@ -18636,86 +19844,1336 @@
         "gaugeName": "ETH+OETH ",
         "gaugeAddress": "0xd03BE91b1932715709e18021734fcB91BB431715",
         "nonBlacklistedVotes": 28238553.56946696,
-        "amountDepositedUSD": 19569.5441234665,
-        "amountClaimedUSD": 17240.965800060418,
-        "maxRewardPerVoteUSD": 0.0008951548441919999,
-        "dollarPerVeCrvVote": 0.0006930080209429049,
-        "dollarPerVlCVXVote": 0.007060119058634305,
+        "amountDepositedUSD": 19521.829753614773,
+        "amountClaimedUSD": 19296.434395023338,
+        "maxRewardPerVoteUSD": 0,
+        "dollarPerVeCrvVote": 0.0006833365011969905,
+        "dollarPerVlCVXVote": 0.006544930825875956,
         "incentivesDirectedUSD": 23825.73402800886,
-        "efficiency": 1.2174904983830777,
-        "remainingWeek": 3.0,
-        "platforms": ["votemarket"],
+        "efficiency": 1.2347221015170375,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "34",
-        "timestampPeriod": 1729728000
-      },
-      {
-        "gaugeName": "ETH+ETHx ",
-        "gaugeAddress": "0x7671299eA7B4bbE4f3fD305A994e6443b4be680E",
-        "nonBlacklistedVotes": 7185143.783638158,
-        "amountDepositedUSD": 3978.128000000001,
-        "amountClaimedUSD": 3936.067382180888,
-        "maxRewardPerVoteUSD": 0.00080424728832,
-        "dollarPerVeCrvVote": 0.0005536601799199763,
-        "dollarPerVlCVXVote": 0.005640492851643296,
-        "incentivesDirectedUSD": 6062.326256223875,
-        "efficiency": 1.523914327599281,
-        "remainingWeek": 1.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": [],
-        "campaignId": "35",
-        "timestampPeriod": 1729728000
-      },
-      {
-        "gaugeName": "DOLA+crvUSD ",
-        "gaugeAddress": "0xEcAD6745058377744c09747b2715c0170B5699e5",
-        "nonBlacklistedVotes": 5626573.344020882,
-        "amountDepositedUSD": 3831.2299943264516,
-        "amountClaimedUSD": 3818.287239806221,
-        "maxRewardPerVoteUSD": 0.00084626688,
-        "dollarPerVeCrvVote": 0.0006809170982188894,
-        "dollarPerVlCVXVote": 0.006936941041381125,
-        "incentivesDirectedUSD": 4747.312558128891,
-        "efficiency": 1.2391092586869068,
-        "remainingWeek": 1.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": [],
-        "campaignId": "38",
-        "timestampPeriod": 1729728000
-      },
-      {
-        "gaugeName": "USDC+WETH+INV ",
-        "gaugeAddress": "0x4Fc86cd0F9b650280Fa783e3116258e0E0496A2c",
-        "nonBlacklistedVotes": 6464119.901698965,
-        "amountDepositedUSD": 4364.0000000000555,
-        "amountClaimedUSD": 3981.5466835648094,
-        "maxRewardPerVoteUSD": 0.00084626688,
-        "dollarPerVeCrvVote": 0.0006751112396372885,
-        "dollarPerVlCVXVote": 0.006877793020600753,
-        "incentivesDirectedUSD": 5453.976285441362,
-        "efficiency": 1.2497654182954383,
-        "remainingWeek": 1.0,
-        "platforms": ["votemarket"],
-        "blacklistedAddresses": [],
-        "campaignId": "39",
         "timestampPeriod": 1729728000
       },
       {
         "gaugeName": "arbi-crvUSD+WETH+GMAC ",
         "gaugeAddress": "0xDa9A503E67A075AF2c3Ea840256b02891535471A",
         "nonBlacklistedVotes": 111392.44323909191,
-        "amountDepositedUSD": 111.2225,
-        "amountClaimedUSD": 0.0,
-        "maxRewardPerVoteUSD": 0.00018632095702655996,
-        "dollarPerVeCrvVote": 0.00018632095702655996,
-        "dollarPerVlCVXVote": 0.0018981715939397122,
+        "amountDepositedUSD": 102.405625,
+        "amountClaimedUSD": 3.591386876384463,
+        "maxRewardPerVoteUSD": 0,
+        "dollarPerVeCrvVote": 3.224084840904277e-05,
+        "dollarPerVlCVXVote": 0.00030879972346729243,
         "incentivesDirectedUSD": 93.98522197023335,
-        "efficiency": 4.528372407839093,
-        "remainingWeek": 2.0,
-        "platforms": ["votemarket"],
+        "efficiency": 26.16961781206111,
+        "remainingWeek": 1.0,
+        "platforms": [
+          "votemarket"
+        ],
         "blacklistedAddresses": [],
         "campaignId": "40",
         "timestampPeriod": 1729728000
+      },
+      {
+        "gaugeName": "USR+RLP ",
+        "gaugeAddress": "0x52ed9F154F25DD0AbC67EdB15dCE90fd92d8b22f",
+        "nonBlacklistedVotes": 2566352.3144439044,
+        "amountDepositedUSD": 1742.1319999999998,
+        "amountClaimedUSD": 1457.7795951016765,
+        "maxRewardPerVoteUSD": 0.0007998118056959999,
+        "dollarPerVeCrvVote": 0.00067883586762229,
+        "dollarPerVlCVXVote": 0.006501824193393378,
+        "incentivesDirectedUSD": 2209.220790657213,
+        "efficiency": 1.2681133178526158,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "42",
+        "timestampPeriod": 1730332800
+      },
+      {
+        "gaugeName": "arbi-CRV+vsdCRV+asdCRV ",
+        "gaugeAddress": "0xF1bb643F953836725c6E48BdD6f1816f871d3E07",
+        "nonBlacklistedVotes": 53313.21314252524,
+        "amountDepositedUSD": 465.9615406822272,
+        "amountClaimedUSD": 0.0,
+        "maxRewardPerVoteUSD": 0.000824407191168,
+        "dollarPerVeCrvVote": 0.000824407191168,
+        "dollarPerVlCVXVote": 0.007896092231422892,
+        "incentivesDirectedUSD": 45.89418928504666,
+        "efficiency": 1.0441937110570845,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
+        "campaignId": "45",
+        "timestampPeriod": 1730332800
+      },
+      {
+        "gaugeName": "ETH+ETHx ",
+        "gaugeAddress": "0x7671299eA7B4bbE4f3fD305A994e6443b4be680E",
+        "nonBlacklistedVotes": 7191562.804722601,
+        "amountDepositedUSD": 4809.945,
+        "amountClaimedUSD": 4759.380459393868,
+        "maxRewardPerVoteUSD": 0.0008113030430399998,
+        "dollarPerVeCrvVote": 0.000668831675479685,
+        "dollarPerVlCVXVote": 0.0064060050099787255,
+        "incentivesDirectedUSD": 6190.790709479395,
+        "efficiency": 1.287081392714344,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "46",
+        "timestampPeriod": 1730332800
+      },
+      {
+        "gaugeName": "DOLA+crvUSD ",
+        "gaugeAddress": "0xEcAD6745058377744c09747b2715c0170B5699e5",
+        "nonBlacklistedVotes": 5521292.667110295,
+        "amountDepositedUSD": 3991.75,
+        "amountClaimedUSD": 3978.083345136454,
+        "maxRewardPerVoteUSD": 0.00079488288,
+        "dollarPerVeCrvVote": 0.0007229738107849988,
+        "dollarPerVlCVXVote": 0.0069245731381524355,
+        "incentivesDirectedUSD": 4752.9540207056,
+        "efficiency": 1.1906943121953029,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "49",
+        "timestampPeriod": 1730332800
+      },
+      {
+        "gaugeName": "USDC+WETH+INV ",
+        "gaugeAddress": "0x4Fc86cd0F9b650280Fa783e3116258e0E0496A2c",
+        "nonBlacklistedVotes": 6313457.82137722,
+        "amountDepositedUSD": 4562.0,
+        "amountClaimedUSD": 4154.641406123726,
+        "maxRewardPerVoteUSD": 0.00079488288,
+        "dollarPerVeCrvVote": 0.0007225834287754605,
+        "dollarPerVlCVXVote": 0.006920834097074402,
+        "incentivesDirectedUSD": 5434.88210929693,
+        "efficiency": 1.191337595198801,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "50",
+        "timestampPeriod": 1730332800
+      },
+      {
+        "gaugeName": "cbBTC+WBTC ",
+        "gaugeAddress": "0xc62B10c61BF060eBf40A60859dCDbeA025Fc7e2e",
+        "nonBlacklistedVotes": 5638968.343198395,
+        "amountDepositedUSD": 250.5,
+        "amountClaimedUSD": 133.299272412,
+        "maxRewardPerVoteUSD": 0.00048096,
+        "dollarPerVeCrvVote": 4.442301938122207e-05,
+        "dollarPerVlCVXVote": 0.00042547937716974084,
+        "incentivesDirectedUSD": 4854.254044363813,
+        "efficiency": 19.37825965813897,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "51",
+        "timestampPeriod": 1730332800
+      },
+      {
+        "gaugeName": "cbBTC+WBTC ",
+        "gaugeAddress": "0xc62B10c61BF060eBf40A60859dCDbeA025Fc7e2e",
+        "nonBlacklistedVotes": 5638968.343198395,
+        "amountDepositedUSD": 13026.0,
+        "amountClaimedUSD": 2614.483477896,
+        "maxRewardPerVoteUSD": 0.0008301369599999999,
+        "dollarPerVeCrvVote": 0.0008301369599999999,
+        "dollarPerVlCVXVote": 0.007950971402355528,
+        "incentivesDirectedUSD": 4854.254044363813,
+        "efficiency": 1.0369864803608568,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "52",
+        "timestampPeriod": 1730332800
+      },
+      {
+        "gaugeName": "arbi-USDe+USDx ",
+        "gaugeAddress": "0x99178264ec6b9de40689eE4F2f561cA3885a4BD2",
+        "nonBlacklistedVotes": 7492942.346793561,
+        "amountDepositedUSD": 4478.200586805774,
+        "amountClaimedUSD": 4462.827014867673,
+        "maxRewardPerVoteUSD": 0,
+        "dollarPerVeCrvVote": 0.0005956040775860822,
+        "dollarPerVlCVXVote": 0.0057046381696018965,
+        "incentivesDirectedUSD": 6322.02534746463,
+        "efficiency": 1.4165965488698387,
+        "remainingWeek": 4.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "10",
+        "timestampPeriod": 1729728000
+      }
+    ]
+  },
+  "83": {
+    "snapshotProposalId": "0x4f3f175f3602962efd030069b88303c3aa28457191c82dd46bfdf874f68016f2",
+    "startRoundTimestamp": 1730937600,
+    "endRoundTimestamp": 1732147200,
+    "crvPerCvx": 9.419754094960053,
+    "vlCVXSupply": 43841247.549384326,
+    "veCrvHeldByConvex": 412973771.13147044,
+    "totalDepositedUSD": 575583.096702583,
+    "incentives": [
+      {
+        "gaugeName": "rETH+frxETH ",
+        "gaugeAddress": "0xF20bd4D5A4112d5f9c64aDF53726F3ef1b7d0D61",
+        "nonBlacklistedVotes": 332060.5594908917,
+        "amountDepositedUSD": 526.8882825432327,
+        "amountClaimedUSD": 526.8882825432327,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0015867234680054948,
+        "dollarPerVlCVXVote": 0.014946544885313976,
+        "incentivesDirectedUSD": 571.4172591430715,
+        "efficiency": 1.0845131274981148,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "WETH+CJPY ",
+        "gaugeAddress": "0xC798130644b8962a357dfBe8BB30b19b681AA7D4",
+        "nonBlacklistedVotes": 788643.8287908679,
+        "amountDepositedUSD": 0.0,
+        "amountClaimedUSD": 0.0,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0,
+        "dollarPerVlCVXVote": 0.0,
+        "incentivesDirectedUSD": 1357.1159904647955,
+        "efficiency": -1,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "crvUSD+CJPY ",
+        "gaugeAddress": "0xa5Dc66685bD13A0924505807c29F8C65dDa0d207",
+        "nonBlacklistedVotes": 788643.8287908679,
+        "amountDepositedUSD": 0.0,
+        "amountClaimedUSD": 0.0,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0,
+        "dollarPerVlCVXVote": 0.0,
+        "incentivesDirectedUSD": 1357.1159904647955,
+        "efficiency": -1,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "FRAX+tBTC+frxETH ",
+        "gaugeAddress": "0x4B43fEaB8f5ccD38Ac0831DD7eC797330114F058",
+        "nonBlacklistedVotes": 332060.5594908917,
+        "amountDepositedUSD": 210.67908386023302,
+        "amountClaimedUSD": 210.67908386023302,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0006344598231817768,
+        "dollarPerVlCVXVote": 0.0059764555175041735,
+        "incentivesDirectedUSD": 571.4172591430715,
+        "efficiency": 2.7122638311934013,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "zunETH+frxETH ",
+        "gaugeAddress": "0x44f30D79f62a3D5340030d64806cD73239889F07",
+        "nonBlacklistedVotes": 539598.409172699,
+        "amountDepositedUSD": 865.4306780196596,
+        "amountClaimedUSD": 865.4306780196596,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0016038421598509156,
+        "dollarPerVlCVXVote": 0.015107798752925238,
+        "incentivesDirectedUSD": 928.5530461074914,
+        "efficiency": 1.0729375208101855,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "MIM+3Crv ",
+        "gaugeAddress": "0xd8b712d29381748dB89c36BCa0138d7c75866ddF",
+        "nonBlacklistedVotes": 41673600.216106914,
+        "amountDepositedUSD": 54041.46079305655,
+        "amountClaimedUSD": 54041.46079305655,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0012967792682372912,
+        "dollarPerVlCVXVote": 0.012215341822237526,
+        "incentivesDirectedUSD": 71712.8660224555,
+        "efficiency": 1.3269971790190664,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "alETH+pxETH ",
+        "gaugeAddress": "0x4C5a449c6B81b800938EFCCDB41970e9CF9eC478",
+        "nonBlacklistedVotes": 5354476.521790629,
+        "amountDepositedUSD": 6444.3850295582815,
+        "amountClaimedUSD": 6444.3850295582815,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0012035508986419402,
+        "dollarPerVlCVXVote": 0.011337153505975268,
+        "incentivesDirectedUSD": 9214.103303682032,
+        "efficiency": 1.4297878325736217,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "alUSD+FRAXBP ",
+        "gaugeAddress": "0x740BA8aa0052E07b925908B380248cb03f3DE5cB",
+        "nonBlacklistedVotes": 50556220.18248827,
+        "amountDepositedUSD": 64468.201553115425,
+        "amountClaimedUSD": 64468.201553115425,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0012751784314652145,
+        "dollarPerVlCVXVote": 0.012011867251599192,
+        "incentivesDirectedUSD": 86998.27770453267,
+        "efficiency": 1.3494757975039011,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "alETH+frxETH ",
+        "gaugeAddress": "0x415F30505368fa1dB82Feea02EB778be04e75907",
+        "nonBlacklistedVotes": 39017115.740179785,
+        "amountDepositedUSD": 49308.796109393625,
+        "amountClaimedUSD": 49308.796109393625,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0012637734792532466,
+        "dollarPerVlCVXVote": 0.011904435406297684,
+        "incentivesDirectedUSD": 67141.52794931094,
+        "efficiency": 1.361654172216143,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "WETH+CVX ",
+        "gaugeAddress": "0x7E1444BA99dcdFfE8fBdb42C02F0005D14f13BE1",
+        "nonBlacklistedVotes": 25817708.500416834,
+        "amountDepositedUSD": 23597.088,
+        "amountClaimedUSD": 23597.088,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0009139884742140852,
+        "dollarPerVlCVXVote": 0.00860954667272442,
+        "incentivesDirectedUSD": 44427.69189837383,
+        "efficiency": 1.8827616313662867,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "CVX+FRAXBP ",
+        "gaugeAddress": "0xaa386EF96A910Ee2F9cbEf7B139e99A88DF3b2ba",
+        "nonBlacklistedVotes": 415075.6993636146,
+        "amountDepositedUSD": 243.16799999999998,
+        "amountClaimedUSD": 243.16799999999998,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0005858401259645411,
+        "dollarPerVlCVXVote": 0.0055184699255464,
+        "incentivesDirectedUSD": 714.2715739288394,
+        "efficiency": 2.9373584268030313,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "frxETH+CVX ",
+        "gaugeAddress": "0xc2075702490F0426E84E00d8B328119027813AC5",
+        "nonBlacklistedVotes": 6765733.89962692,
+        "amountDepositedUSD": 9359.527624713864,
+        "amountClaimedUSD": 9359.527624713864,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013833721165459924,
+        "dollarPerVlCVXVote": 0.013031025159687668,
+        "incentivesDirectedUSD": 11642.626655040085,
+        "efficiency": 1.2439331472560315,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "CRV+cvxCRV ",
+        "gaugeAddress": "0xfB18127c1471131468a1AaD4785c19678e521D86",
+        "nonBlacklistedVotes": 80690715.9562867,
+        "amountDepositedUSD": 103636.896,
+        "amountClaimedUSD": 103636.896,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.001284371997097462,
+        "dollarPerVlCVXVote": 0.01209846837911084,
+        "incentivesDirectedUSD": 138854.39397176643,
+        "efficiency": 1.3398162173032127,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "FXS+cvxFXS ",
+        "gaugeAddress": "0x0c58c509305a8a7fE9a6a60CEaAC6185B96ECBb7",
+        "nonBlacklistedVotes": 1245227.098090844,
+        "amountDepositedUSD": 1671.168,
+        "amountClaimedUSD": 1671.168,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.001342058812052998,
+        "dollarPerVlCVXVote": 0.012641863990513452,
+        "incentivesDirectedUSD": 2142.8147217865185,
+        "efficiency": 1.2822257976376514,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-FXS+cvxFXS ",
+        "gaugeAddress": "0x070EBC9F46d0a6A523D31eb4aE7901C56AD97ae2",
+        "nonBlacklistedVotes": 2822514.75567258,
+        "amountDepositedUSD": 3898.848,
+        "amountClaimedUSD": 3898.848,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013813383941268145,
+        "dollarPerVlCVXVote": 0.013011867994601604,
+        "incentivesDirectedUSD": 4857.046702716109,
+        "efficiency": 1.2457645701284352,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "FXN+cvxFXN ",
+        "gaugeAddress": "0x724476f141ED2DE4DA22eBDF435905dEf1118317",
+        "nonBlacklistedVotes": 2282916.346499881,
+        "amountDepositedUSD": 3154.656,
+        "amountClaimedUSD": 3154.656,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.001381853524697325,
+        "dollarPerVlCVXVote": 0.013016720397902611,
+        "incentivesDirectedUSD": 3928.493656608618,
+        "efficiency": 1.2453001711148912,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "PRISMA+cvxPrisma ",
+        "gaugeAddress": "0x13E58C7b1147385D735a06D14F0456E54C2dEBC8",
+        "nonBlacklistedVotes": 3652666.1543998094,
+        "amountDepositedUSD": 5023.296,
+        "amountClaimedUSD": 5023.296,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013752409302309773,
+        "dollarPerVlCVXVote": 0.012954431384099921,
+        "incentivesDirectedUSD": 6285.58985057379,
+        "efficiency": 1.251287969208621,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "CVX+afCVX ",
+        "gaugeAddress": "0x9755e37A291a37d8a0AB0828699A59b445477514",
+        "nonBlacklistedVotes": 2614976.9059907724,
+        "amountDepositedUSD": 3689.5631999999996,
+        "amountClaimedUSD": 3689.5631999999996,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014109352903069268,
+        "dollarPerVlCVXVote": 0.013290663478592325,
+        "incentivesDirectedUSD": 4499.91091575169,
+        "efficiency": 1.2196324257981785,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "WETH+CVG ",
+        "gaugeAddress": "0x16A3a047fC1D388d5846a73ACDb475b11228c299",
+        "nonBlacklistedVotes": 996181.6784726753,
+        "amountDepositedUSD": 1399.41266112,
+        "amountClaimedUSD": 1399.41266112,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014047765496606503,
+        "dollarPerVlCVXVote": 0.013232649656169765,
+        "incentivesDirectedUSD": 1714.251777429215,
+        "efficiency": 1.2249794682129274,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "zunETH+pxETH ",
+        "gaugeAddress": "0xf792934842e86f964bDF19A439797a6e3c9fE17B",
+        "nonBlacklistedVotes": 871658.9686635908,
+        "amountDepositedUSD": 1401.902592,
+        "amountClaimedUSD": 1401.902592,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0016083154563869945,
+        "dollarPerVlCVXVote": 0.015149936106288939,
+        "incentivesDirectedUSD": 1499.9703052505633,
+        "efficiency": 1.0699533004719368,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "CVX+clevCVX ",
+        "gaugeAddress": "0x7970489a543FB237ABab63d62524d8A5CE165B86",
+        "nonBlacklistedVotes": 1203719.5281544826,
+        "amountDepositedUSD": 1632.0,
+        "amountClaimedUSD": 1632.0,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013557975606677646,
+        "dollarPerVlCVXVote": 0.012771279624037027,
+        "incentivesDirectedUSD": 2071.3875643936353,
+        "efficiency": 1.2692325762215904,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "FRAX+USDC ",
+        "gaugeAddress": "0xCFc25170633581Bf896CB6CDeE170e3E3Aa59503",
+        "nonBlacklistedVotes": 622613.5490454219,
+        "amountDepositedUSD": 921.5999999999999,
+        "amountClaimedUSD": 921.5999999999999,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014802119250584536,
+        "dollarPerVlCVXVote": 0.013943232342478072,
+        "incentivesDirectedUSD": 1071.4073608932592,
+        "efficiency": 1.1625513898581374,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "FRAX+crvUSD ",
+        "gaugeAddress": "0x96424E6b5eaafe0c3B36CA82068d574D44BE4e3c",
+        "nonBlacklistedVotes": 2988545.0354180257,
+        "amountDepositedUSD": 4150.8864,
+        "amountClaimedUSD": 4150.8864,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.001388932189679849,
+        "dollarPerVlCVXVote": 0.01308339968135859,
+        "incentivesDirectedUSD": 5142.755332287645,
+        "efficiency": 1.2389535238274996,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "FRAX+FXB_20241231 ",
+        "gaugeAddress": "0xC2FE9D3c761994897594Df63B33b6D843Ab7b1cF",
+        "nonBlacklistedVotes": 622613.5490454219,
+        "amountDepositedUSD": 921.5999999999999,
+        "amountClaimedUSD": 921.5999999999999,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014802119250584536,
+        "dollarPerVlCVXVote": 0.013943232342478072,
+        "incentivesDirectedUSD": 1071.4073608932592,
+        "efficiency": 1.1625513898581374,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "FRAX+FXB_20261231 ",
+        "gaugeAddress": "0x0E83dF148F69965BfE752250835854b0dBeeaf01",
+        "nonBlacklistedVotes": 7180809.598990534,
+        "amountDepositedUSD": 9962.496,
+        "amountClaimedUSD": 9962.496,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013873778245562323,
+        "dollarPerVlCVXVote": 0.01306875794412034,
+        "incentivesDirectedUSD": 12356.898228968925,
+        "efficiency": 1.240341600033659,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "ETH+frxETH ",
+        "gaugeAddress": "0x2932a86df44Fe8D2A706d8e9c5d51c24883423F5",
+        "nonBlacklistedVotes": 1867840.647136266,
+        "amountDepositedUSD": 2580.48,
+        "amountClaimedUSD": 2580.48,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013815311300545566,
+        "dollarPerVlCVXVote": 0.0130136835196462,
+        "incentivesDirectedUSD": 3214.2220826797784,
+        "efficiency": 1.2455907748480044,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "DOLA+FRAXPYUSD ",
+        "gaugeAddress": "0x4B092818708A721cB187dFACF41f440ADb79044D",
+        "nonBlacklistedVotes": 4441309.983190677,
+        "amountDepositedUSD": 6128.639999999999,
+        "amountClaimedUSD": 6128.639999999999,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013799171918185114,
+        "dollarPerVlCVXVote": 0.0129984806183382,
+        "incentivesDirectedUSD": 7642.705841038584,
+        "efficiency": 1.2470476061636162,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "sfrxETH+rsETH ",
+        "gaugeAddress": "0x8f8E854EF0dc76D88D2e217D3c2653672d13b252",
+        "nonBlacklistedVotes": 332060.5594908917,
+        "amountDepositedUSD": 517.9391999999999,
+        "amountClaimedUSD": 517.9391999999999,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0015597733160303453,
+        "dollarPerVlCVXVote": 0.014692681080886267,
+        "incentivesDirectedUSD": 571.4172591430715,
+        "efficiency": 1.1032516155237364,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "msETH+frxETH ",
+        "gaugeAddress": "0xB7A3C519889a916C5ecB54101E69ECf11DE60d0b",
+        "nonBlacklistedVotes": 1784825.507263543,
+        "amountDepositedUSD": 215.41081139200278,
+        "amountClaimedUSD": 215.41081139200278,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.00012069012377701063,
+        "dollarPerVlCVXVote": 0.0011368712876697316,
+        "incentivesDirectedUSD": 3071.3677678940103,
+        "efficiency": 14.258187637131922,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "eUSD+FRAXBP ",
+        "gaugeAddress": "0x8605dc0C339a2e7e85EEA043bD29d42DA2c6D784",
+        "nonBlacklistedVotes": 830151.3987272293,
+        "amountDepositedUSD": 1214.502659306014,
+        "amountClaimedUSD": 1214.502659306014,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014629893549153372,
+        "dollarPerVlCVXVote": 0.013780999966846714,
+        "incentivesDirectedUSD": 1428.5431478576793,
+        "efficiency": 1.1762371509947713,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "DOLA+FRAXBP ",
+        "gaugeAddress": "0xBE266d68Ce3dDFAb366Bb866F4353B6FC42BA43c",
+        "nonBlacklistedVotes": 2448946.626245327,
+        "amountDepositedUSD": 3372.8457753784214,
+        "amountClaimedUSD": 3372.8457753784214,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013772638975597428,
+        "dollarPerVlCVXVote": 0.01297348723887903,
+        "incentivesDirectedUSD": 4214.202286180155,
+        "efficiency": 1.2494500391756977,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "STG+FRAXBP ",
+        "gaugeAddress": "0x8133e6B0B2420bBa10574A6668ea275f5E7Ed253",
+        "nonBlacklistedVotes": 1245227.098090844,
+        "amountDepositedUSD": 1716.2415984518511,
+        "amountClaimedUSD": 1716.2415984518511,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013782559029458616,
+        "dollarPerVlCVXVote": 0.012982831685677146,
+        "incentivesDirectedUSD": 2142.8147217865185,
+        "efficiency": 1.248550742342722,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "COIL+FRAXBP ",
+        "gaugeAddress": "0x06B30D5F2341C2FB3F6B48b109685997022Bd272",
+        "nonBlacklistedVotes": 290552.98955453024,
+        "amountDepositedUSD": 290.1813182626875,
+        "amountClaimedUSD": 290.1813182626875,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0009987208140848506,
+        "dollarPerVlCVXVote": 0.00940770447819761,
+        "incentivesDirectedUSD": 499.9901017501877,
+        "efficiency": 1.7230265019940745,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "msUSD+FRAXBP ",
+        "gaugeAddress": "0xd5f2e6612E41bE48461FDBA20061E3c778Fe6EC4",
+        "nonBlacklistedVotes": 7222317.168926896,
+        "amountDepositedUSD": 10335.242917746653,
+        "amountClaimedUSD": 10335.242917746653,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014310148219760723,
+        "dollarPerVlCVXVote": 0.013479807729257639,
+        "incentivesDirectedUSD": 12428.325386361808,
+        "efficiency": 1.2025189427353589,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "mkUSD+FRAXBP ",
+        "gaugeAddress": "0xF184d80915Ba7d835D941BA70cDdf93DE36517ee",
+        "nonBlacklistedVotes": 705628.688918145,
+        "amountDepositedUSD": 1025.4950665630101,
+        "amountClaimedUSD": 1025.4950665630101,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0014533069341827322,
+        "dollarPerVlCVXVote": 0.013689793944501632,
+        "incentivesDirectedUSD": 1214.2616756790273,
+        "efficiency": 1.184073639426347,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+FXB20291231 ",
+        "gaugeAddress": "0x48100238C4a3CF44cFbF6C7693eD5C216881fAcE",
+        "nonBlacklistedVotes": 5271461.381917907,
+        "amountDepositedUSD": 5529.599999999999,
+        "amountClaimedUSD": 5529.599999999999,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.001048969080750085,
+        "dollarPerVlCVXVote": 0.009881030793882096,
+        "incentivesDirectedUSD": 9071.248988896263,
+        "efficiency": 1.6404891834664825,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-lend-crvUSD",
+        "gaugeAddress": "0x541f57aB2032A042CE6B02Fd435347fBaE1F6d0A",
+        "nonBlacklistedVotes": 2448946.626245327,
+        "amountDepositedUSD": 2304.0,
+        "amountClaimedUSD": 2304.0,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0009408126642320679,
+        "dollarPerVlCVXVote": 0.008862223946490298,
+        "incentivesDirectedUSD": 4214.202286180155,
+        "efficiency": 1.8290808533768035,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+DAI ",
+        "gaugeAddress": "0x64100c172D5DC8007E3ee701ECD99468619B6583",
+        "nonBlacklistedVotes": 290552.98955453024,
+        "amountDepositedUSD": 460.79999999999995,
+        "amountClaimedUSD": 460.79999999999995,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0015859413482769145,
+        "dollarPerVlCVXVote": 0.014939177509797933,
+        "incentivesDirectedUSD": 499.9901017501877,
+        "efficiency": 1.085047963867595,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-pxETH+wfrxETH ",
+        "gaugeAddress": "0x6b794C5e3188c2C8C1412DBF38Fd70e9b20446a7",
+        "nonBlacklistedVotes": 290552.98955453024,
+        "amountDepositedUSD": 460.79999999999995,
+        "amountClaimedUSD": 460.79999999999995,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0015859413482769145,
+        "dollarPerVlCVXVote": 0.014939177509797933,
+        "incentivesDirectedUSD": 499.9901017501877,
+        "efficiency": 1.085047963867595,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+PYUSD ",
+        "gaugeAddress": "0x72Bd89F2E3470fA5d188cF04eda17E8145eb4BF1",
+        "nonBlacklistedVotes": 415075.6993636146,
+        "amountDepositedUSD": 645.12,
+        "amountClaimedUSD": 645.12,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0015542225213113765,
+        "dollarPerVlCVXVote": 0.014640393959601978,
+        "incentivesDirectedUSD": 714.2715739288394,
+        "efficiency": 1.1071917998648924,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+FXB20551231 ",
+        "gaugeAddress": "0x7bA1e40dAe22847E6c521bA297d40fF1c5fD97dd",
+        "nonBlacklistedVotes": 5271461.381917907,
+        "amountDepositedUSD": 3225.6,
+        "amountClaimedUSD": 3225.6,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0006118986304375496,
+        "dollarPerVlCVXVote": 0.0057639346297645565,
+        "incentivesDirectedUSD": 9071.248988896263,
+        "efficiency": 2.8122671716568277,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+wfrxETH+FXS ",
+        "gaugeAddress": "0x8882eB84d0c4894753C0450f2D514E39883c0C82",
+        "nonBlacklistedVotes": 2490454.196181688,
+        "amountDepositedUSD": 921.5999999999999,
+        "amountClaimedUSD": 921.5999999999999,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.00037005298126461335,
+        "dollarPerVlCVXVote": 0.0034858080856195175,
+        "incentivesDirectedUSD": 4285.629443573037,
+        "efficiency": 4.650205559432549,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-crvUSD+FRAX ",
+        "gaugeAddress": "0x98a6C35546be6F7c545c99EfB48F4673eD2c99fc",
+        "nonBlacklistedVotes": 1328242.237963567,
+        "amountDepositedUSD": 1843.1999999999998,
+        "amountClaimedUSD": 1843.1999999999998,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013876986797423,
+        "dollarPerVlCVXVote": 0.013071780321073189,
+        "incentivesDirectedUSD": 2285.6690365722866,
+        "efficiency": 1.24005481584868,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+USDC ",
+        "gaugeAddress": "0xAA6dDbA00DE48D41E41543eF0a78AB31aae4dE8d",
+        "nonBlacklistedVotes": 290552.98955453024,
+        "amountDepositedUSD": 460.79999999999995,
+        "amountClaimedUSD": 460.79999999999995,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0015859413482769145,
+        "dollarPerVlCVXVote": 0.014939177509797933,
+        "incentivesDirectedUSD": 499.9901017501877,
+        "efficiency": 1.085047963867595,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-FXB20251231+FXB_20261231+FXB20291231 ",
+        "gaugeAddress": "0xBd4Af2a6510b988878805956e5111839e55de069",
+        "nonBlacklistedVotes": 3694173.7243361706,
+        "amountDepositedUSD": 2764.7999999999997,
+        "amountClaimedUSD": 2764.7999999999997,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0007484217598610158,
+        "dollarPerVlCVXVote": 0.007049948937208013,
+        "incentivesDirectedUSD": 6357.017007966673,
+        "efficiency": 2.299268304386094,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-wfrxETH+sfrxETH ",
+        "gaugeAddress": "0xD1D981dDD0c9A0469E7d8cEE877f83B5877D7260",
+        "nonBlacklistedVotes": 290552.98955453024,
+        "amountDepositedUSD": 460.79999999999995,
+        "amountClaimedUSD": 460.79999999999995,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0015859413482769145,
+        "dollarPerVlCVXVote": 0.014939177509797933,
+        "incentivesDirectedUSD": 499.9901017501877,
+        "efficiency": 1.085047963867595,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-FRAX+USDT ",
+        "gaugeAddress": "0xE049AA6fbd64210bDEddC15F5a861084E6eE8b57",
+        "nonBlacklistedVotes": 1328242.237963567,
+        "amountDepositedUSD": 1843.1999999999998,
+        "amountClaimedUSD": 1843.1999999999998,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013876986797423,
+        "dollarPerVlCVXVote": 0.013071780321073189,
+        "incentivesDirectedUSD": 2285.6690365722866,
+        "efficiency": 1.24005481584868,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-lend-crvUSD",
+        "gaugeAddress": "0xFC6891C8482aeF6AEF71a09A09ce14432617A403",
+        "nonBlacklistedVotes": 2448946.626245327,
+        "amountDepositedUSD": 2304.0,
+        "amountClaimedUSD": 2304.0,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0009408126642320679,
+        "dollarPerVlCVXVote": 0.008862223946490298,
+        "incentivesDirectedUSD": 4214.202286180155,
+        "efficiency": 1.8290808533768035,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "fraxtal-lend-crvUSD",
+        "gaugeAddress": "0xf868B47717F4739EE142b3BE6EE0f84Da868E917",
+        "nonBlacklistedVotes": 3320605.594908918,
+        "amountDepositedUSD": 4608.0,
+        "amountClaimedUSD": 4608.0,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0013876986797423001,
+        "dollarPerVlCVXVote": 0.01307178032107319,
+        "incentivesDirectedUSD": 5714.172591430719,
+        "efficiency": 1.2400548158486804,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "WETH+pxETH ",
+        "gaugeAddress": "0xABaD903647511a0EC755a118849f733f7d2Ba002",
+        "nonBlacklistedVotes": 17889762.642571792,
+        "amountDepositedUSD": 19048.034880000003,
+        "amountClaimedUSD": 19048.034880000003,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0010647449751329792,
+        "dollarPerVlCVXVote": 0.01002963583959702,
+        "incentivesDirectedUSD": 30785.104836332986,
+        "efficiency": 1.6161827206992694,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "pxETH+stETH ",
+        "gaugeAddress": "0x58215F083882A5eb7056Ac34a0fdDA9D3b5665d2",
+        "nonBlacklistedVotes": 17889762.642571792,
+        "amountDepositedUSD": 19048.034880000003,
+        "amountClaimedUSD": 19048.034880000003,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.0010647449751329792,
+        "dollarPerVlCVXVote": 0.01002963583959702,
+        "incentivesDirectedUSD": 30785.104836332986,
+        "efficiency": 1.6161827206992694,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "msETH+WETH ",
+        "gaugeAddress": "0x4e227d29b33B77113F84bcC189a6F886755a1f24",
+        "nonBlacklistedVotes": 4441309.983190677,
+        "amountDepositedUSD": 6350.664,
+        "amountClaimedUSD": 6350.664,
+        "maxRewardPerVoteUSD": 0.0,
+        "dollarPerVeCrvVote": 0.001429907847917795,
+        "dollarPerVlCVXVote": 0.013469380305839166,
+        "incentivesDirectedUSD": 7642.705841038584,
+        "efficiency": 1.2034498819396813,
+        "remainingWeek": 2,
+        "maxPricePerVote": 9.419754094960053,
+        "platforms": [
+          "convex"
+        ],
+        "blacklistedAddresses": []
+      },
+      {
+        "gaugeName": "CRV+sdCRV ",
+        "gaugeAddress": "0x26F7786de3E6D9Bd37Fcf47BE6F2bC455a21b74A",
+        "nonBlacklistedVotes": 8626363.60644449,
+        "amountDepositedUSD": 7099.957918780265,
+        "amountClaimedUSD": 5961.054226602863,
+        "maxRewardPerVoteUSD": 0.0053843006470063156,
+        "dollarPerVeCrvVote": 0.0008230534026500003,
+        "dollarPerVlCVXVote": 0.007752960659983146,
+        "incentivesDirectedUSD": 7431.382955607966,
+        "efficiency": 1.0466798593201576,
+        "remainingWeek": 4.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
+        "campaignId": "123",
+        "timestampPeriod": 1730937600
+      },
+      {
+        "gaugeName": "PENDLE+sdPENDLE ",
+        "gaugeAddress": "0x785dFF4aD2b6e55D150D335B46D567D854053dC8",
+        "nonBlacklistedVotes": 973776.895906112,
+        "amountDepositedUSD": 619.1410730672121,
+        "amountClaimedUSD": 35.80190682577568,
+        "maxRewardPerVoteUSD": 0.0053843006470063156,
+        "dollarPerVeCrvVote": 0.0006358140921911002,
+        "dollarPerVlCVXVote": 0.005989212398550425,
+        "incentivesDirectedUSD": 838.8829125398033,
+        "efficiency": 1.3549140075362707,
+        "remainingWeek": 4.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
+        "campaignId": "133",
+        "timestampPeriod": 1730937600
+      },
+      {
+        "gaugeName": "crvUSD+zunUSD ",
+        "gaugeAddress": "0xB1A829a05E618F7C4f50Cb86f8F64Fb86e42dE5a",
+        "nonBlacklistedVotes": 382393.65886309237,
+        "amountDepositedUSD": 360.9493346867389,
+        "amountClaimedUSD": 310.3976928773169,
+        "maxRewardPerVoteUSD": 0.0009413293183865707,
+        "dollarPerVeCrvVote": 0.0009413293183865707,
+        "dollarPerVlCVXVote": 0.008867090701577854,
+        "incentivesDirectedUSD": 329.4219729718784,
+        "efficiency": 0.9151668846087111,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "236",
+        "timestampPeriod": 1730937600
+      },
+      {
+        "gaugeName": "fraxtal-FXS+sdFXS ",
+        "gaugeAddress": "0xa40C1E9aA3781c74c437212cd0353eAAB3EBBa6F",
+        "nonBlacklistedVotes": 862467.481340957,
+        "amountDepositedUSD": 34.92492046386158,
+        "amountClaimedUSD": 34.924920463861554,
+        "maxRewardPerVoteUSD": 0.0009153311099910735,
+        "dollarPerVeCrvVote": 4.04941881513731e-05,
+        "dollarPerVlCVXVote": 0.0003814452946609796,
+        "incentivesDirectedUSD": 742.9928105297012,
+        "efficiency": 21.27400150555847,
+        "remainingWeek": 4.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [
+          "0x52f541764E6e90eeBc5c21Ff570De0e2D63766B6"
+        ],
+        "campaignId": "16",
+        "timestampPeriod": 1730937600
+      },
+      {
+        "gaugeName": "cbBTC+WBTC ",
+        "gaugeAddress": "0xc62B10c61BF060eBf40A60859dCDbeA025Fc7e2e",
+        "nonBlacklistedVotes": 6967721.352335296,
+        "amountDepositedUSD": 21231.45966829077,
+        "amountClaimedUSD": 5551.159436945551,
+        "maxRewardPerVoteUSD": 0.0008278097596800001,
+        "dollarPerVeCrvVote": 0.0008278097596800001,
+        "dollarPerVlCVXVote": 0.007797764373593578,
+        "incentivesDirectedUSD": 6002.506740903794,
+        "efficiency": 1.0406659375841283,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "52",
+        "timestampPeriod": 1730937600
+      },
+      {
+        "gaugeName": "arbi-USDe+USDx ",
+        "gaugeAddress": "0x99178264ec6b9de40689eE4F2f561cA3885a4BD2",
+        "nonBlacklistedVotes": 6113564.399709954,
+        "amountDepositedUSD": 4540.149869354079,
+        "amountClaimedUSD": 4502.1554569947,
+        "maxRewardPerVoteUSD": 0.000956736,
+        "dollarPerVeCrvVote": 0.0007426354860299628,
+        "dollarPerVlCVXVote": 0.006995443660593391,
+        "incentivesDirectedUSD": 5266.673229966237,
+        "efficiency": 1.1600218894790624,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "10",
+        "timestampPeriod": 1730937600
+      },
+      {
+        "gaugeName": "ETH+ETHx ",
+        "gaugeAddress": "0x7671299eA7B4bbE4f3fD305A994e6443b4be680E",
+        "nonBlacklistedVotes": 6293674.249754739,
+        "amountDepositedUSD": 4043.3692965,
+        "amountClaimedUSD": 0.0,
+        "maxRewardPerVoteUSD": 0.0008643535732799999,
+        "dollarPerVeCrvVote": 0.0006424497258747651,
+        "dollarPerVlCVXVote": 0.0060517184361147825,
+        "incentivesDirectedUSD": 6074.175591955567,
+        "efficiency": 1.502255952038183,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "53",
+        "timestampPeriod": 1731542400
+      },
+      {
+        "gaugeName": "DOLA+crvUSD ",
+        "gaugeAddress": "0xEcAD6745058377744c09747b2715c0170B5699e5",
+        "nonBlacklistedVotes": 5759288.821390434,
+        "amountDepositedUSD": 5167.75,
+        "amountClaimedUSD": 0.0,
+        "maxRewardPerVoteUSD": 0.00090149184,
+        "dollarPerVeCrvVote": 0.0008972896064539402,
+        "dollarPerVlCVXVote": 0.008452247444759598,
+        "incentivesDirectedUSD": 5558.427430093888,
+        "efficiency": 1.0755991350382446,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "56",
+        "timestampPeriod": 1731542400
+      },
+      {
+        "gaugeName": "USDC+WETH+INV ",
+        "gaugeAddress": "0x4Fc86cd0F9b650280Fa783e3116258e0E0496A2c",
+        "nonBlacklistedVotes": 6560445.483003498,
+        "amountDepositedUSD": 5906.0,
+        "amountClaimedUSD": 0.0,
+        "maxRewardPerVoteUSD": 0.00090149184,
+        "dollarPerVeCrvVote": 0.0009002437434014191,
+        "dollarPerVlCVXVote": 0.008480074688367685,
+        "incentivesDirectedUSD": 6331.642891553833,
+        "efficiency": 1.0720695718851732,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "57",
+        "timestampPeriod": 1731542400
+      },
+      {
+        "gaugeName": "ETH+ETHx ",
+        "gaugeAddress": "0x7671299eA7B4bbE4f3fD305A994e6443b4be680E",
+        "nonBlacklistedVotes": 6293674.249754739,
+        "amountDepositedUSD": 0.4042965,
+        "amountClaimedUSD": 0.0,
+        "maxRewardPerVoteUSD": 0.000876463062048,
+        "dollarPerVeCrvVote": 6.423854873260325e-08,
+        "dollarPerVlCVXVote": 6.051113324782304e-07,
+        "incentivesDirectedUSD": 6074.175591955567,
+        "efficiency": 15024.061776333872,
+        "remainingWeek": 2.0,
+        "platforms": [
+          "votemarket"
+        ],
+        "blacklistedAddresses": [],
+        "campaignId": "58",
+        "timestampPeriod": 1731542400
       }
     ]
   }
