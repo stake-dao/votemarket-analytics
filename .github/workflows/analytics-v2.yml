@@ -3,7 +3,7 @@ name: Analytics V2
 on:
   workflow_dispatch: # Allows the workflow to be triggered manually
   schedule:
-    - cron: '0 */6 * * *' # Every 6 hours
+    - cron: "0 */6 * * *" # Every 6 hours
 
 env:
   TARGET_DEVOPS_DIR: target-devops
@@ -60,12 +60,11 @@ jobs:
           token: ${{ secrets.GIT_ACCESS_TOKEN }}
           path: ${{ env.TARGET_DEVOPS_DIR }}
         if: always()
-          
-      - name: Copy CSV to target repo
+
+      - name: Copy JSON files to target repo
         run: |
-          cp "${{ env.DEVOPS_DIR }}/json/votemarket-analytics.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics.json"
-          cp "${{ env.DEVOPS_DIR }}/json/votemarket-analytics-vlcvx.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics-vlcvx.json"
-          cp "${{ env.DEVOPS_DIR }}/json/votemarket-analytics-curve.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics-curve.json"
+          mkdir -p "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics"
+          cp ${{ env.DEVOPS_DIR }}/json/votemarket-analytics-*.json "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/"
 
       - name: Commit and push changes to repo
         run: |
@@ -73,8 +72,7 @@ jobs:
           git config user.email "actions@github.com"
           git config user.name "Stake DAO Automation"
           git add .
-          git commit -m "Analytics"
+          git commit -m ""$(date +"%Y-%m-%d %H:%M:%S"): Auto-update analytics data"
           git push
         shell: bash
         if: always()
-      
