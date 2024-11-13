@@ -64,6 +64,7 @@ jobs:
       - name: Copy JSON files to target repo
         run: |
           mkdir -p "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics"
+          cp "${{ env.DEVOPS_DIR }}/json/votemarket-analytics.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics.json"
           cp ${{ env.DEVOPS_DIR }}/json/votemarket-analytics-*.json "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/"
 
       - name: Commit and push changes to repo
