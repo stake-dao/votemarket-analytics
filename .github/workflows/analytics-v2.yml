@@ -64,7 +64,7 @@ jobs:
       - name: Copy JSON files to target repo
         run: |
           mkdir -p "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics"
-          cp "${{ env.DEVOPS_DIR }}/json/votemarket-analytics-*.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/"
+          cp ${{ env.DEVOPS_DIR }}/json/votemarket-analytics-*.json "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/"
 
       - name: Commit and push changes to repo
         run: |
@@ -72,7 +72,7 @@ jobs:
           git config user.email "actions@github.com"
           git config user.name "Stake DAO Automation"
           git add .
-          git commit -m ""$(date +"%Y-%m-%d %H:%M:%S"): Auto-update analytics data"
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update analytics data"
           git push
         shell: bash
         if: always()
