@@ -4,6 +4,11 @@ on:
   workflow_dispatch: # Allows the workflow to be triggered manually
   schedule:
     - cron: "0 */6 * * *" # Every 6 hours
+    - cron: "0 19 * * 1"
+    - cron: "0 20 * * 1"
+    - cron: "0 21 * * 1"
+    - cron: "0 22 * * 1"
+    - cron: "0 23 * * 1"
 
 env:
   TARGET_DEVOPS_DIR: target-devops
