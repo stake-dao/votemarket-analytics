@@ -1,0 +1,29 @@
+[
+    {
+        "gauge": "0x7a59af3a8650edc8ebe6d79162a2aa97f2b98aac",
+        "nonBlacklistedVotes": 7514.280098776974,
+        "totalDeposited": 299.677882264416,
+        "dollarPerVote": 0.02667883118544,
+        "incentiveDirected": 135.3460589853473,
+        "incentiveDirectedUSD": 208.43293083743487,
+        "efficiency": 1.039709846031555
+    },
+    {
+        "gauge": "0x80cd37a62a8a58c4cbf64003410c5ccc4d01519f",
+        "nonBlacklistedVotes": 7493.19034460813,
+        "totalDeposited": 299.9592,
+        "dollarPerVote": 0.026529891443999996,
+        "incentiveDirected": 134.96619357253317,
+        "incentiveDirectedUSD": 207.84793810170112,
+        "efficiency": 1.0455468135882238
+    },
+    {
+        "gauge": "0xdc2df969ee5e66236b950f5c4c5f8abe62035df2",
+        "nonBlacklistedVotes": 45368.6179394185,
+        "totalDeposited": 864.5219999999999,
+        "dollarPerVote": 0.019055506631354982,
+        "incentiveDirected": 815.2598297776324,
+        "incentiveDirectedUSD": 1263.65273615533,
+        "efficiency": 1.46167794012799
+    }
+]
