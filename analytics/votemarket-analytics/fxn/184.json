@@ -1,18 +1,1 @@
-{
-    "number": 184,
-    "endVoting": 1742947200,
-    "totalDepositedUSD": 467.0634828158064,
-    "globalAverageDollarPerVote": 0.1694082793331891,
-    "globalAverageEfficiency": 0.024943227879502334,
-    "analytics": [
-        {
-            "gauge": "0x9c7003bc16f2a1aa47451c858fee6480b755363e",
-            "nonBlacklistedVotes": 2757.028668576431,
-            "totalDeposited": 467.0634828158064,
-            "dollarPerVote": 0.1694082793331891,
-            "incentiveDirected": 11.650070886068683,
-            "incentiveDirectedUSD": 405.4224668351901,
-            "efficiency": 0.8680243302066811
-        }
-    ]
-}
+{"number": 184, "endVoting": 1742947200, "totalDepositedUSD": 421.45964490138755, "globalAverageDollarPerVote": 0.15286734218799575, "globalAverageEfficiency": 0.9619484848426003, "analytics": [{"gauge": "0x9c7003bc16f2a1aa47451c858fee6480b755363e", "nonBlacklistedVotes": 2757.028668576431, "totalDeposited": 421.45964490138755, "dollarPerVote": 0.15286734218799575, "incentiveDirected": 11.650070886068683, "incentiveDirectedUSD": 405.4224668351901, "efficiency": 0.9619484848426003}]}
