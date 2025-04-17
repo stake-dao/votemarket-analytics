@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # Allows the workflow to be triggered manually
   schedule:
     - cron: "*/10 20-23 * * 3" # Every 10 minutes, the Wednesday, from 10pm to 0am
-    - cron: "*/10 0-1   * * 4" # Every 10 minutes, the Thursday, from 0am to 3am
+    #- cron: "*/10 0-1   * * 4" # Every 10 minutes, the Thursday, from 0am to 3am
 
 env:
   TARGET_DEVOPS_DIR: target-devops
