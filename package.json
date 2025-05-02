@@ -24,5 +24,8 @@
   "scripts": {
     "start": "npx ts-node src/index.ts",
     "llamaairforce": "npx ts-node src/llamaairforce.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.4"
   }
 }
