@@ -1,0 +1,41 @@
+name: Llama airforce API snapshot
+
+on:
+  workflow_dispatch: # Allows the workflow to be triggered manually
+  schedule:
+    - cron: "*/15 * * * *" # Every 15 minutes
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+    
+      - name: Run script to snapshot llama airforce
+        run: pnpm tsx src/llamaairforce.ts
+
+      - name: Commit and push if changes found
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Llama airforce API update"
+          git add .
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Llama airforce API data"
+          git push
+        shell: bash
+
+
