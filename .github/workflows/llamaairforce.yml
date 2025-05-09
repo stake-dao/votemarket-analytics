@@ -3,7 +3,7 @@ name: Llama airforce API snapshot
 on:
   workflow_dispatch: # Allows the workflow to be triggered manually
   schedule:
-    - cron: "*/15 * * * *" # Every 15 minutes
+    - cron: "0 */1 * * *" # Every hour
 
 jobs:
   update:
