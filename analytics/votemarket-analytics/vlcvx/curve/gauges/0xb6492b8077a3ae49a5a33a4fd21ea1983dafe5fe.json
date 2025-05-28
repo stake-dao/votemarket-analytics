@@ -1,0 +1,1 @@
+[{"roundDetails": {"id": 97, "startTimestamp": 1747872000, "endTimestamp": 1749081600}, "analytic": {"gauge": "0xb6492b8077A3Ae49A5a33a4FD21ea1983dafE5FE", "nonBlacklistedVotes": 0.0, "nonBlacklistedVotesBreakdowns": [], "totalDeposited": 153.5290986672, "dollarPerVote": 0.0, "incentiveDirected": 0.0, "incentiveDirectedUSD": 0.0, "efficiency": 0.0, "platform": "votemarket"}}]
