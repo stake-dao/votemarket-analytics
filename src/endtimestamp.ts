@@ -1,6 +1,7 @@
 import fs from "fs"
 
-const WEEK = 604800;
+const DAY = 86400;
+const WEEK = 7 * DAY;
 
 const main = async () => {
     for(const protocol of ["curve", "fxn"]) {
@@ -10,7 +11,7 @@ const main = async () => {
         
         // Remove one week on each endVoting
         roundsMetadata.map((round) => {
-            round.endVoting -= WEEK
+            round.endVoting -= (3 * DAY)
             return round
         });
 
@@ -23,7 +24,7 @@ const main = async () => {
             const gaugeFileData = JSON.parse(fs.readFileSync(pathGaugeFile, {encoding: 'utf-8'}))
 
             for(const r of gaugeFileData) {
-                r.roundDetails.endTimestamp -= WEEK
+                r.roundDetails.endTimestamp -= (3 * DAY)
             }
 
             fs.writeFileSync(pathGaugeFile, JSON.stringify(gaugeFileData));
