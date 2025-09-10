@@ -23,7 +23,8 @@
   },
   "scripts": {
     "start": "npx ts-node src/index.ts",
-    "llamaairforce": "npx ts-node src/llamaairforce.ts"
+    "llamaairforce": "npx ts-node src/llamaairforce.ts",
+    "timestamp": "npx ts-node src/endtimestamp.ts"
   },
   "devDependencies": {
     "tsx": "^4.19.4"
