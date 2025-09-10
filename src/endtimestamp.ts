@@ -18,18 +18,18 @@ const main = async () => {
         fs.writeFileSync(pathRoundsMetadata, JSON.stringify(roundsMetadata));
 
         // Gauges files
-        const gaugeFiles = fs.readdirSync(`${path}/gauges`);
+        /*const gaugeFiles = fs.readdirSync(`${path}/gauges`);
         for(const gaugeFile of gaugeFiles) {
             const pathGaugeFile = `${path}/gauges/${gaugeFile}`;
             const gaugeFileData = JSON.parse(fs.readFileSync(pathGaugeFile, {encoding: 'utf-8'}))
 
             for(const r of gaugeFileData) {
-                r.roundDetails.endTimestamp -= (3 * DAY)
+                r.roundDetails.endTimestamp += DAY
             }
 
             fs.writeFileSync(pathGaugeFile, JSON.stringify(gaugeFileData));
 
-        }
+        }*/
     }
 }
 
