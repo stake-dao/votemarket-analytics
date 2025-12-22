@@ -1,7 +1,7 @@
 {
-    "totalDepositedUSD": 837.8320016255417,
-    "globalAverageDollarPerVote": 0.008468794248113712,
-    "globalAverageEfficiency": 1.0523839475218317,
+    "totalDepositedUSD": 3928.070425391283,
+    "globalAverageDollarPerVote": 0.012302288954954478,
+    "globalAverageEfficiency": 0.7236855541601133,
     "analytics": [
         {
             "gauge": "0xdc2df969ee5e66236b950f5c4c5f8abe62035df2",
@@ -12,11 +12,43 @@
                     "nonBlacklistedVotes": 98931.67516877096
                 }
             ],
-            "totalDeposited": 837.8320016255417,
-            "dollarPerVote": 0.008468794248113712,
-            "incentiveDirected": 1388.5589300107486,
-            "incentiveDirectedUSD": 881.7209492308052,
-            "efficiency": 1.0523839475218317,
+            "totalDeposited": 840.6155051880884,
+            "dollarPerVote": 0.008496929863504822,
+            "incentiveDirected": 1389.4435455721712,
+            "incentiveDirectedUSD": 880.7875959734224,
+            "efficiency": 1.0477889005584609,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0x4eb7c7fd67b9b2c24d9ff1601ccda5a01bd40c7f",
+            "nonBlacklistedVotes": 95316.83640706856,
+            "nonBlacklistedVotesBreakdowns": [
+                {
+                    "key": "42161-dd2f-f4c7-24",
+                    "nonBlacklistedVotes": 95316.83640706856
+                }
+            ],
+            "totalDeposited": 2087.575469748449,
+            "dollarPerVote": 0.02123982507611692,
+            "incentiveDirected": 1338.6750290463647,
+            "incentiveDirectedUSD": 848.6047269648883,
+            "efficiency": 0.41916488332170965,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0x7f49d37d0da53a4899bc0ba916f59ec9d4e6d1e2",
+            "nonBlacklistedVotes": 119921.30689369627,
+            "nonBlacklistedVotesBreakdowns": [
+                {
+                    "key": "42161-dd2f-f4c7-25",
+                    "nonBlacklistedVotes": 119921.30689369627
+                }
+            ],
+            "totalDeposited": 999.879450454746,
+            "dollarPerVote": 0.008337796479662159,
+            "incentiveDirected": 1684.2319262842398,
+            "incentiveDirectedUSD": 1067.6580521324445,
+            "efficiency": 1.0677867733423991,
             "platform": "votemarket"
         }
     ]

@@ -1,8 +1,72 @@
 {
-    "totalDepositedUSD": 774.515324365893,
-    "globalAverageDollarPerVote": 0.049113136661461367,
-    "globalAverageEfficiency": 1.763920935679379,
+    "totalDepositedUSD": 19156.95742417752,
+    "globalAverageDollarPerVote": 0.08977497389247327,
+    "globalAverageEfficiency": 0.9597413609628349,
     "analytics": [
+        {
+            "gauge": "0xa295829c082c4d21fe37dbc8c96bfa0ef6dbaa92",
+            "nonBlacklistedVotes": 8306.012296910776,
+            "nonBlacklistedVotesBreakdowns": [
+                {
+                    "key": "42161-155a-f2b4-69",
+                    "nonBlacklistedVotes": 8306.012296910776
+                }
+            ],
+            "totalDeposited": 2087.575469748449,
+            "dollarPerVote": 0.1914949541693017,
+            "incentiveDirected": 26.704616970025782,
+            "incentiveDirectedUSD": 715.6522957237797,
+            "efficiency": 0.44993747223120084,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0x2122a2bee97545595550b85379ac7676fd21a5b4",
+            "nonBlacklistedVotes": 32494.58482692901,
+            "nonBlacklistedVotesBreakdowns": [
+                {
+                    "key": "42161-155a-f2b4-70",
+                    "nonBlacklistedVotes": 32494.58482692901
+                }
+            ],
+            "totalDeposited": 6249.7184292950915,
+            "dollarPerVote": 0.07572358839923671,
+            "incentiveDirected": 104.47317080494713,
+            "incentiveDirectedUSD": 2799.75798237524,
+            "efficiency": 1.1378324435670002,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0x215d87bd3c7482e2348338815e059de07daf798a",
+            "nonBlacklistedVotes": 14346.850291854182,
+            "nonBlacklistedVotesBreakdowns": [
+                {
+                    "key": "42161-155a-f2b4-71",
+                    "nonBlacklistedVotes": 14346.850291854182
+                }
+            ],
+            "totalDeposited": 2867.2266327713614,
+            "dollarPerVote": 0.10123094665732942,
+            "incentiveDirected": 46.12648381375062,
+            "incentiveDirectedUSD": 1236.1354619700628,
+            "efficiency": 0.8511305926597987,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0xa3c0f7360b922136cc8b89063be1e8daf70427bd",
+            "nonBlacklistedVotes": 5619.399099014882,
+            "nonBlacklistedVotesBreakdowns": [
+                {
+                    "key": "42161-155a-f2b4-72",
+                    "nonBlacklistedVotes": 5619.399099014882
+                }
+            ],
+            "totalDeposited": 401.3014664369847,
+            "dollarPerVote": 0.07141359055763373,
+            "incentiveDirected": 18.06690083961387,
+            "incentiveDirectedUSD": 484.17167252375185,
+            "efficiency": 1.2065036213860436,
+            "platform": "votemarket"
+        },
         {
             "gauge": "0x9c7003bc16f2a1aa47451c858fee6480b755363e",
             "nonBlacklistedVotes": 7934.819738101116,
@@ -12,11 +76,59 @@
                     "nonBlacklistedVotes": 7934.819738101116
                 }
             ],
-            "totalDeposited": 774.515324365893,
-            "dollarPerVote": 0.049113136661461367,
+            "totalDeposited": 777.5233922102223,
+            "dollarPerVote": 0.04930388259311411,
             "incentiveDirected": 25.511197703258926,
-            "incentiveDirectedUSD": 687.4068435510227,
-            "efficiency": 1.763920935679379,
+            "incentiveDirectedUSD": 683.6700643747463,
+            "efficiency": 1.747545042953649,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0xe534e5e86382d64133ecd6b7f717c69bec8b40ca",
+            "nonBlacklistedVotes": 8460.374430772892,
+            "nonBlacklistedVotesBreakdowns": [
+                {
+                    "key": "42161-155a-f2b4-74",
+                    "nonBlacklistedVotes": 8460.374430772892
+                }
+            ],
+            "totalDeposited": 935.7962294506884,
+            "dollarPerVote": 0.08131403196372941,
+            "incentiveDirected": 27.20090586439653,
+            "incentiveDirectedUSD": 728.9522538170673,
+            "efficiency": 1.0596050096543947,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0xf0a3eced42dbd8353569639c0eaa833857aa0a75",
+            "nonBlacklistedVotes": 91.73965502647843,
+            "nonBlacklistedVotesBreakdowns": [
+                {
+                    "key": "42161-155a-f2b4-75",
+                    "nonBlacklistedVotes": 91.73965502647843
+                }
+            ],
+            "totalDeposited": 5582.078261513483,
+            "dollarPerVote": 0.10163154835719308,
+            "incentiveDirected": 0.2949516881109818,
+            "incentiveDirectedUSD": 7.9043579977632845,
+            "efficiency": 0.8477756859626466,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0xb5152d159fce50a7576eba7fab61c2b98f0ed692",
+            "nonBlacklistedVotes": 3492.981961439047,
+            "nonBlacklistedVotesBreakdowns": [
+                {
+                    "key": "42161-155a-f2b4-76",
+                    "nonBlacklistedVotes": 3492.981961439047
+                }
+            ],
+            "totalDeposited": 255.7375427512376,
+            "dollarPerVote": 0.07321467604885032,
+            "incentiveDirected": 11.230268151436753,
+            "incentiveDirectedUSD": 300.9579651784686,
+            "efficiency": 1.1768235587968328,
             "platform": "votemarket"
         }
     ]
