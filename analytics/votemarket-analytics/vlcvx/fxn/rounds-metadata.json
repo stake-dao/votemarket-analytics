@@ -1,1 +1,70 @@
-[{"id": 31, "endVoting": 1747008000}, {"id": 32, "endVoting": 1748217600}, {"id": 33, "endVoting": 1749427200}, {"id": 34, "endVoting": 1750636800}, {"id": 35, "endVoting": 1751846400}, {"id": 36, "endVoting": 1753056000}, {"id": 37, "endVoting": 1754265600}, {"id": 38, "endVoting": 1755475200}, {"id": 39, "endVoting": 1756684800}, {"id": 40, "endVoting": 1757894400}, {"id": 41, "endVoting": 1759104000}, {"id": 42, "endVoting": 1760313600}, {"id": 43, "endVoting": 1761523200}, {"id": 44, "endVoting": 1762732800}, {"id": 45, "endVoting": 1763942400}, {"id": 46, "endVoting": 1765152000}]
+[
+    {
+        "id": 31,
+        "endVoting": 1747008000
+    },
+    {
+        "id": 32,
+        "endVoting": 1748217600
+    },
+    {
+        "id": 33,
+        "endVoting": 1749427200
+    },
+    {
+        "id": 34,
+        "endVoting": 1750636800
+    },
+    {
+        "id": 35,
+        "endVoting": 1751846400
+    },
+    {
+        "id": 36,
+        "endVoting": 1753056000
+    },
+    {
+        "id": 37,
+        "endVoting": 1754265600
+    },
+    {
+        "id": 38,
+        "endVoting": 1755475200
+    },
+    {
+        "id": 39,
+        "endVoting": 1756684800
+    },
+    {
+        "id": 40,
+        "endVoting": 1757894400
+    },
+    {
+        "id": 41,
+        "endVoting": 1759104000
+    },
+    {
+        "id": 42,
+        "endVoting": 1760313600
+    },
+    {
+        "id": 43,
+        "endVoting": 1761523200
+    },
+    {
+        "id": 44,
+        "endVoting": 1762732800
+    },
+    {
+        "id": 45,
+        "endVoting": 1763942400
+    },
+    {
+        "id": 46,
+        "endVoting": 1765152000
+    },
+    {
+        "id": 47,
+        "endVoting": 1766361600
+    }
+]

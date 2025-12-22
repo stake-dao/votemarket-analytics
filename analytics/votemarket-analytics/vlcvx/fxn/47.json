@@ -1,0 +1,106 @@
+{
+    "totalDepositedUSD": 21863.52341271221,
+    "globalAverageDollarPerVote": 0.0007029694949293977,
+    "globalAverageEfficiency": 0.3650225002875648,
+    "analytics": [
+        {
+            "gauge": "0xfefafb9446d84a9e58a3a2f2dddd7219e8c94fbb",
+            "nonBlacklistedVotes": 2768357.6972963545,
+            "nonBlacklistedVotesBreakdowns": [],
+            "totalDeposited": 2453.369552983023,
+            "dollarPerVote": 0.000886218408617876,
+            "incentiveDirected": 0.0,
+            "incentiveDirectedUSD": 0.0,
+            "efficiency": 0.28954451878877324,
+            "platform": "votium"
+        },
+        {
+            "gauge": "0xf594bdfafe4197144c6459fca611d7b868d36bea",
+            "nonBlacklistedVotes": 9023.83285482992,
+            "nonBlacklistedVotesBreakdowns": [],
+            "totalDeposited": 1029.0747920720546,
+            "dollarPerVote": 0.11403965572359336,
+            "incentiveDirected": 0.0,
+            "incentiveDirectedUSD": 0.0,
+            "efficiency": 0.0022500916986890563,
+            "platform": "votium"
+        },
+        {
+            "gauge": "0xa295829c082C4d21fE37dbC8C96bFa0ef6dbaa92",
+            "nonBlacklistedVotes": 0.0,
+            "nonBlacklistedVotesBreakdowns": [],
+            "totalDeposited": 2086.5294673518683,
+            "dollarPerVote": 0.0,
+            "incentiveDirected": 0.0,
+            "incentiveDirectedUSD": 0.0,
+            "efficiency": 0.0,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0x2122a2bee97545595550b85379AC7676Fd21a5B4",
+            "nonBlacklistedVotes": 3070363.3761668927,
+            "nonBlacklistedVotesBreakdowns": [],
+            "totalDeposited": 6249.540189893389,
+            "dollarPerVote": 0.0002505664422621201,
+            "incentiveDirected": 0.0,
+            "incentiveDirectedUSD": 0.0,
+            "efficiency": 1.0240784055056495,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0x215D87bd3c7482E2348338815E059DE07Daf798A",
+            "nonBlacklistedVotes": 0.0,
+            "nonBlacklistedVotesBreakdowns": [],
+            "totalDeposited": 2867.5714885306593,
+            "dollarPerVote": 0.0,
+            "incentiveDirected": 0.0,
+            "incentiveDirectedUSD": 0.0,
+            "efficiency": 0.0,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0xA3c0f7360b922136cc8B89063BE1e8daF70427bD",
+            "nonBlacklistedVotes": 0.0,
+            "nonBlacklistedVotesBreakdowns": [],
+            "totalDeposited": 403.8258881658083,
+            "dollarPerVote": 0.0,
+            "incentiveDirected": 0.0,
+            "incentiveDirectedUSD": 0.0,
+            "efficiency": 0.0,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0xE534E5e86382d64133ecd6b7f717C69BEC8B40CA",
+            "nonBlacklistedVotes": 0.0,
+            "nonBlacklistedVotesBreakdowns": [],
+            "totalDeposited": 935.7962294506884,
+            "dollarPerVote": 0.0,
+            "incentiveDirected": 0.0,
+            "incentiveDirectedUSD": 0.0,
+            "efficiency": 0.0,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0xf0A3ECed42Dbd8353569639c0eaa833857aA0A75",
+            "nonBlacklistedVotes": 0.0,
+            "nonBlacklistedVotesBreakdowns": [],
+            "totalDeposited": 5582.078261513483,
+            "dollarPerVote": 0.0,
+            "incentiveDirected": 0.0,
+            "incentiveDirectedUSD": 0.0,
+            "efficiency": 0.0,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0xb5152D159fce50a7576eBa7FAb61C2B98F0Ed692",
+            "nonBlacklistedVotes": 306031.61272064433,
+            "nonBlacklistedVotesBreakdowns": [],
+            "totalDeposited": 255.7375427512376,
+            "dollarPerVote": 0.00024227169920379893,
+            "incentiveDirected": 0.0,
+            "incentiveDirectedUSD": 0.0,
+            "efficiency": 1.0591401451688491,
+            "platform": "votemarket"
+        }
+    ]
+}
