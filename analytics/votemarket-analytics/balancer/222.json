@@ -1,7 +1,7 @@
 {
-    "totalDepositedUSD": 3928.070425391283,
-    "globalAverageDollarPerVote": 0.012302288954954478,
-    "globalAverageEfficiency": 0.7236855541601133,
+    "totalDepositedUSD": 3877.692153818451,
+    "globalAverageDollarPerVote": 0.012142164097762623,
+    "globalAverageEfficiency": 0.6911880974549875,
     "analytics": [
         {
             "gauge": "0xdc2df969ee5e66236b950f5c4c5f8abe62035df2",
@@ -12,11 +12,11 @@
                     "nonBlacklistedVotes": 98931.67516877096
                 }
             ],
-            "totalDeposited": 840.6155051880884,
-            "dollarPerVote": 0.008496929863504822,
-            "incentiveDirected": 1389.4435455721712,
-            "incentiveDirectedUSD": 880.7875959734224,
-            "efficiency": 1.0477889005584609,
+            "totalDeposited": 792.3851740773632,
+            "dollarPerVote": 0.008009418345798816,
+            "incentiveDirected": 1352.3142969655662,
+            "incentiveDirectedUSD": 830.285993405285,
+            "efficiency": 1.0478313080151362,
             "platform": "votemarket"
         },
         {
@@ -28,11 +28,11 @@
                     "nonBlacklistedVotes": 95316.83640706856
                 }
             ],
-            "totalDeposited": 2087.575469748449,
-            "dollarPerVote": 0.02123982507611692,
-            "incentiveDirected": 1338.6750290463647,
-            "incentiveDirectedUSD": 848.6047269648883,
-            "efficiency": 0.41916488332170965,
+            "totalDeposited": 2085.1961976771954,
+            "dollarPerVote": 0.021215617413527357,
+            "incentiveDirected": 1302.9024364028476,
+            "incentiveDirectedUSD": 799.9483893250964,
+            "efficiency": 0.39558213829627326,
             "platform": "votemarket"
         },
         {
@@ -44,11 +44,11 @@
                     "nonBlacklistedVotes": 119921.30689369627
                 }
             ],
-            "totalDeposited": 999.879450454746,
-            "dollarPerVote": 0.008337796479662159,
-            "incentiveDirected": 1684.2319262842398,
-            "incentiveDirectedUSD": 1067.6580521324445,
-            "efficiency": 1.0677867733423991,
+            "totalDeposited": 1000.1107820638922,
+            "dollarPerVote": 0.00833972550808203,
+            "incentiveDirected": 1639.2252283860264,
+            "incentiveDirectedUSD": 1006.44188279269,
+            "efficiency": 1.006330399434083,
             "platform": "votemarket"
         }
     ]
