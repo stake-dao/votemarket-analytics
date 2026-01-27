@@ -67,6 +67,17 @@ jobs:
           ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_TOKEN }}
           AGNOSTIC_KEY: ${{ secrets.AGNOSTIC_KEY }}
 
+      - name: Run the vlaura snapshot
+        run: |
+          cd ${{ env.DEVOPS_DIR }}
+          python script/votemarket/analytics_v2/snapshot_vlaura.py
+        shell: bash
+        env:
+          PYTHONPATH: script/
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_TOKEN }}
+          AGNOSTIC_KEY: ${{ secrets.AGNOSTIC_KEY }}
+
       - name: Checkout target repository
         uses: actions/checkout@v4
         with:
@@ -86,7 +97,7 @@ jobs:
           git config user.email "actions@github.com"
           git config user.name "Stake DAO Automation"
           git add .
-          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update analytics ve and vlcvx data"
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update analytics ve and vl data"
           git push
         shell: bash
         if: always()
