@@ -1,0 +1,29 @@
+{
+    "totalDepositedUSD": 4355.822683440708,
+    "globalAverageDollarPerVote": 0.0014585096405502315,
+    "globalAverageEfficiency": 0.7461594285227101,
+    "analytics": [
+        {
+            "gauge": "0xDc2Df969EE5E66236B950F5c4c5f8aBe62035df2",
+            "nonBlacklistedVotes": 0.0,
+            "nonBlacklistedVotesBreakdowns": [],
+            "totalDeposited": 958.0834613692051,
+            "dollarPerVote": 0.0,
+            "incentiveDirected": 0.0,
+            "incentiveDirectedUSD": 0.0,
+            "efficiency": 0.0,
+            "platform": "votemarket"
+        },
+        {
+            "gauge": "0x4eB7C7fD67B9b2C24d9fF1601ccDa5A01bD40c7f",
+            "nonBlacklistedVotes": 274166.48049480724,
+            "nonBlacklistedVotesBreakdowns": [],
+            "totalDeposited": 3397.739222071503,
+            "dollarPerVote": 0.0014585096405502315,
+            "incentiveDirected": 0.0,
+            "incentiveDirectedUSD": 0.0,
+            "efficiency": 0.7461594285227101,
+            "platform": "votemarket"
+        }
+    ]
+}

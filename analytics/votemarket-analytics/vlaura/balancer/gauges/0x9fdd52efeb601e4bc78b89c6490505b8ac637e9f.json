@@ -1,0 +1,19 @@
+[
+    {
+        "roundDetails": {
+            "id": 94,
+            "startTimestamp": 1768435200,
+            "endTimestamp": 1769644800
+        },
+        "analytic": {
+            "nonBlacklistedVotes": 9631540.300848486,
+            "nonBlacklistedVotesBreakdowns": [],
+            "totalDeposited": 1840.5268204192098,
+            "dollarPerVote": 0.00014825825158715534,
+            "incentiveDirected": 0.0,
+            "incentiveDirectedUSD": 0.0,
+            "efficiency": 7.340645346197445,
+            "platform": "votemarket"
+        }
+    }
+]
