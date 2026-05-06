@@ -67,17 +67,6 @@ jobs:
           ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_TOKEN }}
           AGNOSTIC_KEY: ${{ secrets.AGNOSTIC_KEY }}
 
-      - name: Run the vlaura snapshot
-        run: |
-          cd ${{ env.DEVOPS_DIR }}
-          python script/votemarket/analytics_v2/snapshot_vlaura.py
-        shell: bash
-        env:
-          PYTHONPATH: script/
-          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_TOKEN }}
-          AGNOSTIC_KEY: ${{ secrets.AGNOSTIC_KEY }}
-
       - name: Checkout target repository
         uses: actions/checkout@v4
         with:
