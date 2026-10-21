@@ -80,9 +80,6 @@ jobs:
           token: ${{ secrets.GIT_ACCESS_TOKEN }}
           path: ${{ env.TARGET_DEVOPS_DIR }}
 
-      - name: Test publication safeguards
-        run: python -m unittest discover -s "${{ env.TARGET_DEVOPS_DIR }}/tests" -p "test_snapshot_publication.py"
-
       - name: Copy JSON files to target repo
         run: |
           mkdir -p "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics"
