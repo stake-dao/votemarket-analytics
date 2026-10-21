@@ -6,6 +6,10 @@ on:
     - cron: "*/10 20-22 * * 3" # Every 10 minutes, the Wednesday, from 10pm to 0am
     #- cron: "*/10 0-1   * * 4" # Every 10 minutes, the Thursday, from 0am to 3am
 
+concurrency:
+  group: votemarket-analytics-publish
+  cancel-in-progress: false
+
 env:
   TARGET_DEVOPS_DIR: target-devops
   DEVOPS_DIR: devops
@@ -19,6 +23,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VOTEMARKET_SNAPSHOT_OUTPUT_DIR: ${{ runner.temp }}/votemarket-snapshots
     steps:
       - name: Checkout the votemarket-analytics-v2 repo
         uses: actions/checkout@v4
@@ -73,12 +79,30 @@ jobs:
           repository: stake-dao/votemarket-analytics
           token: ${{ secrets.GIT_ACCESS_TOKEN }}
           path: ${{ env.TARGET_DEVOPS_DIR }}
-        if: always()
+
+      - name: Test publication safeguards
+        run: python -m unittest discover -s "${{ env.TARGET_DEVOPS_DIR }}/tests" -p "test_snapshot_publication.py"
 
       - name: Copy JSON files to target repo
         run: |
           mkdir -p "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics"
-          cp -r "${{ env.DEVOPS_DIR }}/json/votemarket-analytics/"* "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics/"
+          python - <<'PY_CHECK'
+          import json, os
+          from pathlib import Path
+          root = Path(os.environ["VOTEMARKET_SNAPSHOT_OUTPUT_DIR"])
+          files = list(root.rglob("*.json"))
+          if not files:
+              raise SystemExit("No snapshots produced; refusing to publish")
+          for path in files:
+              if {"pendle", "balancer", "vlaura"}.intersection(path.relative_to(root).parts[:-1]):
+                  raise SystemExit(f"Retired market snapshot; refusing to overwrite history: {path}")
+              data = json.loads(path.read_text())
+              if data is None:
+                  raise SystemExit(f"Null snapshot: {path}")
+              if path.stem.isdecimal() and (not isinstance(data, dict) or not isinstance(data.get("analytics"), list)):
+                  raise SystemExit(f"Invalid snapshot: {path}")
+          PY_CHECK
+          cp -R "${VOTEMARKET_SNAPSHOT_OUTPUT_DIR}/." "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics/"
 
       - name: Commit and push changes to repo
         run: |
@@ -86,7 +110,7 @@ jobs:
           git config user.email "actions@github.com"
           git config user.name "Stake DAO Automation"
           git add .
+          if git diff --cached --quiet; then exit 0; fi
           git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update analytics ve and vl data"
           git push
         shell: bash
-        if: always()
