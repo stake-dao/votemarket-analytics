@@ -13,10 +13,6 @@ on:
     - cron: "0 1 * * 2"
     - cron: "0 2 * * 2"
 
-concurrency:
-  group: votemarket-analytics-publish
-  cancel-in-progress: false
-
 env:
   TARGET_DEVOPS_DIR: target-devops
   DEVOPS_DIR: devops
@@ -71,26 +67,13 @@ jobs:
           repository: stake-dao/votemarket-analytics
           token: ${{ secrets.GIT_ACCESS_TOKEN }}
           path: ${{ env.TARGET_DEVOPS_DIR }}
+        if: always()
 
       - name: Copy JSON files to target repo
         run: |
-          python - <<'PY_COPY'
-          import json, os, shutil
-          from pathlib import Path
-          source = Path(os.environ["DEVOPS_DIR"]) / "json"
-          target = Path(os.environ["GITHUB_WORKSPACE"]) / os.environ["TARGET_DEVOPS_DIR"] / "analytics"
-          retired = {f"votemarket-analytics-{protocol}.json" for protocol in ("balancer", "pendle")}
-          files = [path for path in source.glob("votemarket-analytics*.json") if path.name not in retired]
-          if not any(path.name == "votemarket-analytics.json" for path in files):
-              raise SystemExit("Missing aggregate analytics; refusing to publish")
-          for path in files:
-              if not isinstance(json.loads(path.read_text()), dict):
-                  raise SystemExit(f"Invalid analytics: {path}")
-          # Only generated active datasets are replaced. Frozen archives stay untouched.
-          target.mkdir(parents=True, exist_ok=True)
-          for path in files:
-              shutil.copy2(path, target / path.name)
-          PY_COPY
+          mkdir -p "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics"
+          cp "${{ env.DEVOPS_DIR }}/json/votemarket-analytics.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/votemarket-analytics.json"
+          cp ${{ env.DEVOPS_DIR }}/json/votemarket-analytics-*.json "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/analytics/"
 
       - name: Commit and push changes to repo
         run: |
@@ -98,7 +81,7 @@ jobs:
           git config user.email "actions@github.com"
           git config user.name "Stake DAO Automation"
           git add .
-          if git diff --cached --quiet; then exit 0; fi
           git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update analytics data"
           git push
         shell: bash
+        if: always()
